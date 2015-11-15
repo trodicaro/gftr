@@ -66,6 +66,18 @@
             </div>
         </div>
     </div>
+
+<div class="container-fluid mailer">
+    <div class="row jumbotron">
+        <h2>Join the Giftr community and never gift a bad gift again!  Sign up to be notified when Giftr is ready to launch.</h2>
+        <%= form_tag("/users", method: "post") do %>
+            <%= text_field_tag(:email, nil, placeholder: "Email Address", class: "form-control" ) %>
+            <p>&nbsp;</p>
+            <%= submit_tag("Submit", class: "btn btn-info") %>
+        <% end %>
+
+
+
 <div class="container-fluid snapshot">
     <div class="row">
         <div class="col-sm-6">
