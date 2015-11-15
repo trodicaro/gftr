@@ -83,6 +83,28 @@
     background-color: #85B2F6;
     padding: 120px 0;
 }
+.snapshot .col-sm-6:first-child {
+    margin-top: 100px;
+    padding-right: 0;
+    padding-left: 45px;
+}
+
+@media all and (max-width: 767px) {
+    .snapshot.col-sm-6:first-child {
+        margin-top: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 60px;
+    }
+}
+.wrap {
+//    position: relative;
+    background-color: rgba(255,255,255,.65);
+//    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 15px 5px 15px;
+}
 .phonewrapper {
 //    text-align: center;
 }
@@ -162,6 +184,7 @@
     padding: 15px;
     color: #f0f0f0;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 //sharing page
