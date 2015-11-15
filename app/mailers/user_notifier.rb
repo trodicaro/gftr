@@ -5,6 +5,6 @@ class UserNotifier < ApplicationMailer
     
     @user = user
     mail( :to => @user.email, 
-          :subject => "Thanks for signing up with !")
+          :subject => "Thanks for joining Giftr!")
   end
 end
