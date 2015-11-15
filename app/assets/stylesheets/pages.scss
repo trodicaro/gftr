@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
-    margin-bottom: 2vw;
+//    margin-bottom: 2vw;
 //    text-align: center;
 }
 .landingpage .jumbotron {
@@ -34,6 +34,9 @@
 @media all and (max-width: 767px) {
     #GiftrLogo {
         max-width: 200px;
+    }
+    .Features .col-sm-4 {
+        margin-bottom: 60px;
     }
 }
 .logocontainer {
@@ -55,11 +58,42 @@
     display: inline-block;
     letter-spacing: 2px;
 }
+.bg-gray {
+    background-color: #e8e8e8;
+}
 .marketing {
     text-align: center;
+    color: #404040;
 }
-.marketing .row {
+.marketing .col-sm-4 > div {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+.marketing > .row {
+    padding: 80px 0;
+}
+.marketing h3 {
+    line-height: 1.8;
+}
+.marketing h4 {
+    line-height: 1.5;
+    padding: 0px 15px;
+}
+.snapshot {
+    background-color: #85B2F6;
     padding: 120px 0;
+}
+.phonewrapper {
+//    text-align: center;
+}
+.phonewrapper img {
+//    max-height: 
+    max-width: 80%;
+    margin: 0 auto;
+}
+#response {
+    min-height: 20px;
+    padding: 10px 0;
 }
 .bottom {
     position: absolute;
@@ -94,21 +128,34 @@
     display: inline-block;
     border-radius: 50%;
     behavior: url(PIE.htc);
-    background-color: #ff0066;
-    border: 2px solid rgb(255, 51, 102);
-//    width: 25px;
-//    height: 25px;
-    display: block;
+    background: white;
+    border: 8px solid #0066ff;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+}
+#planning, #social, #money {
+    margin: 35px;
 }
 .mailer {
     background-color: #b0b0b0; 
     text-align: center;
 }
+.mailer h2 {
+    font-weight: 300;
+    color: #f0f0f0;
+    line-height: 1.5;
+}
 .mailer p {
     font-size: 125%;
     font-weight: 300px;
+    color: #f0f0f0;
+}
+.mailer .jumbotron {
+    margin-bottom: 0px;
+}
+.btn-info {
+    background-color: #0066ff;
+    border: none;
 }
 .footer {
     background-color: #404040;
