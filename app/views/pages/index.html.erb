@@ -1,7 +1,6 @@
 <div class="landingpage">
-    <div class="wrapper container-fluid">
-        <div class="jumbotron">
-            <div class="container-fluid">
+        <div class="jumbotron no pad">
+            <div class="container-fluid no-pad">
                 <div class="logocontainer">
                 <%= image_tag("giftrlogo.png", :id => "GiftrLogo") %>
                 </div>
@@ -10,14 +9,43 @@
                 <p>GREAT GIFTS START HERE</p>
             </div>
         </div>
-    </div>
     <div class="bottom">
         <%=icon("fa fa-5x fa-chevron-down") %>
     </div>
 </div>
-    <div class="container-fluid">
+    <div class="container-fluid marketing">
         <div class="row">
-            <p class="fw300">Marketing Copy goes here:</p>
+            <div class="col-xs-12">
+                <p class="fw300">
+                    <h3>Marketing Copy Here</h3>
+                </p>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid">
+    <div class="transition"></div>
+</div>
+    <div class="container-fluid marketing Features">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="circle">
+                    <%= image_tag("planning.png") %>
+                </div>
+                    <div class="color">
+                    <h3>Planning</h3>
+                    </div>
+                <h4 class="fw300">Planning text here.</54>
+            </div>
+            <div class="col-sm-4">
+                <p class="fw300">
+                    <h3>Social</h3>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p class="fw300">
+                    <h3>Saving</h3>
+                </p>
+            </div>
         </div>
     </div>
 <div class="container-fluid mailer">
