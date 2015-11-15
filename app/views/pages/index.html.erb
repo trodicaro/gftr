@@ -13,41 +13,60 @@
         <%=icon("fa fa-5x fa-chevron-down") %>
     </div>
 </div>
-    <div class="container-fluid marketing">
+    <div class="container-fluid marketing bg-gray">
         <div class="row">
             <div class="col-xs-12">
-                <p class="fw300">
-                    <h3>Marketing Copy Here</h3>
+                <p>
+                    <h3 class="fw300">Use the power of your social network to help you find and choose unique &amp; memorable gifts for your family and friends. 
+</h3>
                 </p>
             </div>
         </div>
     </div>
-<div class="container-fluid">
-    <div class="transition"></div>
-</div>
     <div class="container-fluid marketing Features">
         <div class="row">
             <div class="col-sm-4">
+                <div>
+                <div class="row">
                 <div class="circle">
-                    <%= image_tag("planning.png") %>
+                    <%= image_tag("planning.png", :id => "planning") %>
+                </div>
                 </div>
                     <div class="color">
                     <h3>Planning</h3>
                     </div>
-                <h4 class="fw300">Planning text here.</54>
+                <h4 class="fw300">Giftr reminds you in time to start planning your gifts.  Use the Giftr Planner to create and manage Gift Lists so you remember the best gift ideas.</h4>
+                </div>
             </div>
             <div class="col-sm-4">
-                <p class="fw300">
+                <div>
+                <div class="row">
+                <div class="circle">
+                    <%= image_tag("social.png", :id => "social") %>
+                </div>
+                </div>
+                    <div class="color">
                     <h3>Social</h3>
-                </p>
+                    </div>
+                <h4 class="fw300">Create circles to collaborate with your family and friends on gift ideas for the person you all share in common.</h4>
+                    </div>
             </div>
             <div class="col-sm-4">
-                <p class="fw300">
-                    <h3>Saving</h3>
-                </p>
+                <div>
+                <div class="row">
+                <div class="circle">
+                    <%= image_tag("money.png", :id => "money") %>
+                </div>
+                </div>
+                    <div class="color">
+                        <h3>Saving</h3>
+                </div>
+                <h4 class="fw300">We'll work with retailers to offer you the best deals on your gifts so that you can be both a savvy and a smart gifter!</h4>
+                    </div>
             </div>
         </div>
     </div>
+
 <div class="container-fluid mailer">
     <div class="row jumbotron">
         <h2>Join the Giftr community and never gift a bad gift again!  Sign up to be notified when Giftr is ready to launch.</h2>
@@ -57,13 +76,19 @@
             <%= submit_tag("Submit", class: "btn btn-info") %>
         <% end %>
 
+
+<div class="container-fluid snapshot">
+    <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <div class="phonewrapper">
+                <%= image_tag("iphone.png", :class => "img-responsive")%>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row footer fw300">
-        <p>Footer here</p>
+        <p>Giftr - Created through Chicago Startup Weekend.</p>
     </div>
 </div>
-<% if false %>
-<%= render 'layouts/footer' %>
-<% end %>
