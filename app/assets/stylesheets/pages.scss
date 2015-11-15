@@ -7,6 +7,9 @@
 .fw300 {
     font-weight: 300;
 }
+.no-pad {
+    padding: 0;
+};
 .landingpage {
     background-image: image-url("Giftr_coverphoto.jpg");
     background-size: cover;
@@ -14,23 +17,23 @@
     position: relative;
     height: 100vh;
     margin-bottom: 2vw;
+//    text-align: center;
 }
-.wrapper .jumbotron {
+.landingpage .jumbotron {
+    text-align: center;
     position: absolute;
     top: 25%;
-    margin: auto;
-    height: 100%;
     width: 100%;
-    background-color: transparent;
-    text-align: center;
+
 }
+
 #GiftrLogo {
     width: 350px;
     padding: 15px;
 }
 @media all and (max-width: 767px) {
     #GiftrLogo {
-        min-width: 200px;
+        max-width: 200px;
     }
 }
 .logocontainer {
@@ -40,16 +43,23 @@
     display: inline-block;
     margin-bottom: 30px;
 }
-.jumbotron .subtext p {
+.subtext {
+    padding: 15px;
+}
+.subtext p {
     color: white;
     font-weight: 300;
     text-align: center;
     font-size: 230%;
     text-shadow: 2px 2px #505050;
-}
-.subtext p {
     display: inline-block;
     letter-spacing: 2px;
+}
+.marketing {
+    text-align: center;
+}
+.marketing .row {
+    padding: 120px 0;
 }
 .bottom {
     position: absolute;
@@ -61,7 +71,37 @@
     color: white;
     text-shadow: 3px 3px 3px #505050;
 }
-
+.transition {
+    width: 100%;
+//    padding: 15px;
+    border-bottom: 1px solid #c0c0c0;
+}
+.color {
+    background-color: #0066ff;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.color h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #f0f0f0;
+    letter-spacing: 1px;
+}
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    background-color: #ff0066;
+    border: 2px solid rgb(255, 51, 102);
+//    width: 25px;
+//    height: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 .mailer {
     background-color: #b0b0b0; 
     text-align: center;
