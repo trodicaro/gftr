@@ -1,7 +1,83 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron {
+    background-color: transparent;
+}
+.fw300 {
+    font-weight: 300;
+}
+.landingpage {
+    background-image: image-url("Giftr_coverphoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 2vw;
+}
+.wrapper .jumbotron {
+    position: absolute;
+    top: 25%;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+}
+#GiftrLogo {
+    width: 350px;
+    padding: 15px;
+}
+@media all and (max-width: 767px) {
+    #GiftrLogo {
+        min-width: 200px;
+    }
+}
+.logocontainer {
+    background-color: rgba(255,255,255,.5);
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.jumbotron .subtext p {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    font-size: 230%;
+    text-shadow: 2px 2px #505050;
+}
+.subtext p {
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+.bottom i {
+    color: white;
+    text-shadow: 3px 3px 3px #505050;
+}
 
+.mailer {
+    background-color: #b0b0b0; 
+    text-align: center;
+}
+.mailer p {
+    font-size: 125%;
+    font-weight: 300px;
+}
+.footer {
+    background-color: #404040;
+    padding: 15px;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+//sharing page
 .navbar{
   // padding: 0;
   margin-left: 5px;
@@ -9,7 +85,6 @@
   margin-bottom: 5px;
 
 }
-
 .list-title{
   text-align: center;
   margin-top: 0;
@@ -18,21 +93,18 @@
   padding:3px;
 
   }
-
-
 .list-contents{
   margin-top:10px;
 }
-
-.col-xs-6{
+.sharing .col-xs-6{
   min-height: 150px;
   padding: 15px;
   margin-bottom: 8px;
 }
-
 .gift{
   border: gray solid 1px;
 }
 .gift-comment{
   background-color:#F9F6F6;
 }
+//end sharing page
