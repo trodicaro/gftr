@@ -1,0 +1,41 @@
+<div class="landingpage">
+    <div class="wrapper container-fluid">
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <div class="logocontainer">
+                <%= image_tag("giftrlogo.png", :id => "GiftrLogo") %>
+                </div>
+            </div>
+            <div class="subtext">
+                <p>GREAT GIFTS START HERE</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <%=icon("fa fa-5x fa-chevron-down") %>
+    </div>
+</div>
+    <div class="container-fluid">
+        <div class="row">
+            <p class="fw300">Marketing Copy goes here:</p>
+        </div>
+    </div>
+<div class="container-fluid mailer">
+    <div class="row jumbotron">
+        <p>Signup text here.</p>
+        <%= form_tag('/signups/subscribe', method: "post", id: "signups", remote: "true") do -%>
+            <%= email_field(:email, :address, {id: "email", placeholder: "Email Address", class: "form-control"}) %>
+            <div id="response">There was an error, please try again.</div><!--Response text displayed here-->
+            <%= submit_tag("Submit", class: "btn btn-info") %>
+<% end %>
+
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row footer fw300">
+        <p>Footer here</p>
+    </div>
+</div>
+<% if false %>
+<%= render 'layouts/footer' %>
+<% end %>
