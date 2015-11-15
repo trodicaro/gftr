@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   def circles
   end
     
-    def planning
-    end
+  def planning
+  end
 
 end

@@ -1,15 +1,11 @@
 class UsersController < ApplicationController
+
   def create
-    @user = User.new(user_params)
+    puts params[:email]
+    @user = User.new(email: params[:email])
     @user.save
     UserNotifier.send_signup_email(@user).deliver
-      
-  end
-
-  private
-
-  def user_params
-    params.require(:user).permit(:email)
+    redirect_to root_url
   end
 
 end
