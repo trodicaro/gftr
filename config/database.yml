@@ -8,16 +8,10 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  username: tatyanashestopalova
-  password:
-  host: localhost
 
 development:
   <<: *default
   database: gftr_development
-  username: tatyanashestopalova
-  password:
-  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -25,12 +19,8 @@ development:
 test:
   <<: *default
   database: gftr_test
-  username: tatyanashestopalova
-  password:
-  host: localhost
 
 production:
   <<: *default
   database: gftr_production
-  username: tatyanashestopalova
-  password:
+
