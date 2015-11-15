@@ -25,7 +25,7 @@
         <p>Signup text here.</p>
         <%= form_tag('/signups/subscribe', method: "post", id: "signups", remote: "true") do -%>
             <%= email_field(:email, :address, {id: "email", placeholder: "Email Address", class: "form-control"}) %>
-            <div id="response">There was an error, please try again.</div><!--Response text displayed here-->
+            <!-- <div id="response">There was an error, please try again.</div> -->
             <%= submit_tag("Submit", class: "btn btn-info") %>
 <% end %>
 
