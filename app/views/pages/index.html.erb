@@ -35,7 +35,7 @@
                     <div class="color">
                     <h3>Planning</h3>
                     </div>
-                <h4 class="fw300">Giftr reminds you in time to start planning your gifts.  Use Giftr Lists to remember your best gift ideas.</h4>
+                <h4 class="fw300">Giftr reminds you in time to start planning your gifts.  Use the Giftr Planner to remember your best gift ideas.</h4>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -66,37 +66,28 @@
             </div>
         </div>
     </div>
-
-<div class="container-fluid mailer">
-    <div class="row jumbotron">
-        <h2>Join the Giftr community and never gift a bad gift again!  Sign up to be notified when Giftr is ready to launch.</h2>
-        <%= form_tag("/users", method: "post") do %>
-            <%= text_field_tag(:email, nil, placeholder: "Email Address", class: "form-control" ) %>
-            <p>&nbsp;</p>
-            <%= submit_tag("Submit", class: "btn btn-info") %>
-        <% end %>
-
-
-
 <div class="container-fluid snapshot">
     <div class="row">
         <div class="col-sm-6">
             <div class="wrap">
             <div class="container-fluid">
+                <div class="row">
                 <div class="box darkblue">
-                    <%=icon('check')%>
+                    <%=icon('fa fa-check-circle fa-4x')%>
                 </div>
-                <p>Receive an invitation for early access</p>
+                <h3>Create circles around the gift recipient and include family and friends</h3>
+                </div>
+                <div class="row">
                 <div class="box blue">
-                    <%=icon('check')%>
+                    <%=icon('fa fa-check-circle fa-4x')%>
                 </div>
-                <p>Get updates on our progress </p>
+                <h3>Share gift ideas </h3>
+                </div>
                 <div class="box darkblue">
-                    <%=icon('check')%>
+                    <%=icon('fa fa-check-circle fa-4x')%>
                 </div>
-                <p>Learn about our expected release date in your area</p>
-                <h4>Want to get updates from the Chimney team? Simply provide us with your email address and you&#39;ll be in the loop.</h4>
-                <h1>Be Informed</h1>
+                <h3>Claim any gift you want to give</h3>
+                <h2>No more duplicate gifts, and no more gifting gifts that recipients won’t like!</h2>
             </div>
         </div>
         </div>
@@ -105,6 +96,16 @@
                 <%= image_tag("iphone.png", :class => "img-responsive")%>
             </div>
         </div>
+    </div>
+</div>
+<div class="container-fluid mailer">
+    <div class="row jumbotron">
+        <h2>Join the Giftr community and never gift a bad gift again!  Sign up to be notified when Giftr is ready to launch.</h2>
+        <%= form_tag("/users", method: "post") do %>
+            <%= text_field_tag(:email, nil, placeholder: "Email Address", class: "form-control" ) %>
+            <p>&nbsp;</p>
+            <%= submit_tag("Submit", class: "btn btn-info") %>
+        <% end %>
     </div>
 </div>
 <div class="container-fluid">

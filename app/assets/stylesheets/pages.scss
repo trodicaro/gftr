@@ -83,18 +83,52 @@
     background-color: #85B2F6;
     padding: 120px 0;
 }
+.snapshot .row {
+    margin: 0;
+    padding-bottom: 20px;
+}
+.snapshot .row .container-fluid .row:first-child {
+    padding-top: 20px;
+}
 .snapshot .col-sm-6:first-child {
-    margin-top: 100px;
+    margin-top: 150px;
     padding-right: 0;
     padding-left: 45px;
 }
-
+.snapshot .box {
+    float: left;
+    display: inline-block;
+}
+.snapshot .wrap h3 {
+//    display: inline-block;
+    text-align: left;
+    padding-left: 65px;
+    min-height: 60px;
+    margin: 0;
+    padding-top: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.snapshot i {
+    color: #000066;
+}
+.snapshot h2 {
+    line-height: 1.3;
+    letter-spacing: 1px;
+    color: #0066ff;
+}
 @media all and (max-width: 767px) {
-    .snapshot.col-sm-6:first-child {
-        margin-top: 0;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-bottom: 60px;
+    .snapshot .col-sm-6:first-child, .snapshot .col-sm-6 {
+        padding-left: 0;
+        padding-right: 0;
+     padding: 0;
+        margin: 0 15px; 
+    }
+    .snapshot .col-sm-6:first-child {
+        margin-bottom: 120px;
+    }
+    .snapshot .row {
+        margin: 0;
     }
 }
 .wrap {
@@ -166,6 +200,7 @@
     font-weight: 300;
     color: #f0f0f0;
     line-height: 1.5;
+    font-size: 25px;
 }
 .mailer p {
     font-size: 125%;
