@@ -1,11 +1,15 @@
 class UsersController < ApplicationController
   def create
-    @user = User.new(params[:user])
-    if @user.save
-      UserNotifier.send_signup_email(@user).deliver
-      redirect_to(@user, :notice => "User subscribed")
-    else
-      render :action => 'new'
-    end
+    @user = User.new(user_params)
+    @user.save
+    UserNotifier.send_signup_email(@user).deliver
+      
   end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:email)
+  end
+
 end

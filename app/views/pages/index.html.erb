@@ -23,7 +23,7 @@
 <div class="container-fluid mailer">
     <div class="row jumbotron">
         <p>Signup text here.</p>
-        <%= form_tag('/signups/subscribe', method: "post", id: "signups", remote: "true") do -%>
+        <%= form_for('/signups/subscribe', method: "post", id: "signups", remote: "true") do -%>
             <%= email_field(:email, :address, {id: "email", placeholder: "Email Address", class: "form-control"}) %>
             <!-- <div id="response">There was an error, please try again.</div> -->
             <%= submit_tag("Submit", class: "btn btn-info") %>
