@@ -233,8 +233,9 @@
 .list-title{
   text-align: center;
   margin-top: 0;
-  font-family: 'Homemade Apple', cursive;
   background-color: #E5EFFF;
+  font-style: oblique;
+  letter-spacing: 1.5px;
   padding:3px;
 
   }
@@ -250,6 +251,13 @@
   border: gray solid 1px;
 }
 .gift-comment{
-  background-color:#F9F6F6;
+  background-color: #F9F6F6;
+}
+.fa-bars {
+  float: right;
+  position: absolute;
+  top: 90px;
+  left: 340px;
+  color:  #0066FF;
 }
 //end sharing page
