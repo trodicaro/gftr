@@ -100,16 +100,26 @@
 </div>
 <div class="container-fluid mailer">
     <div class="row jumbotron">
-        <h2>Join the Giftr community and never gift a bad gift again!  Sign up to be notified when Giftr is ready to launch.</h2>
+        <h2>Join the Giftr community and never give a bad gift again!  Sign up to be notified when Giftr is ready to launch.</h2>
         <%= form_tag("/users", method: "post") do %>
             <%= text_field_tag(:email, nil, placeholder: "Email Address", class: "form-control" ) %>
             <p>&nbsp;</p>
-            <%= submit_tag("Submit", class: "btn btn-info") %>
+        <%= submit_tag("Sign me up!", class: "btn btn-info") %>
         <% end %>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row footer fw300">
-        <p>Giftr - Created at Chicago Startup Weekend</p>
+        <p>Giftr</p>
+        <p>Created during Chicago Startup Weekend for the 2015 Global Startup Battle</p>
+        &nbsp;
+        &nbsp;
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6"><%= link_to image_tag("sw-logo-white.png", :class => "img-responsive center-block"), "http://www.up.co/communities/usa/chicago", :target => "_blank"%></div>
+                <div class="col-sm-6"><%= link_to image_tag("gsb2015.png", :class => "img-responsive center-block"), "http://www.globalstartupbattle.co/", :target => "_blank"%></div>
+            </div>
+        </div>
+        
     </div>
 </div>
