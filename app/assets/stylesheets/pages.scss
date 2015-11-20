@@ -1,6 +1,34 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.ticker {
+//    background-color: #85B2F6;
+    background-color: #202020;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.ticker h2 {
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+//    color: #404040;
+    color: #d0d0d0;
+}
+.ticker h4 {
+    font-weight: 400;
+    line-height: 1.5;
+//    font-size: 16px;
+    font-size: 100%;
+    color: #b0b0b0;
+}
+.ticker strong {
+//    color: #404040;
+    color: #c0c0c0;
+}
+.marquee span {
+    font-size: 200%;
+    background-color: rgba(255,255,255,.5);
+}
 .jumbotron {
     background-color: transparent;
 }
@@ -16,17 +44,13 @@
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
-//    margin-bottom: 2vw;
-//    text-align: center;
 }
 .landingpage .jumbotron {
     text-align: center;
     position: absolute;
     top: 25%;
     width: 100%;
-
 }
-
 #GiftrLogo {
     width: 350px;
     padding: 15px;
@@ -78,6 +102,61 @@
 .marketing h4 {
     line-height: 1.5;
     padding: 0px 15px;
+}
+
+.carousel {
+  height: 670px;
+}
+/* Since positioning the image, we need to help out the caption */
+//.carousel-caption {
+//  z-index: 10;
+//}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 670px;
+//  background-color: #777;
+  background-color: #85b2f6;
+}
+.carousel-inner>.item>.container-fluid>.row>div:first-child {
+    padding-left: 15%;
+    text-align: center;
+}
+.carousel-inner>.item>.container-fluid>.row>div:first-child .carousel-caption {
+    position: relative;
+    bottom: auto;
+    padding-top: 0;
+    text-align: inherit;
+    padding-left: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 0;
+}
+.carousel-inner img {
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+.carousel-inner >.item>.container-fluid>.row>div:nth-child(2) {
+    padding-right: 15%;
+}
+.carousel .item h3 {
+    color: #000099;
+    text-shadow: none;
+}
+.details {
+    text-align: left;
+}
+.details .box, .details p {
+    display: inline-block;
+    text-align: left;
+}
+.details p {
+    padding-left: 45px;
+}
+.details .box .fa {
+    color: #000099;
 }
 .snapshot {
     background-color: #85B2F6;
@@ -131,19 +210,7 @@
         margin: 0;
     }
 }
-.wrap {
-//    position: relative;
-    background-color: rgba(255,255,255,.65);
-//    border: none;
-    border-radius: 10px;
-    text-align: center;
-    padding: 0px 15px 5px 15px;
-}
-.phonewrapper {
-//    text-align: center;
-}
 .phonewrapper img {
-//    max-height: 
     max-width: 80%;
     margin: 0 auto;
 }
@@ -196,11 +263,10 @@
     background-color: #b0b0b0; 
     text-align: center;
 }
-.mailer h2 {
+.mailer h3 {
     font-weight: 300;
-    color: #f0f0f0;
+    color: #404040;
     line-height: 1.5;
-    font-size: 25px;
 }
 .mailer p {
     font-size: 125%;
@@ -217,7 +283,7 @@
 .footer {
     background-color: #404040;
     padding: 15px;
-    color: #d8d8d8;
+    color: #b0b0b0;
     text-align: center;
     letter-spacing: 1px;
 }
