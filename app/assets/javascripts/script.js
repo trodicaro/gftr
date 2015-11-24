@@ -124,10 +124,9 @@ var myfunction = function() {
 
         // Vote cover image full height
         
-        
         $(".container-fluid.vote").each(function() {
             var height = $(".container-fluid.vote").height() + 80;
-            $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head');//bc can't directly change height of pseudo element
+            $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head');//bc can't directly change height
         });
 
         // FeaturesTop two div's same height
@@ -148,9 +147,6 @@ var myfunction = function() {
         if ($(window).width() > 767 && $("#menu-toggle").css("display", "block")) {
         $("#menu-toggle").css("display", "none");
         };
-        if ($(window).width() < 50px) {
-            console.log("test");
-        }
         
     }, pause);
 }
