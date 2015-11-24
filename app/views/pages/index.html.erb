@@ -1,34 +1,133 @@
-<div class="ticker">
-    <div class="marquee" id="mycrawler"><span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#Giftr</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#BuiltIn<span style="color: rgb(0, 102, 255); font-size: 150%;">Chicago</span></span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiftingIsPainful</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Women</span>InTech</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: rgb(0, 102, 255); font-size: 150%;">Chicago</span>Startups</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#StartupBattle</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#SocialGifting</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: rgb(0, 102, 255); font-size: 150%;">Chicago</span>Tech</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Blacks</span>InTech</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#GSB2015</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#SW<span style="color: rgb(0, 102, 255); font-size: 150%;">Chicago</span></span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Diversity</span>InTech</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiftingIsHard</span>  <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#SW<span style="color: rgb(0, 102, 255); font-size: 150%;">Chi</span></span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiveGiftr</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: rgb(0, 102, 255); font-size: 150%;">Chi</span>Founders</span> <span style="background-color: rgba(255,255,255,.75); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Female</span>Founders</span>
+<span class="anchor anchor1" id="vote"></span>
+<div class="sticky-wrapper">
+    <div id="navigation" class="stuck">
+		<div id="nav">
+            <ul>
+                <li>
+                    <a href="#vote">Vote</a>
+                </li>
+                <li>
+                    <a href="#features">What is Giftr?</a>
+                </li>
+                <li>
+                    <a href="#signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+            </ul>
+        </div>
+        <div id="navfa">
+            <%= icon("fa fa-bars fa-2x", :id => "menu-button") %>
+        </div>
     </div>
-    <h2>Giftr won at Chicago Startup Weekend!</h2>
-    <h4>Now we need your help to win the 2015 Global Startup Battle. Support <strong>#Chicago</strong> and <strong>#Diversity</strong>. Voting details coming soon.</h4>
+    <div id="menu-toggle">
+        <div class="container-fluid">
+            <div class="row">
+                <a href="#vote">Vote</a>
+                <a id="mini-menu-button"><span class="glyphicon glyphicon-remove"></span>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#features">What is Giftr?</a>
+            </div>
+            <div class="row">
+                <a href="#signup">Sign Up</a>
+            </div>
+            <div class="row">
+                <a href="#team">Team</a>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="landingpage">
-        <div class="jumbotron no pad">
-            <div class="container-fluid no-pad">
-                <div class="logocontainer">
-                <%= image_tag("giftrlogo.png", :id => "GiftrLogo") %>
+<div class="container-fluid vote">
+    <div class="row">
+        <div class="col-xs-12 jumbotron">
+            <div>
+                <h1>VOTE FOR GIFTR</h1>
+                <p>Global Startup Battle</p>
+                <a type="button" class="btn btn-primary" href="#" target="_blank">
+                    <h2>VOTE</h2>
+                    <h4>(coming soon)</h4>
+                </a>
+                <p>Because friends don't let friends give bad gifts.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row social">
+        <span class="anchor anchor2" id="signup"></span>
+        <div class="col-md-6 socialmedia">
+            <div>
+                <strong>Share your vote for a chance to win a $50 VISA<sup>&reg;</sup> gift card.</strong>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a class="btn btn-social btn-twitter" href="#" target="_blank">
+                            <span class="fa fa-twitter"></span> Twitter
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a class="btn btn-social btn-facebook" href="#" target="_blank">
+                            <span class="fa fa-facebook"></span> Facebook
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a class="btn btn-social btn-github" href="#" target="_blank">
+                            <span class="fa fa-envelope"></span> Email
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="subtext">
-                <p>BRING THE JOY BACK TO GIFTING</p>
+        </div>
+        <div class="col-md-6 signups">
+            <div>
+                <strong>Sign up for Giftr early access.</strong>
+                <%= form_tag("/users", method: "post") do %>
+                    <%= text_field_tag(:email, nil, placeholder: "Email Address", class: "form-control" ) %>
+                <%= submit_tag("Sign me up!", class: "btn btn-social btn-github") %>
+                <% end %>
             </div>
         </div>
-    <div class="bottom">
-        <%=icon("fa fa-5x fa-chevron-down") %>
     </div>
 </div>
-    <div class="container-fluid marketing bg-gray">
-        <div class="row">
-            <div class="col-xs-12">
-                <p>
-                    <h3 class="fw300">Use the power of your social network to help you find and choose unique &amp; memorable gifts for your family and friends. 
-</h3>
-                </p>
+<span class="anchor" id="features"></span>
+<div class="container-fluid featuresTop">
+    <div class="row">
+        <div class="col-xs-12">
+            <div>
+            <h1>What is Giftr?</h1>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="ghost"><!--
+             --><div class="post-ghost">
+                <h2>Use the power of your social network to help you find and choose unique &amp; memorable gifts for your family and friends. </h2>
+                <div>
+                    <%= image_tag("giftrlogo.png", :class => "img-responsive", :id => "GiftrLogo") %>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div>
+                <div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RPphTKGr4lE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid featuresMid">
+    NEW FEATURES SECTION HERE
+</div>
+<!--<div class="ticker">-->
+<!--
+    <div class="marquee" id="mycrawler"><span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#Giftr</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#BuiltIn<span style="color: #d0d0d0; font-size: 150%;">Chicago</span></span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiftingIsPainful</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Women</span>InTech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #d0d0d0; font-size: 150%;">Chicago</span>Startups</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#StartupBattle</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#SocialGifting</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #d0d0d0; font-size: 150%;">Chicago</span>Tech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Blacks</span>InTech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GSB2015</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#SW<span style="color: #d0d0d0; font-size: 150%;">Chicago</span></span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Diversity</span>InTech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiftingIsHard</span>  <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#SW<span style="color: #d0d0d0; font-size: 150%;">Chi</span></span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiveGiftr</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #d0d0d0; font-size: 150%;">Chi</span>Founders</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Female</span>Founders</span>
+    </div>
+-->
     <div class="container-fluid marketing Features">
         <div class="row">
             <div class="col-sm-4">
@@ -72,6 +171,7 @@
             </div>
         </div>
     </div>
+<span class="anchor" id="team"></span>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -79,81 +179,76 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-<!--
         <div class="item active">
           <div class="container-fluid">
               <div class="row">
-                  <div class="col-md-6">
-                      <div class="carousel-caption">
+                  <div class="col-md-6 ghost"><!--
+                     --><div class="carousel-caption post-ghost">
                       <h1>Planning</h1>
                         </div>
                   </div>
-                  <div class="col-md-6"><div class="phonewrapper">
-<% if false %>
+                  <div class="col-md-6 ghost"><!----><div class="phonewrapper post-ghost">
                 <%= image_tag("iphone1.png", :class => "img-responsive")%>
-<% end %>
             </div></div>
               </div>
-            <div class="carousel-caption">
-              <p>Note: If you're viewing this page via a URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-            </div>
           </div>
         </div>
--->
-        <div class="item active">
+        <div class="item">
           <div class="container-fluid">
               <div class="row">
-                  <div class="col-md-6">
-                        <div class="carousel-caption">
+                  <div class="col-md-6 ghost"><!--
+                     --><div class="carousel-caption post-ghost">
                             <h1>Social</h1>
-                            <div class="wrap">
-            <div class="container-fluid details">
+                            <div class="wrap details">
                 <div class="row">
-                <div class="box darkblue">
+                <div class="col-xs-1 box darkblue">
                     <%=icon('fa fa-check-circle fa-2x')%>
                 </div>
+                    <div class="col-xs-11">
                 <p>Create circles around the gift recipient and include family and friends</p>
+                    </div>
                 </div>
                 <div class="row">
-                <div class="box blue">
+                <div class="col-xs-1 box blue">
                     <%=icon('fa fa-check-circle fa-2x')%>
                 </div>
+                    <div class="col-xs-11">
                 <p>Share gift ideas </p>
+                    </div>
                 </div>
-                <div class="box darkblue">
+                                <div class="row">
+                <div class="col-xs-1 box darkblue">
                     <%=icon('fa fa-check-circle fa-2x')%>
                 </div>
+                                <div class="col-xs-11">
                 <p>Claim any gift you want to give</p>
-            </div>
+                                </div>
+                                    </div>
                                 <h3>No more duplicate gifts, and no more giving gifts that recipients won’t like!</h3>
         </div>
                             
                         </div>
                   </div>
-                  <div class="col-md-6"><div class="phonewrapper">
-                      <%= image_tag("iphone2.png", :class => "img-responsive")%>
+                  <div class="col-md-6 ghost"><!--
+                     --><div class="phonewrapper post-ghost"><%= image_tag("iphone2.png", :class => "img-responsive")%>
             </div></div>
               </div>
           </div>
         </div>
-<!--
           <div class="item">
           <div class="container-fluid">
               <div class="row">
-                  <div class="col-md-6">
-                      <div class="carousel-caption">
+                  <div class="col-md-6 ghost">
+                      <div class="carousel-caption post-ghost">
                       <h1>Saving</h1>
                         </div>
                   </div>
-                  <div class="col-md-6"><div class="phonewrapper">
-<% if false %>
+                  <div class="col-md-6 ghost"><!----><div class="phonewrapper post-ghost">
                       <%= image_tag("iphone3.png", :class => "img-responsive")%>
-<% end %>
             </div></div>
               </div>
           </div>
         </div>
--->
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -164,17 +259,21 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+<!--
 <div class="container-fluid mailer">
     <div class="row jumbotron">
         <h3>Join the Giftr community and never give a bad gift again!  Sign up to be notified when Giftr is ready to launch.</h3>
         &nbsp;
+<% if false%>
         <%= form_tag("/users", method: "post") do %>
             <%= text_field_tag(:email, nil, placeholder: "Email Address", class: "form-control" ) %>
             <p>&nbsp;</p>
         <%= submit_tag("Sign me up!", class: "btn btn-info") %>
         <% end %>
+<% end %>
     </div>
 </div>
+-->
 <div class="container-fluid">
     <div class="row footer fw300">
         <div class="container center-block">
@@ -187,7 +286,7 @@
             </a>
             </p>
         </div>
-        <p>Giftr was built at Chicago Startup Weekend for the 2015 Global Startup Battle</p>
+        <p>Giftr was built at Chicago Startup Weekend as part of the 2015 Global Startup Battle</p>
         &nbsp;
         &nbsp;
         <div class="container-fluid">
