@@ -148,6 +148,9 @@ var myfunction = function() {
         if ($(window).width() > 767 && $("#menu-toggle").css("display", "block")) {
         $("#menu-toggle").css("display", "none");
         };
+        if ($(window).width() < 50px) {
+            console.log("test");
+        }
         
     }, pause);
 }
