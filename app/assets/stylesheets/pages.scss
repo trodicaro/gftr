@@ -193,6 +193,10 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
+.post-ghostB {
+    display: inline-block;
+    vertical-align: bottom;
+}
 .jumbotron {
     background-color: transparent;
 }
@@ -203,11 +207,11 @@ body {
 //BEGIN VOTE CALL TO ACTION
 //region
 .container-fluid.vote {
-    z-index: 13;
+//    z-index: 13;
     overflow: hidden;
-    height: 100vh;
     margin-top: -80px;
-    padding-top: 80px;   
+    padding-top: 80px; 
+    position: relative;
 }
 .vote:before {
     content: "";
@@ -332,7 +336,6 @@ body {
 }
 @media all and (max-width: 991px) {
     .container-fluid.vote {
-        height: auto;
         overflow: auto;
     }
     .vote p:last-child {
@@ -404,11 +407,12 @@ body {
     font-size: 70px;
     word-spacing: 15px;
     margin: 0;
-    font-variant: small-caps;
+    text-transform: uppercase;
+//    font-variant: small-caps;
 }
-.featuresTop h2 {
+.bodyh2 {
     color: #565a5c;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.3;
     font-weight: 300;
     margin: 0;
@@ -438,7 +442,7 @@ body {
     margin: 0 auto;
 }
 @media all and (max-width: 991px) {
-    .featuresTop h2 {
+    .bodyh2 {
         font-size: 24px;
     }
     .featuresTop .col-xs-12 > div {
@@ -466,7 +470,7 @@ body {
         font-size: 40px;
         word-spacing: 5px;
     }
-    .featuresTop h2 {
+    .bodyh2 {
         font-size: 18px;
     }
     #GiftrLogo {
@@ -479,29 +483,160 @@ body {
     }
     .featuresTop .col-md-4 > div, .featuresTop .col-md-8 > div {
     padding: 15px;
-}
+    }
 }
 //endregion
 //END FEATURES TOP SECTION
 
 //BEGIN FEATURES MIDDLE SECTION
+//region
+.featuresMid {
+    padding: 40px;
+}
+.featuresMid .phonewrapper img {
+    margin: 0 auto;
+    max-height: 510px;
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=5, Color='#444')";
+	-webkit-filter: drop-shadow(0px 5px 7px rgba(0,0,0,0.5));
+	filter: drop-shadow(0px 5px 7px rgba(0,0,0,0.5));
+}
+.featuresMid .col-sm-7 .ghost {
+    height: 57px;
+    display: inline-block;
+}
+.featuresMid .col-sm-7 .row h2 {
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #0023eb;
+}
+.featuresMid p {
+    margin-top: 15px;
+    color: #565a5c;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.featuresMid .bodyh2 {
+    margin-bottom: 10px;
+}
+.featuresMid .col-sm-7 .row {
+    margin: 30px 0;
+}
+.featuresMid .col-sm-7 img, .featuresMid .col-sm-7 .row h2 {
+    display: inline-block;
+}
+.featuresMid .hidden-sm {
+    display: none;
+}
+@media all and (max-width: 991px) {
+    .featuresMid .col-sm-7 .row {
+        margin: 15px 0;
+    }
+}
+@media all and (max-width: 767px) {
+    .featuresMid .phonewrapper {
+        padding: 0 30px;
+    }
+    .featuresMid .hidden-sm {
+        display: inherit;
+        text-align: center;
+    }
+    .featuresMid {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .featuresMid .bodyh2 {
+        margin: 0px 0 40px;
+        font-size: 24px;
+    }
+    .featuresMid .imagerow {
+        display: inline-block;
+        text-align: left;
+        width: 190px;
+    }
+    .featuresMid .col-sm-7, .featuresMid .col-sm-5 {
+        text-align: center;
+        padding: 0;
+    }
+    .featuresMid .col-sm-7 {
+        padding: 40px 15px 0 15px;
+    }
+    .featuresMid .col-sm-7 p {
+        text-align: center;
+    }
+    .featuresMid .textrow {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+@media all and (max-width: 500px) {
+    .featuresMid .col-sm-7 p {
+        text-align: justify;
+    }
+}
+//endregion
 //END FEATURES MIDDLE SECTION
 
-/* Since positioning the image, we need to help out the caption */
-//.carousel-caption {
-//  z-index: 10;
-//}
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  background-color: #85b2f6;
+//BEGIN FEATURES BOTTOM SECTION
+.featuresBot .phonewrapper img {
+    margin: 0 auto;
+    max-height: 510px;
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=5, Color='#444')";
+	-webkit-filter: drop-shadow(0px 5px 7px rgba(0,0,0,0.5));
+	filter: drop-shadow(0px 5px 7px rgba(0,0,0,0.5));
 }
-.carousel-inner>.item>.container-fluid>.row>div:first-child {//i.e. col-md-6
+.featuresBot .item>.container-fluid>.row:first-child {//to center imagerow
+    text-align: center;
+}
+.featuresBot .item>.container-fluid>.row:nth-child(2) {
+    margin-bottom: 50px;
+}
+.featuresBot .imagerow {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 15px;
+}
+.featuresBot .imagerow .ghost {
+    height: 57px;
+    display: inline-block;
+}
+.featuresBot .imagerow h2 {
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 50px;
+}
+.featuresBot .imagerow img {
+    display: inline-block;
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='#444')";
+	-webkit-filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.6));
+	filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.6));
+}
+.carousel .jumbotron {
+    margin: 0;
+    padding: 0;
+}
+.carousel-inner .item:first-child {
+  background-color: #ab2436;
+}
+.carousel-inner .item:nth-child(2) {
+    background-color: #28B6F7;
+}
+.carousel-inner .item:last-child {
+    background-color: #12B23F;
+}
+    .carousel-inner>.item>.container-fluid>.row:nth-child(2)>div:nth-child(2) {//i.e. left side
     padding-left: 15%;
     text-align: center;
-    height: 670px;
+    height: 550px;
 }
-.carousel-inner>.item>.container-fluid>.row>div:first-child .carousel-caption {
+    .carousel-inner >.item>.container-fluid>.row:nth-child(2)>div:first-child {//i.e. right side
+    padding-right: 15%;
+    height: 550px;
+}
+.featuresBot .carousel-caption {
     position: relative;
     bottom: auto;
     padding-top: 0;
@@ -511,40 +646,53 @@ body {
     right: 0;
     padding-bottom: 0;
 }
-.carousel-inner img {
-    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-    filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-}
-.carousel-inner >.item>.container-fluid>.row>div:nth-child(2) {//i.e. col-md-6
-    padding-right: 15%;
-    height: 670px;
-}
-.carousel .item h3 {
-    color: #000099;
-    text-shadow: none;
+.carousel .col-md-7 h2 {
     text-align: center;
+    color: #181818;
+    text-shadow: none;
+    line-height: 1.3;
 }
-.carousel h1 {
-    margin-bottom: 30px;
+.details {
+    text-align: left;
+}
+.details .box, .details p {
+    display: inline-block;
+    text-align: left;
+    color: #f8f8f8;
+}
+.details .box .fa {
+    color: white;
+}
+.details .row {
+    min-height: 45px;
+}
+.carousel .col-xs-11 {
+    padding-left: 30px;
 }
 @media all and (max-width: 991px) {
-    .carousel-inner >.item>.container-fluid>.row>div:nth-child(2) {
+    .featuresBot .carousel-indicators {
+        bottom: 10px;
+    }
+        .carousel-inner >.item>.container-fluid>.row:nth-child(2)>div:first-child {//i.e. right side
         height: auto;
         padding-right: 0;
         text-align: center;
-        padding-bottom: 60px;
+        padding: 40px 45px;
+//        padding-bottom: 60px;
     }
-    .carousel-inner>.item>.container-fluid>.row>div:first-child {//i.e. col-md-6
-    padding-left: 15%;
+        .carousel-inner>.item>.container-fluid>.row:nth-child(2)>div:nth-child(2) {//i.e. left side
+        padding-left: 15%;
         padding-right: 15%;
-    text-align: center;
-    height: auto;
+        text-align: center;
+        height: auto;
         padding-bottom: 20px;
     }
 }
 @media all and (max-width: 767px) {
+    .jumbotron .details p {
+        font-size: 16px;
+        text-align: justify;
+    }
     .carousel .col-xs-1 {
         padding-right: 0;
         min-width: 30px;
@@ -553,142 +701,16 @@ body {
         margin-left: -10px;
         padding-left: 30px;
     }
-}
-.details {
-    text-align: left;
-}
-.details .box, .details p {
-    display: inline-block;
-    text-align: left;
-}
-.details .box .fa {
-    color: #000099;
-}
-.details .row {
-    min-height: 40px;
-}
-.snapshot {
-    background-color: #85B2F6;
-    padding: 120px 0;
-}
-.snapshot .row {
-    margin: 0;
-    padding-bottom: 20px;
-}
-.snapshot .row .container-fluid .row:first-child {
-    padding-top: 20px;
-}
-.snapshot .col-sm-6:first-child {
-    margin-top: 150px;
-    padding-right: 0;
-    padding-left: 45px;
-}
-.snapshot .box {
-    float: left;
-    display: inline-block;
-}
-.snapshot .wrap h3 {
-//    display: inline-block;
-    text-align: left;
-    padding-left: 65px;
-    min-height: 60px;
-    margin: 0;
-    padding-top: 10px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-.snapshot i {
-    color: #000066;
-}
-.snapshot h2 {
-    line-height: 1.3;
-    letter-spacing: 1px;
-    color: #0066ff;
-}
-@media all and (max-width: 767px) {
-    .snapshot .col-sm-6:first-child, .snapshot .col-sm-6 {
-        padding-left: 0;
-        padding-right: 0;
-     padding: 0;
-        margin: 0 15px; 
+    .carousel .col-md-7 h2 {
+        line-height: 1.2;
+        font-size: 26px;
     }
-    .snapshot .col-sm-6:first-child {
-        margin-bottom: 120px;
-    }
-    .snapshot .row {
-        margin: 0;
+    .carousel-inner>.item>.container-fluid>.row:nth-child(2)>div:nth-child(2) {//i.e. left side
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
-.phonewrapper img {
-    max-width: 80%;
-    margin: 0 auto;
-}
-#response {
-    min-height: 20px;
-    padding: 10px 0;
-}
-.bottom {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
-}
-.bottom i {
-    color: white;
-    text-shadow: 3px 3px 3px #505050;
-}
-.transition {
-    width: 100%;
-//    padding: 15px;
-    border-bottom: 1px solid #c0c0c0;
-}
-.color {
-    background-color: #0066ff;
-    text-align: center;
-    display: inline-block;
-    padding: 15px;
-    border-radius: 2px;
-    margin-bottom: 30px;
-}
-.color h3 {
-    margin: 0;
-    font-weight: 400;
-    color: #f0f0f0;
-    letter-spacing: 1px;
-}
-.circle {
-    display: inline-block;
-    border-radius: 50%;
-    behavior: url(PIE.htc);
-    background: white;
-    border: 8px solid #0066ff;
-    margin: 0 auto;
-    margin-bottom: 60px;
-}
-#planning, #social, #money {
-    margin: 35px;
-}
-.mailer {
-    background-color: #b0b0b0; 
-    text-align: center;
-}
-.mailer h3 {
-    font-weight: 300;
-    color: #404040;
-    line-height: 1.5;
-}
-.mailer p {
-    font-size: 125%;
-    font-weight: 300px;
-    color: #f0f0f0;
-}
-.mailer .jumbotron {
-    margin-bottom: 0px;
-}
-.btn-info {
-    background-color: #0066ff;
-    border: none;
-}
+
 .footer {
     background-color: #404040;
     padding: 15px;
@@ -703,39 +725,3 @@ body {
 .footer .row div:first-child img {
     max-height: 60px;
 }
-//sharing page
-.navbar{
-  // padding: 0;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-
-}
-.list-title{
-  text-align: center;
-  margin-top: 0;
-  background-color: #E5EFFF;
-  font-style: oblique;
-  letter-spacing: 1.5px;
-  padding:3px;
-
-  }
-.list-contents{
-  margin-top:10px;
-}
-.sharing .col-xs-6{
-  min-height: 150px;
-  padding: 15px;
-  margin-bottom: 8px;
-}
-.gift{
-  border: gray solid 1px;
-}
-.gift-comment{
-  background-color: #F9F6F6;
-}
-
-.planning .col-xs-4 {
-    height: 200px;
-}
-//end sharing page

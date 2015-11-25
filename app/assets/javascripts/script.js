@@ -125,8 +125,19 @@ var myfunction = function() {
         // Vote cover image full height
         
         $(".container-fluid.vote").each(function() {
+            if ($(window).width() > 991) {
+                $(this).css("height", "100vh");
+             } else {
+                 $(this).css("height", "auto");
+             }
+            
+            if ($(window).width() > 991 && $(window).height() < 631) {
+                console.log("running");
+                $(".container-fluid.vote").height(550);
+            };
             var height = $(".container-fluid.vote").height() + 80;
             $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head');//bc can't directly change height
+            
         });
 
         // FeaturesTop two div's same height
@@ -147,6 +158,20 @@ var myfunction = function() {
         if ($(window).width() > 767 && $("#menu-toggle").css("display", "block")) {
         $("#menu-toggle").css("display", "none");
         };
+        
+        // Carousel change fa-check
+        
+        $('.featuresBot').each(function() {
+            if ($(window).width() < 767) {
+                if ($('.featuresBot i').hasClass("fa-3x")) {
+                    $('.featuresBot i').removeClass("fa-3x").addClass("fa-2x");
+                }
+            } else {
+                if ($('.featuresBot i').hasClass("fa-2x")) {
+                    $('.featuresBot i').removeClass("fa-2x").addClass("fa-3x");
+                }
+            }
+        });
         
     }, pause);
 }
