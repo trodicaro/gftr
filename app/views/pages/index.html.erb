@@ -284,6 +284,7 @@
     </div>
 <span class="anchor" id="team"></span>
 <div class="container-fluid team">
+    <div class="lgContainer">
     <h2 class="bodyh2">Our diverse team is so cool.</h2>
     <div class="col-xs-6 col-sm-4">
         <div class="circle" id="Dalal"></div>
@@ -320,17 +321,28 @@
         <h3 class="name">Mark</h3>
         <p class="role">Technical</p>
     </div>
+    </div>
 </div>
 <div class="container-fluid">
     <div class="row footer fw300">
-        <div class="container center-block">
-            <p><a href="https://www.youtube.com/channel/UChSdlj2qizwwjCwdyisja4w
-" target="_blank" class="btn btn-social-icon btn-pinterest">
-                <%=icon('youtube')%>
-            </a>
-            <a href="https://plus.google.com/114129075785989889291/posts" target="_blank" class="btn btn-social-icon btn-google-plus">
-                <%=icon('google-plus')%>
-            </a>
+        <div class="container-fluid lgContainer center-block">
+            <p>
+                <a href="#" target="_blank" class="btn btn-social-icon btn-twitter">
+                    <%=icon('twitter')%>
+                </a>
+                <a href="#" target="_blank" class="btn btn-social-icon btn-facebook">
+                    <%=icon('facebook')%>
+                </a>
+                <a href="https://www.youtube.com/channel/UChSdlj2qizwwjCwdyisja4w
+    " target="_blank" class="btn btn-social-icon btn-pinterest">
+                    <%=icon('youtube')%>
+                </a>
+                <a href="https://plus.google.com/114129075785989889291/posts" target="_blank" class="btn btn-social-icon btn-google-plus">
+                    <%=icon('google-plus')%>
+                </a>
+                <a href="mailto:givegiftr@gmail.com" class="btn btn-social-icon btn-vimeo">
+                    <%=icon('fa fa-envelope')%>
+                </a>
             </p>
         </div>
         <p>Giftr was built at Chicago Startup Weekend as part of the 2015 Global Startup Battle</p>
@@ -338,8 +350,12 @@
         &nbsp;
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-6"><%= link_to image_tag("sw-logo-white.png", :class => "img-responsive center-block"), "http://www.up.co/communities/usa/chicago", :target => "_blank"%></div>
-                <div class="col-xs-6"><%= link_to image_tag("gsb2015.png", :class => "img-responsive center-block"), "http://www.globalstartupbattle.co/", :target => "_blank"%></div>
+                <div class="col-sm-6"><%= link_to image_tag("sw-logo-white.png", :class => "img-responsive"), "http://www.up.co/communities/usa/chicago", :target => "_blank"%></div>
+                <div class="col-sm-6">
+                    <div class="imgwrapper">
+                        <%= link_to image_tag("gsb2015.png", :class => "img-responsive center-block"), "http://www.globalstartupbattle.co/", :target => "_blank"%>
+                    </div>
+                </div>
             </div>
         </div>
         

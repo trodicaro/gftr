@@ -275,6 +275,7 @@ body {
     margin: 25px 0 40px;
     padding: 20px;
     border: 1px solid #f00000;
+    border-radius: 10px;
     border-bottom: 1px solid #700000;
     background: rgba(240,0,0,1);
     background: -moz-linear-gradient(top, rgba(240,0,0,1) 0%, rgba(112,0,0,1) 100%);
@@ -783,27 +784,57 @@ body {
     font-size: 26px;
     }
 }
+@media all and (max-width: 450px) {
+    .team .circle {
+        height: 125px;
+        width: 125px;        
+    }
+}
 //endregion
 //END TEAM SECTION
+
+//BEGIN FOOTER
+//region
 .footer {
-    background-color: #404040;
+    background-color: #181818;
     padding: 15px;
     color: #b0b0b0;
     text-align: center;
     letter-spacing: 1px;
 }
+.footer>p {
+    margin-top: 10px;
+}
 .footer img {
     -webkit-filter: opacity(75%);
     filter: opacity(75%);
 }
-.footer .row div:first-child img {
+.footer .row>div:first-child img {
     max-height: 60px;
+    float: right;
 }
+.footer .row div:nth-child(2) .imgwrapper {
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+@media all and (max-width: 767px) {
+.footer .row>div:nth-child(2) img {
+    margin-top: 20px;
+}
+}
+@media all and (max-width: 400px) {
+    .footer .row>div:nth-child(2) img {
+        max-height: 45px;
+    }
+}
+//endregion
+//END FOOTER
 
 //MIN WIDTH LANDINGPAGE
 
 @media all and (max-width: 319px) {
     body, .footer, .header > .row:nth-child(2) { 
     min-width: 319px;
-}
+    }
 }
