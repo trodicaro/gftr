@@ -1,0 +1,14 @@
+//REMOVE ANY PREVIOUS NOTICES
+$(".notice").remove();
+ 
+//DISPLAY ERROR MESSAGES
+$("#help_block").append('<div class="notice"><%=escape_javascript(@errorEmail[0])%></div>');
+$("help_block:contains(.)").closest(".form-group").addClass("has-error");
+ 
+//DISPLAY SUCCESS MESSAGE
+$("#help_block").append('<div class="notice"><%=escape_javascript(flash.discard(:notice))%></div>');
+ 
+//RESET FORM IF MESSAGE SAVED
+<% if @resetForm == "1" %>
+$(".form-horizontal")[0].reset();
+<% end %>

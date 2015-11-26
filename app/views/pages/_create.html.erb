@@ -1,0 +1,12 @@
+<div class="col-md-6 signups">
+	<div>
+		<strong>Sign up for Giftr early access</strong>
+
+		<%= form_for User.new, remote: true do |f| %>
+		<!-- <div class="form-group"> -->
+		<%= f.text_field :email, placeholder: "Email Address", class: "form-control"  %>
+		<span id="help_block" class="help-block"></span>
+		<%= submit_tag("Sign me up!", class: "btn btn-social btn-github") %>
+		<% end %>
+	</div>
+</div>
