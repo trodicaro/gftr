@@ -786,8 +786,8 @@ body {
 }
 @media all and (max-width: 450px) {
     .team .circle {
-        height: 125px;
-        width: 125px;        
+        height: 135px;
+        width: 135px;        
     }
 }
 //endregion
@@ -822,6 +822,14 @@ body {
 .footer .row>div:nth-child(2) img {
     margin-top: 20px;
 }
+    .footer .row>div:first-child img {
+        float: none;
+        margin: 0 auto;
+    }
+    .footer .row div:nth-child(2) .imgwrapper {
+        float: none;
+        margin: 0 auto;
+    }
 }
 @media all and (max-width: 400px) {
     .footer .row>div:nth-child(2) img {
