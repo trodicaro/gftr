@@ -78,7 +78,15 @@
                 </div>
             </div>
         </div>
-       <%= render 'create' %>
+        <div class="col-md-6 signups">
+            <div>
+                <strong>Sign up for Giftr early access</strong>
+                <%= form_tag("/users", method: "post") do %>
+                    <%= text_field_tag(:email, nil, placeholder: "Email Address", class: "form-control" ) %>
+                <%= submit_tag("Sign me up!", class: "btn btn-social btn-github") %>
+                <% end %>
+            </div>
+        </div>
     </div>
 </div>
 <span class="anchor" id="features"></span>
