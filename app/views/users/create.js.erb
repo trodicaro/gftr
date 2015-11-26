@@ -2,13 +2,12 @@
 $(".notice").remove();
  
 //DISPLAY ERROR MESSAGES
-$("#help_block").append('<div class="notice"><%=escape_javascript(@errorEmail[0])%></div>');
-$("help_block:contains(.)").closest(".form-group").addClass("has-error");
+$("#help_block").append('<div class="notice"><%=escape_javascript(@errorMessage[0])%></div>');
  
 //DISPLAY SUCCESS MESSAGE
 $("#help_block").append('<div class="notice"><%=escape_javascript(flash.discard(:notice))%></div>');
  
 //RESET FORM IF MESSAGE SAVED
 <% if @resetForm == "1" %>
-$(".form-horizontal")[0].reset();
+$(".signups .form-control")[0].reset();
 <% end %>

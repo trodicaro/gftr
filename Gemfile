@@ -19,6 +19,7 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'jquery-ui-rails'
 gem 'bootstrap-social-rails'
 gem 'slim-rails'
+gem 'validates_email_format_of'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

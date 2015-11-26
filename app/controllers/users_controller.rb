@@ -2,21 +2,24 @@ class UsersController < ApplicationController
 
   def create
   	puts params[:user]
-    @user = User.new(user_params)
+      @user = User.new(user_params) #ok per walkthrough
     respond_to do |format|
 
       @errorMessage = []
 
-      if @user.save
-        format.js {:flash[:notice] = "Thanks for signing up for the beta version!"}
+      if @user.save #ok per walkthrough
+        format.js {flash[:notice] = "Thanks for signing up for the beta version!"}
 		@resetForm = "1"
-		UserNotifier.send_signup_email(@user).deliver_now
+		UserNotifier.send_signup_email(@user).deliver_now #ok per walkthrough
       else
         format.js
         @user.errors.any?
-        @user.errors.each do |k,v|
-        	@errorMessage << v
-        end
+        if (@user.errors["email"] != nil)
+              @errorMessage.push(@user.errors["email"][0])
+        end  
+#        @user.errors.each do |k,v|
+#        	@errorMessage << v
+#        end
         @resetForm = "0"
       end
 

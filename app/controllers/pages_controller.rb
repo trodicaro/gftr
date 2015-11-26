@@ -1,12 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-  end
-
-  def circles
-  end
-    
-  def planning
+      @user = User.new
   end
 
 end
