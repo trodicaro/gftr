@@ -16,3 +16,4 @@
 !/log/.keep
 /tmp
 /.DS_Store
+/config/initializers/app_env_vars.rb
