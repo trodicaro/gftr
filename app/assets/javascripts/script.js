@@ -145,20 +145,6 @@ var myfunction = function () {
         if ($(window).width() > 767 && $("#menu-toggle").css("display", "block")) {
             $("#menu-toggle").css("display", "none");
         };
-
-        // Carousel change fa-check
-
-//        $('.featuresBot').each(function () {
-//            if ($(window).width() < 767) {
-//                if ($('.featuresBot i').hasClass("fa-3x")) {
-//                    $('.featuresBot i').removeClass("fa-3x").addClass("fa-2x");
-//                }
-//            } else {
-//                if ($('.featuresBot i').hasClass("fa-2x")) {
-//                    $('.featuresBot i').removeClass("fa-2x").addClass("fa-3x");
-//                }
-//            }
-//        });
         
         // Footer logos same width
         
