@@ -25,8 +25,9 @@
         <div class="container-fluid">
             <div class="row">
                 <a href="#vote">Vote</a>
-                <a id="mini-menu-button"><span class="glyphicon glyphicon-remove"></span>
-                </a>
+                <div id="mini-menu-button">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
             </div>
             <div class="row">
                 <a href="#features">What is Giftr?</a>
@@ -44,17 +45,17 @@
     <div class="row">
         <div class="col-xs-12 jumbotron">
             <div>
-                <h1>VOTE FOR GIFTR</h1>
-                <p>Global Startup Battle</p>
+                <h1>Vote for Giftr</h1>
+                <h2 class="bodyh2">Global Startup Battle</h2>
                 <a type="button" class="btn btn-primary" href="#" target="_blank">
                     <h2>VOTE  NOW</h2>
-                    <h4>(coming soon)</h4>
                 </a>
-                <p>Because friends don't let friends give bad gifts.</p>
+                <h2 class="bodyh2">Because friends don't let friends give bad gifts.</h2>
             </div>
         </div>
     </div>
     <div class="row social">
+        <div class="lgContainer">
         <span class="anchor anchor2" id="signup"></span>
         <div class="col-md-6 socialmedia">
             <div>
@@ -68,8 +69,7 @@
                     <div class="col-xs-4">
                         <a class="btn btn-social btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.givegiftr.co" onclick="window.open(this.href,'','scrollbars=no,resizable=yes, location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-350)+ ', top='+(screen.availHeight/2-350)+',width=700,height=263');return false;">
                             <span class="fa fa-facebook"></span> Facebook
-                        </a></div>
-                        
+                        </a></div>   
                     <div class="col-xs-4">
                         <a class="btn btn-social btn-github" href="mailto:?&subject=Check out Giftr&body=Hey!%0A%0AI%20just%20voted%20for%20Giftr%20in%20Global%20Startup%20Competition%202015.%20It's%20an%20app%20that%20uses%20the%20power%20of%20your%20social%20network%20to%20help%20you%20find%20and%20choose%20unique%20%26%20memorable%20gifts.%20%0A%0ACheck%20it%20out%20and%20vote%20for%20Giftr%20here%3A%20www.givegiftr.co" target="_blank">
                             <span class="fa fa-envelope"></span> Email
@@ -79,92 +79,90 @@
             </div>
         </div>
         <%= render 'users/form' %>
+        </div>
     </div>
 </div>
 <span class="anchor" id="features"></span>
 <div class="container-fluid featuresTop">
     <div class="lgContainer">
-    <div class="row">
-        <div class="col-xs-12">
-            <div>
-            <h1>What is Giftr?</h1>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="ghost"><!--
-             --><div class="post-ghost">
-                <h2 class="bodyh2">Use the power of your social network to help you find and choose unique &amp; memorable gifts for your family and friends. </h2>
+        <div class="row">
+            <div class="col-xs-12">
                 <div>
-                    <%= image_tag("giftrlogo.png", :class => "img-responsive", :id => "GiftrLogo") %>
-                </div>
+                <h1>What is Giftr?</h1>
                 </div>
             </div>
         </div>
-        <div class="col-md-8">
-            <div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="ghost"><!--
+                 --><div class="post-ghost">
+                    <h2 class="bodyh2">Use the power of your social network to help you find and choose unique &amp; memorable gifts for your family and friends. </h2>
+                    <div>
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/giftrlogo.png", :class => "img-responsive", :id => "GiftrLogo") %>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
                 <div>
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jz_OL532avg" frameborder="0" allowfullscreen></iframe>
+                    <div>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jz_OL532avg" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 </div>
 <div class="container-fluid featuresMid">
-    <div class="row">
-        <h2 class="bodyh2 hidden-sm">Giftr is the only product that combines:</h2>
-        <div class="col-sm-5">
-            <div class="phonewrapper">
-                <%= image_tag("iphone0.png", :class => "img-responsive center-block") %>
-            </div>
-        </div>
-        <div class="col-sm-7">
-            <h2 class="bodyh2 hidden-xs">Giftr is the only product that combines:</h2>
-            <div class="row">
-                <div class="imagerow">
-                <%= image_tag("planning.png", :id => "planning") %>
-                <div class="ghost"><!--
-                 --><h2 class="post-ghostB">Planning</h2>
-                </div>
-                </div>
-                <div class="textrow">
-                <p>Use the Giftr Planner to remember your best gift ideas.</p>
+    <div class="lgContainer">
+        <div class="row">
+            <h2 class="bodyh2 hidden-sm">Giftr is the only product that combines:</h2>
+            <div class="col-sm-5">
+                <div class="phonewrapper">
+                    <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/iphone0.png", :class => "img-responsive center-block") %>
                 </div>
             </div>
-            <div class="row">
-                <div class="imagerow">
-                <%= image_tag("social.png", :id => "social") %>
-                <div class="ghost"><!--
-                 --><h2 class="post-ghostB">Social</h2>
+            <div class="col-sm-7">
+                <h2 class="bodyh2 hidden-xs">Giftr is the only product that combines:</h2>
+                <div class="row">
+                    <div class="imagerow">
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/planning.png", :id => "planning") %>
+                        <div class="ghost"><!--
+                         --><h2 class="post-ghostB">Planning</h2>
+                        </div>
+                    </div>
+                    <div class="textrow">
+                        <p>Use the Giftr Planner to remember your best gift ideas.</p>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="imagerow">
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/social.png", :id => "social") %>
+                        <div class="ghost"><!--
+                         --><h2 class="post-ghostB">Social</h2>
+                        </div>
+                    </div>
+                    <div class="textrow">
+                        <p>Create circles to collaborate with your family and friends on gift ideas for the person you all share in common.</p>
+                    </div>
                 </div>
-                <div class="textrow">
-                <p>Create circles to collaborate with your family and friends on gift ideas for the person you all share in common.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="imagerow">
-                <%= image_tag("money.png", :id => "saving") %>
-                <div class="ghost"><!--
-                 --><h2 class="post-ghostB">Saving</h2>
-                </div>
-                </div>
-                <div class="textrow">
-                <p>We'll work with retailers to offer you the best deals on your gifts!</p>
+                <div class="row">
+                    <div class="imagerow">
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/money.png", :id => "saving") %>
+                        <div class="ghost"><!--
+                         --><h2 class="post-ghostB">Saving</h2>
+                        </div>
+                    </div>
+                    <div class="textrow">
+                        <p>We'll work with retailers to offer you the best deals on your gifts!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--<div class="ticker">-->
-<!--
-    <div class="marquee" id="mycrawler"><span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#Giftr</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#BuiltIn<span style="color: #d0d0d0; font-size: 150%;">Chicago</span></span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiftingIsPainful</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Women</span>InTech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #d0d0d0; font-size: 150%;">Chicago</span>Startups</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#StartupBattle</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#SocialGifting</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #d0d0d0; font-size: 150%;">Chicago</span>Tech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Blacks</span>InTech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GSB2015</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#SW<span style="color: #d0d0d0; font-size: 150%;">Chicago</span></span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Diversity</span>InTech</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiftingIsHard</span>  <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#SW<span style="color: #d0d0d0; font-size: 150%;">Chi</span></span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#GiveGiftr</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #d0d0d0; font-size: 150%;">Chi</span>Founders</span> <span style="background-color: rgba(255,255,255,.25); padding: 8px; border-radius: 4px; margin: 0 5px;">#<span style="color: #000099; font-size: 150%;">Female</span>Founders</span>
-    </div>
--->
 <div id="myCarousel" class="featuresBot carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -173,10 +171,10 @@
     </ol>
     <div class="carousel-inner jumbotron" role="listbox">
         <div class="item active">
-            <div class="container-fluid">
+            <div class="container-fluid lgContainer">
                 <div class="row">
                     <div class="imagerow">
-                        <%= image_tag("planning2.png", :id => "planning2") %>
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/planning2.png", :id => "planning2") %>
                         <div class="ghost"><!--
                         --><h2 class="carousel-caption post-ghostB">Planning</h2>
                         </div>
@@ -185,22 +183,25 @@
                 <div class="row">
                     <div class="col-md-5 col-md-push-7 ghost"><!--
                      --><div class="phonewrapper post-ghost">
-                        <%= image_tag("iphone1.png", :class => "img-responsive")%>
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/iphone1.png", :class => "img-responsive")%>
                         </div>
                     </div>
                     <div class="col-md-7 col-md-pull-5 ghost"><!--
                      --><div class="carousel-caption post-ghost">
-                            <h1>Planning</h1>
+                            <div class="details hidden-sm hidden-xs">
+                                <h1>Never forget another occasion.</h1>
+                                    <h2 class="detailsgray">Giftr reminds you when to plan ahead.</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="item">
-            <div class="container-fluid">
+            <div class="container-fluid lgContainer">
                 <div class="row">
                     <div class="imagerow">
-                        <%= image_tag("social2.png", :id => "social2") %>
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/social2.png", :id => "social2") %>
                         <div class="ghost"><!--
                         --><h2 class="carousel-caption post-ghostB">Social</h2>
                         </div>
@@ -208,78 +209,80 @@
                 </div>
                 <div class="row">
                     <div class="col-md-5 col-md-push-7 ghost"><!--
-                    --><div class="phonewrapper post-ghost"><%= image_tag("iphone2.png", :class => "img-responsive")%>
+                    --><div class="phonewrapper post-ghost"><%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/iphone2.png", :class => "img-responsive")%>
                     </div>
                     </div>
                     <div class="col-md-7 col-md-pull-5 ghost"><!--
                      --><div class="carousel-caption post-ghost">
-                        <div class="details">
-                            <h2>No more duplicate gifts, and no more giving gifts that recipients won’t like!</h2>
-                            <div class="row">
-                                <div class="col-xs-1 box darkblue">
-                                    <%=icon('fa fa-check fa-3x')%>
+                            <div class="details hidden-sm hidden-xs">
+                                <h1>No more giving bad gifts!</h1>
+                                <div class="row">
+                                    <div class="col-xs-1 box darkblue">
+                                        <%=icon('fa fa-check fa-2x')%>
+                                    </div>
+                                    <div class="col-xs-11">
+                                        <p class="dark">Create circles around the gift recipient &amp; include family and friends</p>
+                                    </div>
                                 </div>
-                                <div class="col-xs-11">
-                                    <p>Create circles around the gift recipient and include family and friends</p>
+                                <div class="row">
+                                    <div class="col-xs-1 box blue">
+                                        <%=icon('fa fa-check fa-2x')%>
+                                    </div>
+                                    <div class="col-xs-11">
+                                        <p class="dark">Share &amp; collaborate on gift ideas </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-1 box darkblue">
+                                        <%=icon('fa fa-check fa-2x')%>
+                                    </div>
+                                    <div class="col-xs-11">
+                                        <p class="dark">Claim ideas to avoid duplicate gifts</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-1 box blue">
-                                    <%=icon('fa fa-check fa-3x')%>
-                                </div>
-                                <div class="col-xs-11">
-                                    <p>Share gift ideas </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-1 box darkblue">
-                                    <%=icon('fa fa-check fa-3x')%>
-                                </div>
-                                <div class="col-xs-11">
-                                    <p>Claim any gift you want to give</p>
-                                </div>
-                            </div>
-                        </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="item">
-            <div class="container-fluid">
+            <div class="container-fluid lgContainer">
                 <div class="row">
                     <div class="imagerow">
-                        <%= image_tag("money2.png", :id => "saving2") %>
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/money2.png", :id => "saving2") %>
                         <div class="ghost"><!--
                         --><h2 class="carousel-caption post-ghostB">Saving</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                <div class="col-md-5 col-md-push-7 ghost"><!--
-                 --><div class="phonewrapper post-ghost">
-                    <%= image_tag("iphone3.png", :class => "img-responsive")%>
+                    <div class="col-md-5 col-md-push-7 ghost"><!--
+                     --><div class="phonewrapper post-ghost">
+                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/iphone3.png", :class => "img-responsive")%>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7 col-md-pull-5 ghost">
-                    <div class="carousel-caption post-ghost">
-                    <h1>Saving</h1>
+                    <div class="col-md-7 col-md-pull-5 ghost"><!--
+                     --><div class="carousel-caption post-ghost">
+                            <div class="details hidden-sm hidden-xs">
+                                <h1>Get special deals on popular gifts.</h1>
+                                <h2 class="detailsgray">Use Sally, Giftr’s virtual concierge, to find deals on great gifts.</h2>
+                            </div>
+                            </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
     </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
-    </div>
+    </a>
+</div>
 <span class="anchor" id="team"></span>
 <div class="container-fluid team">
     <div class="lgContainer">
@@ -348,14 +351,13 @@
         &nbsp;
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6"><%= link_to image_tag("sw-logo-white.png", :class => "img-responsive"), "http://www.up.co/communities/usa/chicago", :target => "_blank"%></div>
+                <div class="col-sm-6"><%= link_to image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/sw-logo-white.png", :class => "img-responsive"), "http://www.up.co/communities/usa/chicago", :target => "_blank"%></div>
                 <div class="col-sm-6">
                     <div class="imgwrapper">
-                        <%= link_to image_tag("gsb2015.png", :class => "img-responsive center-block"), "http://www.globalstartupbattle.co/", :target => "_blank"%>
+                        <%= link_to image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/gsb2015.png", :class => "img-responsive center-block"), "http://www.globalstartupbattle.co/", :target => "_blank"%>
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div>  
     </div>
 </div>
