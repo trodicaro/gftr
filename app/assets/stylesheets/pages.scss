@@ -221,6 +221,7 @@ div#mini-menu-button {
     background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     position: relative;
     min-height: 100vh;
 }
@@ -261,7 +262,7 @@ div#mini-menu-button {
 }
 .vote .bodyh2 {
     color: #181818;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, .25), -1px -1px 2px rgba(255, 255, 255, .25);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, .35), -1px -1px 2px rgba(255, 255, 255, .35);
     font-weight: 500;
 }
 .vote .btn h2 {
@@ -276,6 +277,9 @@ div#mini-menu-button {
     letter-spacing: 2px;
     color: #c8c8c8;
 }
+//.socialmedia .btn {
+//    min-width: 192px;
+//}
 .vote .btn-primary {
     margin: 40px 0 40px;
     padding: 20px;
@@ -344,6 +348,41 @@ div#mini-menu-button {
 .social .signups .btn-github:hover {
     background-color: #0047b2;
 }
+.vote ul {
+    padding-left: 0;
+    max-width: 192px;
+}
+.vote .twitternote, .vote ul {
+    text-align: left;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.vote .twitternote {
+    margin-bottom: 10px;
+}
+.socialmedia .btn {
+        margin: 0 0 15px;
+    }
+.twitternote2 {
+    margin: 0;
+}
+@media all and (min-width: 992px) {
+//    .social .col-sm-4 {
+//        width: 100%;
+//    }
+//    .socialmedia .btn {
+//        margin: 0 0 15px;
+//    }
+//    .socialmedia .btn.btn-twitter {
+//        margin: 0;
+//    }
+    
+}
+@media all and (min-width: 1450px) {
+//    .social .col-sm-4 {
+//        width: 33.33333333%;
+//    }
+}
 @media all and (max-width: 991px) {
     .container-fluid.vote {
         overflow: auto;
@@ -382,8 +421,14 @@ div#mini-menu-button {
     }
     .vote .bodyh2 {
         font-size: 20px;
-        font-weight: normal;
+//        font-weight: normal;
     }
+//    .socialmedia .btn {
+//        margin: 0 0 15px;
+//    }
+//    .socialmedia .btn.btn-twitter {
+//        margin: 0;
+//    }
 }
 @media all and (max-width: 459px) {
     .vote .jumbotron {
@@ -393,12 +438,18 @@ div#mini-menu-button {
         padding-left: 0;
         padding-right: 0;
     }
-    .social .col-xs-4 {
-        width: 100%;
-    }
     .socialmedia .btn {
         display: block;
-        margin: 15px;
+    }
+    .social form {
+        padding: 0;
+        padding-top: 15px;
+}
+    .social .col-xs-4 {
+        width: 100%;//change to other width?
+    }
+    .twitternote2 {
+        font-size: 90%;
     }
 }
 //endregion

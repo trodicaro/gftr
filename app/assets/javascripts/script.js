@@ -112,14 +112,15 @@ var myfunction = function () {
         // Vote cover image full height
 
         $(".container-fluid.vote").each(function () {
+            $(".container-fluid.vote").css("min-height", "100vh");
 ////            if ($(window).width() > 991) {
 ////                $(this).css("height", "100vh");
 ////            } else {
 ////                $(this).css("height", "auto");
 ////            }
 ////
-            if ($(window).width() > 991 && $(window).height() < 670) {
-                $(".container-fluid.vote").css("min-height", 670);
+            if ($(window).width() > 991 && $(window).height() < 665) {
+                $(".container-fluid.vote").css("min-height", 665);
             };
 //            var height = $(".container-fluid.vote").height() + 80;
 //            $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head'); //bc can't directly change height
