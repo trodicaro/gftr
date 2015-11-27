@@ -138,9 +138,6 @@ body {
     border-bottom: 3px solid #000000;
     cursor: pointer;
 }
-#menu-toggle .glyphicon {
-    float: right;
-}
 #menu-toggle .row {
     padding: 10px 0;
     border-bottom: 1px solid #303030;
@@ -151,6 +148,13 @@ body {
 }
 #menu-toggle .row:last-child {
     border-bottom: none;
+}
+#mini-menu-button:hover {
+    cursor: pointer;
+}
+div#mini-menu-button {
+    display: inline-block;
+    float: right;
 }
 .anchor {
     display: block;
