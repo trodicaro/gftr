@@ -225,7 +225,8 @@ div#mini-menu-button {
     margin-left: -15px;
     width: 100%;
     height: 100%;
-    background-image: image-url("Giftr_coverphoto.jpg");
+//    background-image: image-url("Giftr_coverphoto.jpg");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-filter: opacity(80%);
@@ -369,6 +370,7 @@ div#mini-menu-button {
     }
     .vote:before {
         height: auto;
+         background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto_small.jpg");
     }
     .vote .bodyh2 {
         font-size: 20px;
@@ -752,31 +754,31 @@ div#mini-menu-button {
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,.5);
 }
 #Dalal {
-    background-image: image-url("dalal.png");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/dalal.png");
     background-position: center top;
 }
 #Tatyana {
-    background-image: image-url("tatyana.png");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/tatyana.png");
     background-position: center top;
 }
 #Andrew {
-    background-image: image-url("andrew.png");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/andrew.png");
     background-position: center top;
 }
 #Rodica {
-    background-image: image-url("rodica.png");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/rodica.png");
     background-position: center top;
 }
 #Cheryl {
-    background-image: image-url("cheryl.png");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/cheryl.png");
     background-position: center center;
 }
 #Amar {
-    background-image: image-url("amar.png");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/amar.png");
     background-position: center top;
 }
 #Mark {
-    background-image: image-url("mark.png");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/mark.png");
     background-position: center top;
 }
 .team h3 {
