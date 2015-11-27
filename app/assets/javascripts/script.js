@@ -105,27 +105,28 @@ var myfunction = function () {
                 height.push($(this).height());
             });
             if ($(window).width() > 991) {
+                console.log("runningggg");
                 $(this).find('.col-md-6 > div').height(Math.max.apply(null, height));
             };
         });
 
         // Vote cover image full height
 
-        $(".container-fluid.vote").each(function () {
-            if ($(window).width() > 991) {
-                $(this).css("height", "100vh");
-            } else {
-                $(this).css("height", "auto");
-            }
-
-            if ($(window).width() > 991 && $(window).height() < 631) {
-                console.log("running");
-                $(".container-fluid.vote").height(550);
-            };
-            var height = $(".container-fluid.vote").height() + 80;
-            $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head'); //bc can't directly change height
-
-        });
+//        $(".container-fluid.vote").each(function () {
+////            if ($(window).width() > 991) {
+////                $(this).css("height", "100vh");
+////            } else {
+////                $(this).css("height", "auto");
+////            }
+////
+////            if ($(window).width() > 991 && $(window).height() < 631) {
+//////                console.log("running");
+////                $(".container-fluid.vote").height(550);
+////            };
+////            var height = $(".container-fluid.vote").height() + 80;
+////            $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head'); //bc can't directly change height
+//
+//        });
 
         // FeaturesTop two div's same height
 
