@@ -676,12 +676,14 @@ body {
     color: #f8f8f8;
 }
 .details .box .fa {
-    color: white;
+    color: #303030;
+    text-shadow: none;
 }
 .jumbotron .details p.dark {
     color: #202020;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 22px;
+    text-shadow: none;
 }
 .carousel .col-xs-11 {
     padding-left: 30px;
