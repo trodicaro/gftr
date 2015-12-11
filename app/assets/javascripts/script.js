@@ -113,15 +113,23 @@ var myfunction = function () {
 
         $(".container-fluid.vote").each(function () {
             $(".container-fluid.vote").css("min-height", "100vh");
+            $(".vote .jumbotron.ghost").css("height", "");
 ////            if ($(window).width() > 991) {
 ////                $(this).css("height", "100vh");
 ////            } else {
 ////                $(this).css("height", "auto");
 ////            }
 ////
-            if ($(window).width() > 991 && $(window).height() < 665) {
-                $(".container-fluid.vote").css("min-height", 665);
+            if ($(window).width() > 991 && $(window).height() < 575) {
+                $(".container-fluid.vote").css("min-height", 575);
             };
+            if ($(window).width() < 992 && $(window).height() < 735) {
+                $(".container-fluid.vote").css("min-height", 735);
+            };
+            if ($(window).width() > 459) {
+                $(".vote .jumbotron.ghost").height($(".container-fluid.vote").height()-$(".social").height()-2*$(".vote .jumbotron.ghost").css("padding-top").slice(0,-2));
+            };
+            console.log($(".vote .jumbotron.ghost").css("padding-top").slice(0,-2));
 //            var height = $(".container-fluid.vote").height() + 80;
 //            $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head'); //bc can't directly change height
 

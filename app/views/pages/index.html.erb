@@ -1,10 +1,10 @@
-<span class="anchor anchor1" id="vote"></span>
+<span class="anchor anchor1" id="home"></span>
 <div class="sticky-wrapper">
     <div id="navigation" class="stuck">
 		<div id="nav">
             <ul>
                 <li>
-                    <a href="#vote">Vote</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
                     <a href="#features">What is Giftr?</a>
@@ -24,7 +24,7 @@
     <div id="menu-toggle">
         <div class="container-fluid">
             <div class="row">
-                <a href="#vote">Vote</a>
+                <a href="#home">Home</a>
                 <div id="mini-menu-button">
                     <span class="glyphicon glyphicon-remove"></span>
                 </div>
@@ -43,13 +43,13 @@
 </div>
 <div class="container-fluid vote">
     <div class="row">
-        <div class="col-xs-12 jumbotron">
-            <div>
-                <h1>VOTE FOR GIFTR</h1>
-                <h2 class="bodyh2">Global Startup Battle</h2>
-                <a type="button" class="btn btn-primary" href="http://tinyurl.com/nzojgxy" target="_blank">
-                    <h2>VOTE  NOW</h2>
-                </a>
+        <div class="col-xs-12 jumbotron ghost"><!--
+         --><div class="post-ghost">
+<!--                <h1>VOTE FOR GIFTR</h1>-->
+<!--                <h2 class="bodyh2">Global Startup Battle</h2>-->
+                <div class="logocontainer">
+                    <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/giftrlogo.png", :class => "img-responsive", :id => "GiftrLogo") %>
+                </div>
                 <h2 class="bodyh2 h2white">Because friends don't let friends give bad gifts.</h2>
             </div>
         </div>
@@ -59,23 +59,22 @@
         <span class="anchor anchor2" id="signup"></span>
         <div class="col-md-6 socialmedia">
             <div>
-                <strong>Share your vote for a chance to win a $50 VISA<sup>&reg;</sup> gift card</strong>
+                <strong>Share Giftr with your friends</strong>
                 <div class="row">
                     <div class="col-xs-4">
-                        <a class="btn btn-social btn-twitter" href="https://twitter.com/home?status=%23Ivoted4Giftr%0A%0AHelp%20launch%20Giftr%20at%20bit.ly/givegiftr%0A%0A%23vote2LaunchGiftr%20%40givegiftr" onclick="window.open(this.href,'','scrollbars=no,resizable=yes, location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-350)+ ', top='+(screen.availHeight/2-350)+',width=700,height=253');return false;">
-                            <span class="fa fa-twitter"></span> Twitter *</a>
+                        <a class="btn btn-social btn-twitter" href="https://twitter.com/home?status=Rooting%20for%20%40givegiftr,%20a%20new%20startup,%20bc%20friends%20don't%20let%20friends%20give%20bad%20gifts.%20Sign%20up%20for%20early%20access%20here%3A%20www.givegiftr.co" onclick="window.open(this.href,'','scrollbars=no,resizable=yes, location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-350)+ ', top='+(screen.availHeight/2-350)+',width=700,height=253');return false;">
+                            <span class="fa fa-twitter"></span> Twitter</a>
                     </div>
                     <div class="col-xs-4">
                         <a class="btn btn-social btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.givegiftr.co" onclick="window.open(this.href,'','scrollbars=no,resizable=yes, location=no,menubar=no,status=no,toolbar=no,left='+(screen.availWidth/2-350)+ ', top='+(screen.availHeight/2-350)+',width=700,height=263');return false;">
                             <span class="fa fa-facebook"></span> Facebook
                         </a></div>   
                     <div class="col-xs-4">
-                        <a class="btn btn-social btn-github" href="mailto:?&subject=Check out Giftr&body=Hey!%0A%0AI%20just%20voted%20for%20Giftr%20in%20Global%20Startup%20Competition%202015.%20It's%20an%20app%20that%20uses%20the%20power%20of%20your%20social%20network%20to%20help%20you%20find%20and%20choose%20unique%20%26%20memorable%20gifts.%20%0A%0AGiftr%20needs%20our%20votes%20to%20launch.%20Vote%20here%3A%20www.givegiftr.co">
+                        <a class="btn btn-social btn-github" href="mailto:?&subject=Check out Giftr&body=Hey!%0A%0AI%20just%20signed%20up%20for%20Giftr.%20%20It's%20an%20app%20that%20uses%20the%20power%20of%20your%20social%20network%20to%20help%20you%20find%20and%20choose%20unique%20%26%20memorable%20gifts.%20%0A%0ASign%20up%20for%20early%20access%20and%20Giftr%20user%20research%20here%3A%20www.givegiftr.co">
                             <span class="fa fa-envelope"></span> Email
                         </a>
                     </div>
                 </div>
-                <p class="twitternote2">* RT: #Ivoted4Giftr Help launch Giftr at bit.ly/givegiftr #vote2LaunchGiftr @givegiftr</p>
             </div>
         </div>
         <%= render 'users/form' %>
@@ -97,9 +96,6 @@
                 <div class="ghost"><!--
                  --><div class="post-ghost">
                     <h2 class="bodyh2">Use the power of your social network to help you find and choose unique &amp; memorable gifts for your family and friends. </h2>
-                    <div>
-                        <%= image_tag("https://s3.amazonaws.com/giftrassets/LandingPage/giftrlogo.png", :class => "img-responsive", :id => "GiftrLogo") %>
-                    </div>
                     </div>
                 </div>
             </div>
