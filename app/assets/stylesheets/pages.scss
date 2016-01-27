@@ -453,6 +453,10 @@ div#mini-menu-button {
     }
 }
 @media all and (max-width: 767px) {
+    _::-webkit-full-page-media, _:future, :root  .vote .logocontainer {
+        -webkit-filter: none;
+        background-color: rgba($pearl,.55);
+    }
     .vote .btn-primary {
         margin: 20px 0 20px;
     }
@@ -516,6 +520,7 @@ div#mini-menu-button {
         font-size: 90%;
     }
 }
+
 //endregion
 //BEGIN VOTE CALL TO ACTION
 
@@ -663,6 +668,7 @@ div#mini-menu-button {
 @media all and (max-width: 767px) {
     .featuresMid .phonewrapper {
         padding: 0 30px;
+        display: none;
     }
     .featuresMid .hidden-sm {
         display: inherit;
@@ -673,7 +679,7 @@ div#mini-menu-button {
         padding-right: 30px;
     }
     .featuresMid .bodyh2 {
-        margin: 0px 0 40px;
+        margin: 0;
         font-size: 24px;
     }
     .featuresMid .imagerow {
