@@ -183,6 +183,11 @@ div#mini-menu-button {
 .anchor2 {
     top: -54px;
 }
+@media all and (max-width: 991px) {
+    #menu-toggle {
+        margin-top: 39px;
+    }
+}
 @media all and (max-width: 767px) {
     body {
     margin-top: 40px;
@@ -234,8 +239,8 @@ div#mini-menu-button {
     position: relative;
 }
 .vote {
-//    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto.jpg");
-    background-image: image-url("Bear.jpg");
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Bear_large.jpg");
+//    background-image: image-url("Bear.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -426,7 +431,9 @@ div#mini-menu-button {
 }
 @media all and (max-width: 991px) {
     .container-fluid.vote {
-        overflow: auto;
+        margin-top: -39px;
+        padding-top: 39px;
+//        overflow: auto;
     }
     .vote p:last-child {
         margin: 0;
@@ -456,9 +463,11 @@ div#mini-menu-button {
         font-size: 40px;
         word-spacing: 10px;
     }
+    .vote {
+        background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Bear_small.jpg");
+    }
     .vote:before {
         height: auto;
-         background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto_small.jpg");
     }
     .vote .bodyh2 {
         font-size: 175%;
@@ -819,6 +828,10 @@ div#mini-menu-button {
     }
 }
 @media all and (max-width: 991px) {
+    .carousel {
+        max-height: 774px;
+        overflow: hidden;
+    }
     .featuresBot .carousel-indicators {
         bottom: 10px;
     }
