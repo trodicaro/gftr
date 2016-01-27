@@ -1,5 +1,21 @@
+// Global Colors
+$pearl: #f8f5f2;
+$black: #020509;
+
+$lapis: #556dac;
+$salmon: #f79b77;
+$peppercorn: #755248;
+$stoneground: #4b4345;
+
+$lightblue: #0066ff;//Giftr logo color
+$blue: #000066;//Giftr logo color
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
     margin-top: 80px;//height of navbar if screen > 767
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !important;
 }
 
 //BEGIN NAV BAR
@@ -12,7 +28,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    background: #ffffff;
+    background: $pearl;
     z-index: 13;
 }
 #navigation a {
@@ -27,9 +43,9 @@ body {
 #nav, #navfa  {
     margin: 0 auto;
     background: #ffffff;//need for smooth transition
-    -webkit-box-shadow: 0px 1px 5px 0px #505050;
-    -moz-box-shadow: 0px 1px 5px 0px #505050;
-    box-shadow: 0px 1px 5px 0px #505050;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba($peppercorn, .50);
+    -moz-box-shadow: 0px 1px 5px 0px rgba($peppercorn, .50);
+    box-shadow: 0px 1px 5px 0px rgba($peppercorn, .50);
 }
 #nav ul {
     padding: 20px 0;
@@ -58,13 +74,13 @@ body {
     transition: all 200ms linear;
 }
 #nav ul li#active, #nav ul li:hover,  #nav ul li:focus {
-  background: #000000;
+  background: $peppercorn;
 }
 .bodynav #nav ul {
     padding: 0px;
 }
 .bodynav #nav ul li#active, .bodynav #nav ul li:hover,  .bodynav #nav ul li:focus {
-  background: #ffffff !important;
+  background: $salmon !important;
 }
 .bodynav #nav ul li a {
     font-weight: 300;
@@ -72,39 +88,39 @@ body {
 }
 .bodynav #nav ul, .bodynav #nav ul li, .bodynav #nav ul li a, .bodynav #navfa, #navfa {
     background: #181818 !important;
-    background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, #181818 100%) !important;
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(100%, #181818)) !important;
-    background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, #181818 100%) !important;
-    background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, #181818 100%) !important;
-    background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, #181818 100%) !important;
-    background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, #181818 100%) !important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#181818', GradientType=0 ) !important;
+    background: -moz-linear-gradient(top, lighten($lapis, 25%) 0%, $lapis 100%) !important;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $peppercorn), color-stop(100%, #181818)) !important;
+    background: -webkit-linear-gradient(top, lighten($lapis, 25%) 0%, $lapis 100%) !important;
+    background: -o-linear-gradient(top, lighten($lapis, 25%) 0%, $lapis 100%) !important;
+    background: -ms-linear-gradient(top, lighten($lapis, 25%) 0%, $lapis 100%) !important;
+    background: linear-gradient(to bottom, lighten($lapis, 25%) 0%, $lapis 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abb7d6', endColorstr='#556dac', GradientType=0 ) !important;
     color: white !important;
 }
 .bodynav #nav {
     padding: 0px 0 6px;
-    background-color: #181818 !important;
+    background-color: $lapis !important;
 }
 #navfa {
     display: none;
-    border-bottom: 1px solid #181818;
+    border-bottom: 1px solid $lapis;
 }
 #navfa i {
     margin: 5px 15px;
     padding: 0px 4px;
-    border: 1px solid rgb(51,51,51);
+//    border: 1px solid $salmon;
     border-radius: 4px;
 }
 #navfa i:hover {
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 2px 0px #0066ff;
-    -moz-box-shadow: 0px 0px 2px 0px #0066ff;
-    box-shadow: 0px 0px 2px 0px #0066ff;
-    text-shadow: 0px 0px 2px #0066ff;
+    -webkit-box-shadow: 0px 0px 2px 0px $salmon;
+    -moz-box-shadow: 0px 0px 2px 0px $salmon;
+    box-shadow: 0px 0px 2px 0px $salmon;
+    text-shadow: 0px 0px 2px $salmon;
 }
 .bodynav #navfa i, #navfa i {
-    color: #a0a0a0;
-    border: 1px solid #d8d8d8;
+    color: $pearl*.9;
+    border: 1px solid $pearl;
     font-size: 1.8em;
     padding: 1px 4px;
 }
@@ -115,11 +131,11 @@ body {
     margin-top: 80px;
     width: 100%;
     padding: 0px 15px;
-    background-color: white;
+    background-color: $pearl;
     overflow: hidden; // hides top box shadow
-    -webkit-box-shadow: 0px 1px 5px 0px #505050;
-    -moz-box-shadow: 0px 1px 5px 0px #505050;
-    box-shadow: 0px 1px 5px 0px #505050;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba($peppercorn, .50);
+    -moz-box-shadow: 0px 1px 5px 0px rgba($peppercorn, .50);
+    box-shadow: 0px 1px 5px 0px rgba($peppercorn, .50);
 }
 #menu-toggle .container-fluid {
     margin: 0 -15px;
@@ -135,16 +151,16 @@ body {
     margin: 0 0 7px; 
 }
 #menu-toggle #active, #menu-toggle a:hover {
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid $salmon;
     cursor: pointer;
 }
 #menu-toggle .row {
     padding: 10px 0;
-    border-bottom: 1px solid #303030;
+    border-bottom: 1px solid $stoneground;
     padding-left: 15px;
 }
 #menu-toggle .row:hover {
-    background-color: rgba(0, 102, 255, .5);
+//    background-color: rgba(0, 102, 255, .5);
 }
 #menu-toggle .row:last-child {
     border-bottom: none;
@@ -218,7 +234,8 @@ div#mini-menu-button {
     position: relative;
 }
 .vote {
-    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto.jpg");
+//    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto.jpg");
+    background-image: image-url("Bear.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -255,42 +272,46 @@ div#mini-menu-button {
     font-weight: 600;
     margin: 0;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: $pearl;
     font-size: 85px;
     word-spacing: 10px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8), -1px -1px 1px rgba(0, 0, 0, .25);
+//    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8), -1px -1px 1px rgba(0, 0, 0, .25);
 }
 .vote .jumbotron > div {
     text-align: center;
 }
 .vote .logocontainer {
-    background-color: rgba(255,255,255,.7);
-    border-radius: 6px;
+//    background-color: rgba(255,255,255,.25);
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=5, Color='#ffffff')";
+	-webkit-filter: drop-shadow(0px 5px 7px rgba($pearl, .5));
+	filter: drop-shadow(0px 5px 7px rgba($pearl, .5));
+    border-radius: 3px;
     text-align: center;
     display: inline-block;
     margin-bottom: 30px;
 }
 .vote .bodyh2 {
-    color: #181818;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, .35), -1px -1px 2px rgba(255, 255, 255, .35);
+    color: $stoneground;
+//    text-shadow: 1px 1px 2px rgba(255, 255, 255, .35), -1px -1px 2px rgba(255, 255, 255, .35);
     font-weight: 500;
 }
 .vote .h2white {
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8), -1px -1px 1px rgba(0, 0, 0, .25);
+    font-size: 200%;
+    color: $pearl;
+//    text-shadow: 1px 1px 0px opacify($peppercorn, .5), -1px -1px 0px;
     font-weight: 400;
 }
 .vote .btn h2 {
     margin: 0;
     font-weight: 400;
     word-spacing: 10px;
-    color: #f0f0f0;
+    color: $pearl;
 }
 .vote .btn h4 {
     margin: 0;
     font-weight: 300;
     letter-spacing: 2px;
-    color: #c8c8c8;
+    color: $pearl;
 }
 //.socialmedia .btn {
 //    min-width: 192px;
@@ -301,14 +322,14 @@ div#mini-menu-button {
     border: 1px solid #0066ff;
     border-radius: 10px;
     border-bottom: 1px solid #0023EB;
-    background: rgba(0,102,255,1);
-    background: -moz-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,102,255,1)), color-stop(100%, rgba(0,35,235,1)));
-    background: -webkit-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
-    background: -o-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
-    background: -ms-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
-    background: linear-gradient(to bottom, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#0023eb', GradientType=0 );
+    background: $salmon;
+//    background: -moz-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
+//    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,102,255,1)), color-stop(100%, rgba(0,35,235,1)));
+//    background: -webkit-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
+//    background: -o-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
+//    background: -ms-linear-gradient(top, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
+//    background: linear-gradient(to bottom, rgba(0,102,255,1) 0%, rgba(0,35,235,1) 100%);
+//    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#0023eb', GradientType=0 );
     box-shadow: 0px 1px 5px 0px #505050;
 }
 .vote .btn-primary:hover {
@@ -321,15 +342,17 @@ div#mini-menu-button {
     padding: 15px;
 }
 .socialmedia > div, .signups > div {
-    background-color: rgba(255,255,255,.8);
+    border-radius: 3px;
+//    background-color: rgba(255,255,255,.8);
+    background-color: rgba($pearl,.5);
     padding: 15px;
     text-align: center;
 }
 .socialmedia strong, .signups strong {
     line-height: 1.1;
-    font-size: 19px;
-    color: #404040;
-    font-weight: 300;
+    font-size: 180%;
+    color: $stoneground;
+    font-weight: 600;
 }
 .social .row {
     padding-top: 30px;
@@ -346,8 +369,8 @@ div#mini-menu-button {
 }
 .social form .form-control {
     background-color: rgba(0,0,0,.05);
-    color: black;
-    border: 1px solid #404040;
+    color: $stoneground;
+    border: 1px solid $stoneground;
 }
 .social .form-control::-webkit-input-placeholder { color: black; }
 .social .form-control:-moz-placeholder { color: black; }
@@ -358,10 +381,13 @@ div#mini-menu-button {
     margin-bottom: 5px; 
 }
 .social .signups .btn-github {
-    background-color: #0066ff;
+    background-color: $salmon;
+    border: 1px solid darken($salmon, 10%);
+    color: $pearl;
+    font-weight: 500;
 }
 .social .signups .btn-github:hover {
-    background-color: #0047b2;
+    background-color: darken($salmon, 5%);
 }
 .vote ul {
     padding-left: 0;
@@ -424,7 +450,7 @@ div#mini-menu-button {
         margin: 20px 0 20px;
     }
     .vote .jumbotron {
-        padding: 5-px 30px;
+        padding: 50px 30px;
     }
     .vote h1 {
         font-size: 40px;
@@ -435,8 +461,12 @@ div#mini-menu-button {
          background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Giftr_coverphoto_small.jpg");
     }
     .vote .bodyh2 {
-        font-size: 20px;
+        font-size: 175%;
+//        font-size: 20px;
 //        font-weight: normal;
+    }
+    .socialmedia strong, .signups strong {
+        font-size: 150%;
     }
 //    .socialmedia .btn {
 //        margin: 0 0 15px;
@@ -484,20 +514,21 @@ div#mini-menu-button {
 //region
 .featuresTop {
     padding: 40px 40px;
-    background-color: #f5f5f5;
+    background-color: $pearl;
 }
 .featuresTop .col-xs-12 > div {
-    background-color: white;
+    background-color: $pearl;
     text-align: center;
     padding-top: 20px;
 }
 .featuresTop h1 {
-    color: #0066ff;
+    color: $lapis;
     font-size: 70px;
     margin: 0;
+    margin-bottom: 15px;
 }
 .bodyh2 {
-    color: #565a5c;
+    color: $stoneground;
     font-size: 26px;
     line-height: 1.3;
     font-weight: 300;
@@ -511,7 +542,7 @@ div#mini-menu-button {
 }
 .featuresTop .col-md-4 > div, .featuresTop .col-md-8 > div {
     padding: 20px 40px;
-    background-color: white;
+    background-color: $pearl;
 }
 .featuresTop .col-md-4 > div {
     text-align: center;
@@ -595,7 +626,7 @@ div#mini-menu-button {
     margin: 0;
     margin-left: 15px;
     margin-top: 15px;
-    color: #0023eb;
+    color: $lapis;
 }
 .featuresMid p {
     margin-top: 15px;
@@ -639,7 +670,7 @@ div#mini-menu-button {
     .featuresMid .imagerow {
         display: inline-block;
         text-align: left;
-        width: 190px;
+        width: 200px;
     }
     .featuresMid .col-sm-7, .featuresMid .col-sm-5 {
         text-align: center;
@@ -695,27 +726,27 @@ div#mini-menu-button {
     margin: 0;
     margin-left: 15px;
     margin-top: 15px;
-    color: white;
+    color: $pearl;
     font-size: 50px;
 }
 .featuresBot .imagerow img {
     display: inline-block;
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='#444')";
-	-webkit-filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.6));
-	filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.6));
+	-webkit-filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.25));
+	filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.25));
 }
 .carousel .jumbotron {
     margin: 0;
     padding: 0;
 }
 .carousel-inner .item:first-child {
-  background-color: #ab2436;
+  background-color: $salmon;
 }
 .carousel-inner .item:nth-child(2) {
-    background-color: #28B6F7;
+    background-color: rgba($lapis, .75);
 }
 .carousel-inner .item:last-child {
-    background-color: #12B23F;
+    background-color: $peppercorn;
 }
     .carousel-inner>.item>.container-fluid>.row:nth-child(2)>div:nth-child(2) {//i.e. left side
     padding-left: 15%;
@@ -741,21 +772,22 @@ div#mini-menu-button {
     right: 0;
     padding-bottom: 0;
 }
-.carousel .col-md-7 h2 {
-    text-align: center;
-    color: #181818;
-    text-shadow: none;
-    line-height: 1.3;
-    margin: 0 0 30px;
-    font-weight: 600;
-}
+//.carousel .col-md-7 h2 {
+//    text-align: center;
+//    color: $lapis;
+//    text-shadow: none;
+//    line-height: 1.3;
+//    margin: 0 0 30px;
+//    font-weight: 600;
+//}
 .details {
     text-align: left;
 }
 .details h2.detailsgray {
     text-align: left;
     font-weight: 500;
-    color: #202020;
+    color: lighten($lapis, 15%);
+    text-shadow: none;
 }
 .details .box, .details p {
     display: inline-block;
@@ -763,13 +795,18 @@ div#mini-menu-button {
     color: #f8f8f8;
 }
 .details .box .fa {
-    color: #303030;
+    color: lighten($stoneground, 5%);
     text-shadow: none;
 }
 .jumbotron .details p.dark {
-    color: #202020;
-    font-weight: 500;
+//    color: darken($pearl, 15%);
+    color: lighten($stoneground, 5%);
+    font-weight: 600;
     font-size: 22px;
+    text-shadow: none;
+}
+.jumbotron .details .brown {
+    color: $peppercorn;
     text-shadow: none;
 }
 .carousel .col-xs-11 {
@@ -831,14 +868,20 @@ div#mini-menu-button {
     text-align: center;
     margin: 40px 0;
 }
+.team .bodyh2 {
+    color: $stoneground;
+}
+.team .name {
+    color: $lapis;
+}
 .team .circle {
     border-radius: 50%;
     behavior: url(PIE.htc);//for IE8
     width: 150px;
     height: 150px;
-    background: #d8d8d8;
+    background: $pearl;
     margin: 0 auto;
-    border: 3px solid #181818;
+    border: 3px solid $peppercorn;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,.5);
     -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,.5);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,.5);
@@ -878,9 +921,13 @@ div#mini-menu-button {
     margin-bottom: 5px;
 }
 .team .role {
-    margin-bottom: 25px;
     font-size: 18px;
     font-weight: 300;
+}
+.team .handle {
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: $salmon;
 }
 .team .bodyh2 {
     margin-bottom: 40px;
@@ -905,7 +952,7 @@ div#mini-menu-button {
 //BEGIN FOOTER
 //region
 .footer {
-    background-color: #181818;
+    background-color: darken( $stoneground, 5%);
     padding: 15px;
     color: #b0b0b0;
     text-align: center;
