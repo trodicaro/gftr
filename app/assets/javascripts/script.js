@@ -129,7 +129,7 @@ var myfunction = function () {
             if ($(window).width() > 459) {
                 $(".vote .jumbotron.ghost").height($(".container-fluid.vote").height()-$(".social").height()-2*$(".vote .jumbotron.ghost").css("padding-top").slice(0,-2));
             };
-            console.log($(".vote .jumbotron.ghost").css("padding-top").slice(0,-2));
+//            console.log($(".vote .jumbotron.ghost").css("padding-top").slice(0,-2));
 //            var height = $(".container-fluid.vote").height() + 80;
 //            $('<style>.vote:before {height: ' + height + 'px;}</style>').appendTo('head'); //bc can't directly change height
 
