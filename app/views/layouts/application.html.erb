@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta charset="utf-8">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color"             content="#ffffff">
@@ -40,10 +41,12 @@
     <meta name="twitter:image"           content="https://s3.amazonaws.com/giftrassets/Giftr_square-tw.jpg"/>
     <meta name="twitter:site"            content="@givegiftr"/>
     <meta name="twitter:creator"         content="@givegiftr"/>
-
-
   </head>
   <body>
-    <%= yield %>
+    <%= render partial: 'layouts/navbar' %>
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+    <%= render partial: 'layouts/footer' %>
   </body>
 </html>

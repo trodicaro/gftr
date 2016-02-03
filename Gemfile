@@ -14,10 +14,10 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'bootstrap-sass', '~> 3.3.4'
-gem 'font-awesome-sass', '~> 4.3.0'
+#gem 'bootstrap-sass', '~> 3.3.4'
+gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
-gem 'bootstrap-social-rails'
+#gem 'bootstrap-social-rails'
 gem 'slim-rails'
 gem 'validates_email_format_of'
 
@@ -29,6 +29,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'foundation-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
