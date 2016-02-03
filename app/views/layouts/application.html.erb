@@ -41,6 +41,7 @@
     <meta name="twitter:image"           content="https://s3.amazonaws.com/giftrassets/Giftr_square-tw.jpg"/>
     <meta name="twitter:site"            content="@givegiftr"/>
     <meta name="twitter:creator"         content="@givegiftr"/>
+    <%= render partial: 'partials/google_analytics' %>
   </head>
   <body>
     <%= render partial: 'layouts/navbar' %>
@@ -48,5 +49,6 @@
       <%= yield %>
     </div>
     <%= render partial: 'layouts/footer' %>
+    <%= render partial: 'partials/google_analytics_pageview' %>
   </body>
 </html>
