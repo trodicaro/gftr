@@ -21,7 +21,7 @@
         | group of your friends
         .fa.fa-plus.fa-2x
         | one gifting expert
-      .button.radius#getstarted[href="#options"]
+      .button.radius#friends[href="#options"]
           h5.pearl.zerotbmargin
             | Select
     .columns.small-12.medium-4[data-equalizer-watch style="vertical-align: middle;"]
@@ -30,14 +30,14 @@
         | our community of gift enthusiasts
         .fa.fa-plus.fa-2x
         | one gifting expert
-      .button.radius#getstarted[href="#options"]
+      .button.radius#group[href="#options"]
           h5.pearl.zerotbmargin
             | Select
     .columns.small-12.medium-4[data-equalizer-watch style="vertical-align: middle;"]
       img src="/assets/master.svg" alt="ask your friends" data-svg-fallback="/assets/master.png"
       div
         | gifting creative master (one-on-one chat)
-      .button.radius#getstarted[href="#options"]
+      .button.radius#master[href="#options"]
           h5.pearl.zerotbmargin
             | Select
 #signup
@@ -45,3 +45,4 @@
     | Woah! You caught us before we’re ready.
   .row
     | We’re working really hard to put the finishing touches on Giftr to make it super easy for you to find great gift ideas. If you’d like us to notify you when the app is ready, please leave your email below.
+    = render partial: "users/form"

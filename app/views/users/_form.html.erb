@@ -1,6 +1,5 @@
 <div class="col-md-6 signups">
 	<div>
-		<strong>Request an early access invite to Giftr</strong>
         <%= form_for @user, remote: true do |f| %>
         <%= f.email_field :email, placeholder: "Email Address", class: "form-control" %>
 		<span id="help_block" class="help-block"></span>
