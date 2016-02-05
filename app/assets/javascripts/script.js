@@ -3,5 +3,5 @@ $(document).on('page:load', function() {//turbolinks
 });
 
 $('#getstarted').on('click', function() {
-  ga('send', 'event', 'Share', 'sendEmail');
+  ga('send', 'event', 'Start', 'getStarted');
 });

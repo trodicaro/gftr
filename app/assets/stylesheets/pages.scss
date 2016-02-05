@@ -21,12 +21,15 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 
+$navheight: 67px;
+$negnavheight: -67px;
+
 .jumbotron {
   padding: 3rem;
 }
 .wrapper {
   min-height: 100vh;
-  padding-top: 67px;
+  padding-top: $navheight;
 }
 @media screen and (max-width: 39.9375em) {
   .jumbotron {
@@ -159,52 +162,6 @@ nav.column {
 }
 //endregion
 
-//Sidebar
-//region
-.lgsidebar {
-  background-color: $light-gray;
-  min-height: 100vh;
-  margin-top: -67px;//adjust topbar
-}
-.lgsidebar>div {
-  padding-top: 67px;//adjust topbar
-}
-.wrapper > .row > .columns > .row{
-  margin: 0;
-}
-ul.mobile-ofc.vertical.menu, .lgsidebar {
-  border-right: 1px solid $medium-gray;
-}
-ul.mobile-ofc.vertical.menu li, .lgsidebar li {
-  border-top: 1px solid $medium-gray;
-    }
-.sidebarli i, .sidebarli span {
-  display: block;
-  text-align: center;
-}
-.sidebarli li {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.sidebarli li:hover {
-  background-color: $pearl;
-}
-@media screen and (min-width: 39.9375em) {
-  .lgsidebar {
-    max-width: 105px; 
-    position: absolute;
-  }
-  .fixed-width-left {
-    padding-left: 105px;
-  }
-}
-@media screen and (min-width: 75em) {
-  .wrapper > .row > .columns > .row{
-    margin: 0 auto;
-  }
-}
-//endregion
-
 //Index
 //region
 .index.imagecover {
@@ -214,7 +171,7 @@ ul.mobile-ofc.vertical.menu li, .lgsidebar li {
   background-repeat: no-repeat;
   background-position: center bottom  ;
   position: relative;
-  margin-top: -67px;//navbar height
+  margin-top: $negnavheight;//navbar height
 }
 .index .centered {
   display: table-cell;
@@ -236,6 +193,9 @@ ul.mobile-ofc.vertical.menu li, .lgsidebar li {
   margin-top: 4rem;
   border-radius: 3px;
 }
+.index h3 {
+  font-style: italic;
+}
 @media screen and (max-width: 39.9375em) {
   .index.imagecover {
     margin-top: -41px;//navbar height
@@ -245,6 +205,31 @@ ul.mobile-ofc.vertical.menu li, .lgsidebar li {
   }
 }
 //endregion
+
+//Options & Signup
+#options {
+  background-color: $pearl;
+}
+#options {
+  min-height: 100vh;
+  margin-top: $negnavheight;
+  padding-top: $navheight;
+}
+#options .columns, #options .columns .fa {
+  display: block;
+}
+#options .columns .fa {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#options .columns img {
+  max-width: 12rem;
+  display: inline-block;
+}
+#signup {
+  min-height: 100vh;
+  background-color: $peppercorn;
+}
 
 //Footer
 //region
@@ -273,7 +258,7 @@ ul.mobile-ofc.vertical.menu li, .lgsidebar li {
   color: #FFF;
   color: rgba(255, 255, 255, 0.8);
 }
-.social-icons.icon-rounded .fa{
+.social-icons.icon-rounded .fa {
   border-radius: 3px;
 }
 .social-icons .fa:hover, .social-icons .fa:active {
