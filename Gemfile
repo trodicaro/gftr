@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 #gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-rails'
-gem 'jquery-ui-rails'
+#gem 'jquery-ui-rails'
 #gem 'bootstrap-social-rails'
 gem 'slim-rails'
 gem 'validates_email_format_of'

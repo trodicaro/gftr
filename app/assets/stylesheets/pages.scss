@@ -100,6 +100,14 @@ $negnavheight: -67px;
 .nomaxwidth {
   max-width: 200rem;
 }
+.out-vc {
+  display: table;
+  width: 100%;
+}
+.in-vc {
+  display: table-cell;
+  vertical-align: middle;
+}
 
 //Navbar
 //region
@@ -194,7 +202,7 @@ nav.column {
   border-radius: 3px;
 }
 .index h3 {
-  font-style: italic;
+//  font-style: italic;
 }
 @media screen and (max-width: 39.9375em) {
   .index.imagecover {
@@ -220,16 +228,53 @@ nav.column {
   display: block;
 }
 #options .columns .fa {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  color: $peppercorn;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
 }
 #options .columns img {
   max-width: 12rem;
   display: inline-block;
 }
+#options .clearfix {
+  background-color: $medium-gray;
+  padding: 1.25em;
+  border-radius: 6px;
+}
+#options>.out-vc {
+  position: relative;
+  height: 100%;
+}
+#options .in-vc {
+  padding-top: 1rem;
+  vertical-align: top;
+}
+#options .button {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+#options h3 {
+  margin: 2rem;
+}
 #signup {
   min-height: 100vh;
   background-color: $peppercorn;
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  #options .columns img {
+    max-width: 10rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  #options .columns img {
+    max-width: 8rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  #options .columns {
+//    width: auto;
+  }
 }
 
 //Footer

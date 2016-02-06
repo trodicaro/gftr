@@ -1,45 +1,60 @@
-.index.imagecover
+.index.imagecover#pagetop
   .centered.jumbotron.text-center
     h1.pearl
       | Friends don't let friends give bad gifts.
     h3.pearl.subheader
       | (and neither will our gifting experts)
-    div
+    div#startcontainer
       h4.stoneground
         | Giftr is a simple tool to get great gift ideas from real people.
       .row
-        .small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#getstarted[href="#options"]
+        a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#getstarted[href="#options" onclick="showOptions()"]
           h4.pearl.zerotbmargin
             | Get Started
 #options
-  h4.stoneground.text-center
-    | Choose your gift idea helpers.
-  .row.text-center[data-equalizer data-equalize-on="medium"]
-    .columns.small-12.medium-4[data-equalizer-watch style="vertical-align: middle;"]
-      img src="/assets/friends.svg" alt="ask your friends" data-svg-fallback="/assets/friends.png"
-      div
-        | group of your friends
-        .fa.fa-plus.fa-2x
-        | one gifting expert
-      .button.radius#friends[href="#options"]
-          h5.pearl.zerotbmargin
-            | Select
-    .columns.small-12.medium-4[data-equalizer-watch style="vertical-align: middle;"]
-      img src="/assets/group.svg" alt="ask your friends" data-svg-fallback="/assets/group.png"
-      div
-        | our community of gift enthusiasts
-        .fa.fa-plus.fa-2x
-        | one gifting expert
-      .button.radius#group[href="#options"]
-          h5.pearl.zerotbmargin
-            | Select
-    .columns.small-12.medium-4[data-equalizer-watch style="vertical-align: middle;"]
-      img src="/assets/master.svg" alt="ask your friends" data-svg-fallback="/assets/master.png"
-      div
-        | gifting creative master (one-on-one chat)
-      .button.radius#master[href="#options"]
-          h5.pearl.zerotbmargin
-            | Select
+  .out-vc
+    .in-vc
+      h3.peppercorn.text-center
+        | Choose your gift idea helpers.
+      .row.text-center[data-equalizer data-equalize-on="medium" data-equalize-by-row="true"]
+        .columns.medium-4
+          .clearfix
+            img src="/assets/friends.svg" alt="ask your friends" data-svg-fallback="/assets/friends.png"
+            .out-vc[data-equalizer-watch]
+              .in-vc
+                h5.stoneground
+                  | group of your friends
+                .fa.fa-plus.fa-2x
+                h5.stoneground
+                  | one gifting expert
+            a.button.radius#friends[href="#signup" onclick="showForm()"]
+              h5.pearl.zerotbmargin
+                | Select
+        .columns.medium-4
+          .clearfix
+            img src="/assets/group.svg" alt="ask a group" data-svg-fallback="/assets/group.png"
+            .out-vc[data-equalizer-watch]
+              .in-vc
+                h5.stoneground
+                  | our community of gift enthusiasts
+                .fa.fa-plus.fa-2x
+                h5.stoneground
+                  | one gifting expert
+            a.button.radius#group[href="#signup" onclick="showForm()"]
+              h5.pearl.zerotbmargin
+                | Select
+        .columns.medium-4
+          .clearfix
+            img src="/assets/master.svg" alt="ask a master" data-svg-fallback="/assets/master.png"
+            .out-vc[data-equalizer-watch]
+              .in-vc
+                h5.stoneground
+                  | gifting creative master
+                  br
+                  | (one-on-one chat)
+            a.button.radius#master[href="#signup" onclick="showForm()"]
+              h5.pearl.zerotbmargin
+                | Select
 #signup
   .row
     | Woah! You caught us before we’re ready.
