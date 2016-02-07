@@ -36,8 +36,11 @@ $negnavheight: -67px;
     padding: 1.875rem .938rem;
   }
   .wrapper {
-    padding-top: 41px;//navbar adjustment
-    margin-top: -41px;//navbar adjustment
+    padding-top: 0;
+//    margin-top: $negnavheight;
+//    padding-top: 41px;//navbar adjustment
+//    margin-top: -41px;//navbar adjustment
+//    padding-top: $navheight;
   }
 }
 .margin-left {
@@ -168,6 +171,12 @@ nav.column {
 .title-bar ul li:not(.menu-text) > a {
   padding: 0.35rem 1rem;
 }
+@media screen and (max-width: 640px) {
+  .top-bar {
+    position: absolute;
+    width: 100%;
+  }
+}
 //endregion
 
 //Index
@@ -194,22 +203,22 @@ nav.column {
 }
 .index .jumbotron {
   padding-top: 115px;//adjust for navbar
+//  text-align: center;
 }
 .index .jumbotron>div {
   background-color: rgba($pearl, 0.5);
   padding: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
   margin-top: 4rem;
   border-radius: 3px;
 }
-.index h3 {
-//  font-style: italic;
-}
 @media screen and (max-width: 39.9375em) {
   .index.imagecover {
-    margin-top: -41px;//navbar height
+    margin-top: 0;//navbar height
   }
   .index .jumbotron {
-    padding-top: 0px;//adjust for navbar
+    padding-top: 0;//adjust for navbar
   }
 }
 //endregion
@@ -220,9 +229,11 @@ nav.column {
   display: none;
 }
 #options, #signup {
+//  display: table;
   min-height: 100vh;
   margin-top: $negnavheight;
   padding-top: $navheight;
+  width: 100%;
 }
 #options .columns, #options .columns .fa {
   display: block;
@@ -242,12 +253,13 @@ nav.column {
   border-radius: 6px;
 }
 #options>.out-vc {
+  display: table-row;
   position: relative;
   height: 100%;
 }
 #options .in-vc {
   padding-top: 1rem;
-  vertical-align: top;
+  vertical-align: center;
 }
 #options .button {
   margin-bottom: 0;
@@ -255,6 +267,7 @@ nav.column {
 }
 #options h3 {
   margin: 2rem;
+  margin-top: 0;
 }
 #signup {
   min-height: 100vh;
@@ -272,8 +285,20 @@ nav.column {
   }
 }
 @media screen and (max-width: 640px) {
-  #options .columns {
-//    width: auto;
+  #options .columns:nth-child(2), #options .columns:nth-child(3) {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  #options .columns:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+  #options .columns>div {
+    margin: 0 auto;
+    max-width: 20rem;
+  }
+  #options, #signup {
+  margin-top: 0;
+  padding-top: 0;
   }
 }
 

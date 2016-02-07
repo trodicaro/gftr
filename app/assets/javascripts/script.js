@@ -21,6 +21,11 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     scrollTo(this.hash);
   });
+  if ($(window).width() < 640) {
+    $("#friends, #group, #master").click(function(e) {
+      scrollTo(this.hash);
+    });
+  };
 });
 function hide(el) {
   $(el).fadeOut(400);
@@ -28,6 +33,7 @@ function hide(el) {
 
 function show(el) {
   $(el).fadeIn(400);
+  $(el).css("display", "table");
 };
 function scrollTo(el) {
   $('html, body').stop().animate({
