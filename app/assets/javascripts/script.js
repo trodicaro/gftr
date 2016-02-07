@@ -2,20 +2,37 @@ $(document).on('page:load', function() {//turbolinks
   $(document).foundation();
 });
 
-function showOptions() {
-  var options = document.getElementById("options");
-  var container = document.getElementById("startcontainer");
-  options.style.display="block";
-  container.style.display="none";
-  window.dispatchEvent(new Event('resize'));
+jQuery(document).ready(function($) {
+  $("#getstarted").click(function(e) {
+    e.preventDefault();
+    hide("#startcontainer");
+    show("#options");
+    scrollTo(this.hash);
+    window.dispatchEvent(new Event('resize'));
+  }); 
+  $("#friends, #group, #master").click(function(e) {
+    e.preventDefault();
+    $("#options").css('position', "absolute");
+    hide("#options");
+    show("#signup");
+    window.dispatchEvent(new Event('resize'));
+  }); 
+  $("#navlogo").click(function(e) {
+    e.preventDefault();
+    scrollTo(this.hash);
+  });
+});
+function hide(el) {
+  $(el).fadeOut(400);
 };
 
-function showForm() {
-  var form = document.getElementById("signup");
-  var options = document.getElementById("options");
-  options.style.display = "none";
-  form.style.display="block";
-  window.dispatchEvent(new Event('resize'));
+function show(el) {
+  $(el).fadeIn(400);
+};
+function scrollTo(el) {
+  $('html, body').stop().animate({
+      'scrollTop': $(el).offset().top
+  }, 400, 'swing');
 };
 
 $('#getstarted').on('click', function() {
