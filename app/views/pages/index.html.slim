@@ -8,14 +8,14 @@
       h4.stoneground
         | Giftr is a simple tool to get great gift ideas from real people.
       .row
-        a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#getstarted[href="#options"]
+        a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#getstarted[href="#options" onclick="ga('send', 'event', 'Start', 'getStarted')"]
           h4.pearl.zerotbmargin
             | Get Started
 #options
   .out-vc
     .in-vc
       h3.peppercorn.text-center
-        | Choose your gift idea helpers.
+        | Choose your gift idea helpers:
       .row.text-center[data-equalizer data-equalize-on="medium" data-equalize-by-row="true"]
         .columns.medium-4
           .clearfix
@@ -27,7 +27,7 @@
                 .fa.fa-plus.fa-2x
                 h5.stoneground
                   | one gifting expert
-            a.button.radius#friends[href="#signup"]
+            a.button.radius#friends[href="#signup" onclick="ga('send', 'event', 'Choose', 'friends')"]
               h5.pearl.zerotbmargin
                 | Select
         .columns.medium-4
@@ -40,7 +40,7 @@
                 .fa.fa-plus.fa-2x
                 h5.stoneground
                   | one gifting expert
-            a.button.radius#group[href="#signup"]
+            a.button.radius#group[href="#signup" onclick="ga('send', 'event', 'Choose', 'community')"]
               h5.pearl.zerotbmargin
                 | Select
         .columns.medium-4
@@ -52,7 +52,7 @@
                   | gifting creative master
                   br
                   | (one-on-one chat)
-            a.button.radius#master[href="#signup"]
+            a.button.radius#master[href="#signup" onclick="ga('send', 'event', 'Choose', 'master')"]
               h5.pearl.zerotbmargin
                 | Select
 #signup
