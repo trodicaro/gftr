@@ -200,8 +200,9 @@ nav.column {
   margin: 0 auto;
   display: block;
 }
-.index .jumbotron {
-  padding-top: 115px;//adjust for navbar
+.index h1 {
+//  padding-top: 115px;//adjust for navbar
+  padding-top: $navheight;
 }
 .index .jumbotron>div {
   background-color: rgba($pearl, 0.5);
@@ -213,11 +214,15 @@ nav.column {
 }
 @media screen and (max-width: 39.9375em) {
   .index.imagecover {
-    margin-top: 0;//navbar height
+    padding-top: $navheight;
+//    margin-top: 0;//navbar height
     background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Bear_small.jpg");
   }
   .index .jumbotron {
     padding-top: 0;//adjust for navbar
+  }
+  .index .jumbotron>div {
+    margin-top: 1rem;
   }
 }
 //endregion
