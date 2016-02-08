@@ -262,7 +262,10 @@ nav.column {
 }
 #options .in-vc, #signup .in-vc, {
   padding-top: 1rem;
-  vertical-align: center;
+  vertical-align: middle;
+}
+#options .in-vc {
+  vertical-align: top;
 }
 #options .button {
   margin-bottom: 0;
