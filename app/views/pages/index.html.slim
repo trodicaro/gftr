@@ -58,15 +58,17 @@
 #signup
   .out-vc
     .in-vc
-      .row
-        .jumbotron
-          h3.pearl.text-center
-            | Woah! You caught us before we’re ready.
-          h5.stoneground.text-center
-            | We’re working really hard to put the finishing touches on Giftr to make it super easy for you to find great gift ideas.
-      .row.form
-        .jumbotron
-          div
-            h5.peppercorn
-              | If you’d like us to notify you when the app is ready, please leave your email below.
-            = render partial: "users/form"
+      .jumbotron
+        div
+          .row
+            .jumbotron
+              h3.pearl.text-center
+                | Woah! You caught us before we’re ready.
+              h5.stoneground.text-center
+                | We’re working really hard to put the finishing touches on Giftr to make it super easy for you to find great gift ideas.
+          .row.form
+            .jumbotron
+              div
+                h5.peppercorn
+                  | If you’d like us to notify you when the app is ready, please leave your email below.
+                = render partial: "users/form"

@@ -299,6 +299,18 @@ nav.column {
 .form input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px $pearl inset;
 }
+#signup {
+  background-color: $pearl;
+}
+#signup .in-vc>.jumbotron>div {
+  background-color: lighten($stoneground, 25%);
+  border-radius: 3px;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+#signup h5.stoneground {
+  color: darken($stoneground, 10%);
+}
 @media screen and (max-width: 990px) {
   #options .columns img {
     max-width: 10rem;
@@ -310,6 +322,9 @@ nav.column {
   }
 }
 @media screen and (max-width: 640px) {
+  #signup {
+  background-color: lighten($stoneground, 25%);
+}
   #options .columns:nth-child(2), #options .columns:nth-child(3) {
     margin-top: 2rem;
     text-align: center;
