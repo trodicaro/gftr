@@ -38,33 +38,3 @@ function scrollTo(el) {
       'scrollTop': $(el).offset().top
   }, 400, 'swing');
 };
-//$('#getstarted').on('click', function() {
-//  ga('send', 'event', 'Start', 'getStarted');
-//});
-//$('#friends').on('click', function() {
-//  ga('send', 'event', 'Choose', 'friends');
-//});
-//$('#group').on('click', function() {
-//  ga('send', 'event', 'Choose', 'community');
-//});
-//$('#master').on('click', function() {
-//  ga('send', 'event', 'Choose', 'master');
-//});
-//$('#submit').on('click', function() {
-//  ga('send', 'event', 'SignUp', 'signup');
-//});
-//$('#twitter').on('click', function() {
-//  ga('send', 'event', 'Social', 'twitter');
-//});
-//$('#facebook').on('click', function() {
-//  ga('send', 'event', 'Social', 'facebook');
-//});
-//$('#youtube').on('click', function() {
-//  ga('send', 'event', 'Social', 'youtube');
-//});
-//$('#googleplus').on('click', function() {
-//  ga('send', 'event', 'Social', 'googleplus');
-//});
-//$('#emailus').on('click', function() {
-//  ga('send', 'event', 'Social', 'emailus');
-//});
