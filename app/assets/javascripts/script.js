@@ -39,7 +39,6 @@ function scrollTo(el) {
       'scrollTop': $(el).offset().top
   }, 400, 'swing');
 };
-
 $('#getstarted').on('click', function() {
   ga('send', 'event', 'Start', 'getStarted');
 });
