@@ -1,7 +1,6 @@
 $(document).on('page:load', function() {//turbolinks
   $(document).foundation();
 });
-
 jQuery(document).ready(function($) {
   $("#getstarted").click(function(e) {
     e.preventDefault();
