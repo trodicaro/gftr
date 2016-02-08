@@ -2,7 +2,7 @@
 	<div>
         <%= form_for @user, remote: true do |f| %>
         <%= f.email_field :email, placeholder: "Email Address" %>
-		<span id="help_block"></span>
+		<span id="help_block" class="lapis"></span>
       <%= f.submit "Sign up", class: "button radius", id: "submit", data: {disable_with: "Loading..."} %>
 		<% end %>
 	</div>

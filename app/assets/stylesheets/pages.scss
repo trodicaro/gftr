@@ -37,10 +37,6 @@ $negnavheight: -67px;
   }
   .wrapper {
     padding-top: 0;
-//    margin-top: $negnavheight;
-//    padding-top: 41px;//navbar adjustment
-//    margin-top: -41px;//navbar adjustment
-//    padding-top: $navheight;
   }
 }
 .margin-left {
@@ -66,6 +62,9 @@ $negnavheight: -67px;
 }
 .pearl {
   color: $pearl;
+}
+.light-gray {
+  color: $light-gray;
 }
 .black {
   color: $black;
@@ -182,8 +181,8 @@ nav.column {
 //Index
 //region
 .index.imagecover {
-  background-image: image-url("Bear.jpg");
-//  background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Bear_large.jpg");
+//  background-image: image-url("Bear.jpg");
+  background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Bear_large.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom  ;
@@ -203,7 +202,6 @@ nav.column {
 }
 .index .jumbotron {
   padding-top: 115px;//adjust for navbar
-//  text-align: center;
 }
 .index .jumbotron>div {
   background-color: rgba($pearl, 0.5);
@@ -216,6 +214,7 @@ nav.column {
 @media screen and (max-width: 39.9375em) {
   .index.imagecover {
     margin-top: 0;//navbar height
+    background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage/Bear_small.jpg");
   }
   .index .jumbotron {
     padding-top: 0;//adjust for navbar
@@ -229,7 +228,6 @@ nav.column {
   display: none;
 }
 #options, #signup {
-//  display: table;
   min-height: 100vh;
   margin-top: $negnavheight;
   padding-top: $navheight;
@@ -252,12 +250,12 @@ nav.column {
   padding: 1.25em;
   border-radius: 6px;
 }
-#options>.out-vc {
+#options>.out-vc, #signup>.out-vc {
   display: table-row;
   position: relative;
   height: 100%;
 }
-#options .in-vc {
+#options .in-vc, #signup .in-vc, {
   padding-top: 1rem;
   vertical-align: center;
 }
@@ -265,14 +263,33 @@ nav.column {
   margin-bottom: 0;
   margin-top: 1rem;
 }
-#options h3 {
+#options h3, #signup h3 {
   margin: 2rem;
   margin-top: 0;
 }
 #signup {
   min-height: 100vh;
-  background-color: $peppercorn;
+  background-color: lighten($peppercorn, 25%);
   display: none;
+}
+.form .jumbotron>div {
+  background-color: rgba($pearl, 0.5);
+  padding: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+.form .jumbotron {
+  padding-top: 0;
+}
+.form #user_email {
+  border-radius: 3px;
+}
+.form .notice {
+  margin-bottom: 1rem;
+}
+.form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px $pearl inset;
 }
 @media screen and (max-width: 990px) {
   #options .columns img {

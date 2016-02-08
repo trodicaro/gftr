@@ -30,7 +30,6 @@ jQuery(document).ready(function($) {
 function hide(el) {
   $(el).fadeOut(400);
 };
-
 function show(el) {
   $(el).fadeIn(400);
   $(el).css("display", "table");
