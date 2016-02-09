@@ -17,5 +17,4 @@
 //= require crawler
 //= require_tree .
 
-
 $(function(){ $(document).foundation(); });
