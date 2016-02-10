@@ -203,6 +203,9 @@ nav.column {
 .index h1 {
   padding-top: 115px;//adjust for navbar
 }
+.index .stoneground {
+  color: darken($stoneground, 15%)
+}
 .index .jumbotron>div {
   background-color: rgba($pearl, 0.5);
   padding: 2rem;
