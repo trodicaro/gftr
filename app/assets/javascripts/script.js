@@ -6,6 +6,13 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     hide("#startcontainer");
     show("#options");
+    //SHUFFLE BEGIN
+    var maindiv = $("#shuffle");
+    var divs = maindiv.children();
+    while (divs.length) {
+        maindiv.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+    //SHUFFLE END
     scrollTo(this.hash);
     window.dispatchEvent(new Event('resize'));
   }); 
