@@ -44,7 +44,11 @@
     <%= render partial: 'partials/google_analytics' %>
   </head>
   <body>
-    <%= yield %>
+    <%= render partial: 'layouts/navbar' %>
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+    <%= render partial: 'layouts/footer' %>
     <%= render partial: 'partials/google_analytics_pageview' %>
   </body>
 </html>
