@@ -4,7 +4,7 @@ $(document).on('page:load', function() {//turbolinks
 jQuery(document).ready(function($) {
   $("#getstarted").click(function(e) {
     e.preventDefault();
-    hide("#startcontainer");
+    hide("#getstarted");
     show("#options");
     //SHUFFLE BEGIN
     var maindiv = $("#shuffle");
