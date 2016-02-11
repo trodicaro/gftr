@@ -201,10 +201,11 @@ nav.column {
   display: block;
 }
 .index .stoneground {
-  color: darken($stoneground, 15%)
+  color: darken($stoneground, 10%);
+  font-weight: 500;
 }
 .index .jumbotron>div {
-  background-color: rgba($pearl, 0.5);
+  background-color: rgba($pearl, 0.75);
   padding: 2rem;
   max-width: 50rem;
   margin: 0 auto;
