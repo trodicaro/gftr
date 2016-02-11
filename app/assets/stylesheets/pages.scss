@@ -200,9 +200,6 @@ nav.column {
   margin: 0 auto;
   display: block;
 }
-.index h1 {
-  padding-top: 115px;//adjust for navbar
-}
 .index .stoneground {
   color: darken($stoneground, 15%)
 }
@@ -214,10 +211,13 @@ nav.column {
   margin-top: 4rem;
   border-radius: 3px;
 }
-@media screen and (max-height: 1000px) {
+@media screen and (max-height: 899px) {
   .index .centered {
     vertical-align: top;
   }
+  .index h1 {
+  padding-top: 115px;//adjust for navbar
+}
 }
 @media screen and (max-width: 39.9375em) {
   .index.imagecover {
@@ -274,12 +274,18 @@ nav.column {
   position: relative;
   height: 100%;
 }
-#options .in-vc, #signup .in-vc, {
-  padding-top: 1rem;
+#options .in-vc, #signup .in-vc {
+  padding-top: 2rem;
   vertical-align: middle;
 }
-#options .in-vc {
+#signup .in-vc {
+  padding-top: 0;
+}
+#options .in-vc .in-vc {
   vertical-align: top;
+}
+#options .row {
+  margin-bottom: $navheight;
 }
 #options .button {
   margin-bottom: 0;
@@ -356,6 +362,11 @@ nav.column {
   #options, #signup {
   margin-top: 0;
   padding-top: 0;
+  }
+}
+@media screen and (max-height: 899px) {
+  #options .in-vc {
+  vertical-align: top;
   }
 }
 
