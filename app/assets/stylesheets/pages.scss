@@ -212,12 +212,15 @@ nav.column {
   margin-top: 4rem;
   border-radius: 3px;
 }
+.index h1 {
+  font-size: 4rem;
+}
 @media screen and (max-height: 899px) {
   .index .centered {
     vertical-align: top;
   }
   .index h1 {
-  padding-top: 115px;//adjust for navbar
+    padding-top: 75px;//adjust for navbar
 }
 }
 @media screen and (max-width: 39.9375em) {
@@ -231,13 +234,14 @@ nav.column {
   }
   .index .jumbotron>div {
     margin-top: 1rem;
-    background-color: rgba($pearl, 0.7);
+    background-color: rgba($pearl, 0.85);
   }
   .index h3 {
     font-size: 1rem;
   }
   .index h1 {
-    padding-top: 25vh;
+    padding-top: 20vh;
+    font-size: 2rem;
   }
 }
 //endregion
