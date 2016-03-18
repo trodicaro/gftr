@@ -4,5 +4,8 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
-    
+  def one
+    @user = User.new
+  end
+
 end
