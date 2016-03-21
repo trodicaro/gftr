@@ -2,7 +2,7 @@
 = render 'partials/savebar'
 
 
-h5.stoneground Hi, these are your recommendations from Giftr
+h5.stoneground#hello_message Hi, these are your recommendations from Giftr
 
 .gift-container
 	.gift-photo
@@ -21,20 +21,46 @@ h5.stoneground Hi, these are your recommendations from Giftr
 
 		.purchase
 			h5 $39.99
-			.button Buy now!
+			.button#first-idea[href="#ideas" onclick="ga('send', 'event', 'Ideas', 'buyFirstIdea')"] 
+				| Buy now!
 
-.button#more-help I still have no idea what to get
+.gift-container
+	.gift-photo
+		img src="http://placehold.it/350x250" 
+
+	.gift-details
+		h4.stoneground Personalized Book Stamp
+
+		h5.quote
+			| "The stamp was personalized to say "From the library of (my name)". I loved the gift because I love reading and lending out my books, so it was a cute thoughtful gift. "
+
+		.recipient-details
+			h5 Age: 36
+			h5 Relationship type & length: Dating for 6 months
+			h5 Occasion: Christmas
+
+		.purchase
+			h5 $49.99
+			.button#second-idea[href="#ideas" onclick="ga('send', 'event', 'Ideas', 'buySecondIdea')"] 
+				| Buy now!
+
+.button#more-help[href="#more-help" onclick="ga('send', 'event', 'Help', 'moreHelp')"] 
+	| I still have no idea what to get
+
 
 #more-options 
 	p That's ok, we have you covered! What would you like to do?
 
-	.button Run the Giftr algorithm again and show me more ideas
+	.button#rerun-algorithm[href="#help" onclick="ga('send', 'event', 'moreHelp', 'rerunAlgorithm')"] 
+		|	Run the Giftr algorithm again and show me more ideas
 
-	.button Chat 1 with a gift concierge to understand your recipient better & match u with a gift
+	.button#gift-concierge[href="#help" onclick="ga('send', 'event', 'moreHelp', 'giftConcierge')"] 
+		| Chat 1 with a gift concierge to understand your recipient better & match u with a gift
 
-	.button Get a second opinion from a friend
+	.button#second-opinion[href="#help" onclick="ga('send', 'event', 'moreHelp', 'secondOpinion')"]  Get a second opinion from a friend
 
-
+#thank-you
+	p Thanks for letting us know! We will be in touch with you soon!
 
 
 
