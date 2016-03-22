@@ -33,11 +33,20 @@
 .jumbotron.mediacenter
   h2.stoneground.text-center
     | Find Us On
-  .row.text-center[data-equalizer data-equalize-on="small" data-equalize-by-row="true"]
+  .row.text-center[data-equalizer data-equalize-on="small"]
     div
-      .columns.small-4.angel[data-equalizer-watch]
-        = image_tag '/assets/angellist.png', alt: "Angellist"
-      .columns.small-4.angel[data-equalizer-watch]
-        = image_tag '/assets/CrunchBase.png', alt: "CrunchBase"
-      .columns.small-4.angel[data-equalizer-watch]
-        = image_tag '/assets/Gust.png', alt: "Gust"
+      .columns.medium-4.small-6.angel
+        .out-vc[data-equalizer-watch]
+          .in-vcB
+            a[href="https://angel.co/giftr-1" target="_blank"]
+              = image_tag '/assets/angellist.png', alt: "Angellist"
+      .columns.medium-4.small-6.angel
+        .out-vc[data-equalizer-watch]
+          .in-vcB
+            a[href="https://gust.com/companies/giftr" target="_blank"]
+              = image_tag '/assets/Gust.png', alt: "Gust"
+      .columns.medium-4.small-12.angel
+        .out-vc[data-equalizer-watch]
+          .in-vcB
+            a[href="https://www.crunchbase.com/organization/giftr-2" target="_blank"]
+              = image_tag '/assets/CrunchBase.png', alt: "CrunchBase"
