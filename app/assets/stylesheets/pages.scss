@@ -394,9 +394,12 @@ nav.column {
 .mediacenter .bg2:hover {
   background-color: darken($lapis, 35%);
 }
-.mediacenter > div {
+.mediacenter .row > div {
   max-width: 750px;
   margin: 0 auto;
+}
+.mediacenter .angel img {
+  max-height: 100px;
 }
 @media screen and (max-width: 39.9375em) {
   .mediacenter .columns:nth-child(3) .bg1 {

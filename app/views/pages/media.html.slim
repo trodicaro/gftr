@@ -30,6 +30,14 @@
         a[href="http://www.techstars.com/content/community/gsb2015chicago/" target="_blank"]
           div.bg2[data-equalizer-watch]
             = image_tag '/assets/techstars.png', alt: "Techstars"
-.jumbotron
+.jumbotron.mediacenter
   h2.stoneground.text-center
     | Find Us On
+  .row.text-center[data-equalizer data-equalize-on="small" data-equalize-by-row="true"]
+    div
+      .columns.small-4.angel[data-equalizer-watch]
+        = image_tag '/assets/angellist.png', alt: "Angellist"
+      .columns.small-4.angel[data-equalizer-watch]
+        = image_tag '/assets/CrunchBase.png', alt: "CrunchBase"
+      .columns.small-4.angel[data-equalizer-watch]
+        = image_tag '/assets/Gust.png', alt: "Gust"
