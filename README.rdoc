@@ -1,3 +1,1 @@
-Team Giftr brings back the joy in gifting. We've mapped a comprehensive gifting solution and won 3rd Place during the three day Chicago Startup Weekend(http://www.up.co/communities/usa/chicago/startup-weekend/7653).
-
-Web page: www.givegiftr.co
+Reinventing gifting by building the world’s largest, community-powered, searchable database of relationship- and occasion-specific gifts to inspire givers with vetted gift ideas. We are currently developing our app with a focus on user testing and research.  
