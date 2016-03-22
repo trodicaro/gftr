@@ -374,6 +374,37 @@ nav.column {
   vertical-align: top;
   }
 }
+//MediaCenter
+//region
+.mediacenter .small-6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mediacenter .bg1 {
+  background-color: $stoneground;
+  padding: 15px;
+}
+.mediacenter .bg2 {
+  background-color: $lapis;
+  padding: 15px;
+}
+.mediacenter .bg1:hover {
+  background-color: darken($stoneground, 15%);
+}
+.mediacenter .bg2:hover {
+  background-color: darken($lapis, 35%);
+}
+.mediacenter .bg2 {
+  background-color: $lapis;
+  padding: 15px;
+}
+@media screen and (max-width: 39.9375em) {
+  .mediacenter .bg1 {
+    background-color: $salmon;
+  }
+}
+
+//endregion
 
 //Footer
 //region
@@ -382,9 +413,6 @@ nav.column {
   color: $medium-gray;
   font-size: 80%;
   padding: 1rem;
-}
-#mediacenter {
-    
 }
 .list-unstyled {
   list-style: none;

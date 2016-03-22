@@ -1,2 +1,31 @@
-div#pagetop
-  | test
+.jumbotron.mediacenter
+  h2.stoneground.text-center
+    | Giftr in the News
+  .row.text-center[data-equalizer data-equalize-on="small" data-equalize-by-row="true"]
+      .columns.small-6.medium-4
+        a[href="http://www.chicagotribune.com/bluesky/originals/ct-wistem-new-class-bsi-20160310-story.html" target="_blank"]
+          div.bg1[data-equalizer-watch]
+            = image_tag '/assets/Chicago_Tribune1.png', alt: "Chicago Tribune"
+      .columns.small-6.medium-4
+        a[href="http://chicagoinno.streetwise.co/2016/03/10/chicago-women-startup-program-wistem-adds-13-new-members/" target="_blank"]
+          div.bg2[data-equalizer-watch]
+            = image_tag '/assets/ChicagoInno.png', alt: "ChicagoInno"
+      .columns.small-6.medium-4
+        a[href="http://www.techstars.com/content/uncategorized/announcing-the-2015-global-startup-battle-champions/" target="_blank"]
+          div.bg1[data-equalizer-watch]
+            = image_tag '/assets/techstars.png', alt: "Techstars"
+      .columns.small-6.medium-4
+        a[href="http://www.techstars.com/content/uncategorized/gsb-2015-finalists-great-making-track/" target="_blank"]
+          div.bg2[data-equalizer-watch]
+            = image_tag '/assets/techstars.png', alt: "Techstars"
+      .columns.small-6.medium-4
+        a[href="http://www.techstars.com/content/community/gsb-2015-finalists-startup-women-track/" target="_blank"]
+          div.bg1[data-equalizer-watch]
+            = image_tag '/assets/techstars.png', alt: "Techstars"
+      .columns.small-6.medium-4
+        a[href="http://www.techstars.com/content/community/gsb2015chicago/" target="_blank"]
+          div.bg2[data-equalizer-watch]
+            = image_tag '/assets/techstars.png', alt: "Techstars"
+.jumbotron
+  h2.stoneground.text-center
+    | Find Us On
