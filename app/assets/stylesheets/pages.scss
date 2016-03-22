@@ -383,6 +383,9 @@ nav.column {
   font-size: 80%;
   padding: 1rem;
 }
+#mediacenter {
+    
+}
 .list-unstyled {
   list-style: none;
   padding-left: 0;
@@ -410,6 +413,12 @@ nav.column {
   -webkit-box-shadow: 1px 1px 3px #333;
   -moz-box-shadow: 1px 1px 3px #333;
   box-shadow: 1px 1px 3px #333; 
+}
+#mediacenter {
+    color: rgba(255, 255, 255, 0.8);
+}
+#mediacenter:hover, #mediacenter:active {
+    color: #FFF;
 }
 .social-icons .fa-facebook {
   background-color: #3c599f;

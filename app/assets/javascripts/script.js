@@ -1,6 +1,7 @@
 $(document).on('page:load', function() {//turbolinks
   $(document).foundation();
 });
+
 jQuery(document).ready(function($) {
   $("#getstarted").click(function(e) {
     e.preventDefault();
@@ -13,7 +14,7 @@ jQuery(document).ready(function($) {
         maindiv.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
     //SHUFFLE END
-    scrollTo(this.hash);
+    scrollTowards(this.hash);
     window.dispatchEvent(new Event('resize'));
   }); 
   $("#friends, #group, #master").click(function(e) {
@@ -25,14 +26,16 @@ jQuery(document).ready(function($) {
   }); 
   $("#navlogo").click(function(e) {
     e.preventDefault();
-    scrollTo(this.hash);
+    console.log(this.hash);
+    scrollTowards(this.hash);
   });
   if ($(window).width() < 640) {
     $("#friends, #group, #master").click(function(e) {
-      scrollTo(this.hash);
+      scrollTowards(this.hash);
     });
   };
 });
+
 function hide(el) {
   $(el).fadeOut(400);
 };
@@ -40,7 +43,7 @@ function show(el) {
   $(el).fadeIn(400);
   $(el).css("display", "table");
 };
-function scrollTo(el) {
+function scrollTowards(el) {
   $('html, body').stop().animate({
       'scrollTop': $(el).offset().top
   }, 400, 'swing');
