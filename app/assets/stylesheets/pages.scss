@@ -172,7 +172,7 @@ nav.column {
 }
 @media screen and (max-width: 640px) {
   .top-bar {
-    position: absolute;
+//    position: absolute;
     width: 100%;
   }
 }
@@ -394,14 +394,20 @@ nav.column {
 .mediacenter .bg2:hover {
   background-color: darken($lapis, 35%);
 }
-.mediacenter .bg2 {
-  background-color: $lapis;
-  padding: 15px;
+.mediacenter > div {
+  max-width: 750px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 39.9375em) {
-  .mediacenter .bg1 {
-    background-color: $salmon;
+  .mediacenter .columns:nth-child(3) .bg1 {
+    background-color: $lapis;
   }
+  .mediacenter .columns:nth-child(4) .bg2 {
+    background-color: $stoneground;
+  }
+  .pushdown {
+    height: 50px;
+}
 }
 
 //endregion
@@ -482,6 +488,6 @@ body, nav {
 }
 @media screen and (max-width: 39.9375em) {
   nav.column {
-    position: relative;
+//    position: relative;
   }
 }
