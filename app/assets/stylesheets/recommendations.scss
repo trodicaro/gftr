@@ -1,0 +1,13 @@
+.gift-container {
+	outline: black solid 1px;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+
+
+#userform, #more-options, #thank-you {
+	display:none;
+}
+

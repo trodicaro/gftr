@@ -1,9 +1,0 @@
-<div class="signups">
-	<div>
-        <%= form_for @user, remote: true do |f| %>
-        <%= f.email_field :email, placeholder: "Email Address" %>
-		<span id="help_block" class="lapis"></span>
-      <%= f.submit "Sign up", class: "button radius", id: "submit", data: {disable_with: "Loading..."}, onclick: "ga('send', 'event', 'SignUp', 'signup')" %>
-		<% end %>
-	</div>
-</div>
