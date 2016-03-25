@@ -1,8 +1,36 @@
-h5.stoneground Our algorithm might match you with different gifts later - save these ideas! 
-
+h5.stoneground.uppercase
+  | We're holding your gift ideas.
+p
+  | After 10 minutes, our algorithm may match you with alternate ideas from our community. 
+#countdown.countdownHolder
+  span.countDays[style="display: none"]
+    span.position
+      span.digit.static
+    span.position
+      span.digit.static
+  /span.countDiv.countDiv0
+  span.countHours[style="display: none"]
+    span.position
+      span.digit.static
+    span.position
+      span.digit.static
+  /span.countDiv.countDiv1
+  span.countMinutes
+    span.position
+      span.digit.static
+    span.position
+      span.digit.static
+  span.countDiv.countDiv2
+  span.countSeconds
+    span.position
+      span.digit.static
+    span.position
+      span.digit.static
+  /span.countDiv.countDiv3
+  
 .button.radius#save-options[href="#ideas" onclick="ga('send', 'event', 'Save', 'saveIdeas')"]
 	h6.pearl.zerotbmargin
-		| Save now
-
+		| Save my Gift Ideas
 #userform
 	= render 'users/form'
+  
