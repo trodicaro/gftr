@@ -44,10 +44,14 @@
     <%= render partial: 'partials/google_analytics' %>
   </head>
   <body>
-    <%= render partial: 'layouts/navbar' %>
-    <div class="wrapper">
+    <% if current_page?('/') || current_page?('/pages/media') %>
+      <%= render partial: 'layouts/navbar' %>
+      <div class="wrapper">
+        <%= yield %>
+      </div>
+    <% else %>
       <%= yield %>
-    </div>
+    <% end %>
     <%= render partial: 'layouts/footer' %>
     <%= render partial: 'partials/google_analytics_pageview' %>
   </body>

@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
   }); 
   $("#navlogo").click(function(e) {
     e.preventDefault();
-    console.log(this.hash);
+//    console.log(this.hash);
     scrollTowards(this.hash);
   });
   if ($(window).width() < 640) {
