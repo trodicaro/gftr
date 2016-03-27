@@ -1,3 +1,5 @@
+@import 'pages.scss';
+  
 .gift-container {
 	outline: black solid 1px;
 	display:flex;
@@ -9,53 +11,66 @@
 #userform, #more-options, #thank-you {
 	display:none;
 }
-
+.rem1 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
 ////COUNTDOWN
+#countdown {
+  background-color: $salmon;
+}
 .countdownHolder{
-	width:450px;
-	margin:0 auto;
-	font: 40px/1.5 'Open Sans Condensed',sans-serif;
-	text-align:center;
-	letter-spacing:-3px;
+//	width:450px;
+//	margin:0 auto;
+//	font: 40px/1.5 'Open Sans Condensed',sans-serif;
+//	text-align:center;
+//	letter-spacing:-3px;
+//  display: inline-block;
 }
 .position{
 	display: inline-block;
-	height: 1.6em;
+//	height: 1.4em;
+	height: 0.9rem;
 	overflow: hidden;
 	position: relative;
-	width: 1.05em;
+	width: 0.6rem;
 }
 .digit{
 	position:absolute;
 	display:block;
-	width:1em;
-	background-color:#444;
-	border-radius:0.2em;
+//	width:1em;
+//	background-color:#444;
+	background-color:$salmon;
+//	border-radius:0.2em;
 	text-align:center;
-	color:#fff;
-	letter-spacing:-1px;
+//	color:#fff;
+	color: $pearl;
+//	letter-spacing:-1px;
 }
 .digit.static{
-	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+//	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
 }
 
 .countDiv{
 	display:inline-block;
-	width:16px;
-	height:1.6em;
+//	width:16px;
+	width:8px;
+	height:1.2rem;
 	position:relative;
 }
 .countDiv:before,
 .countDiv:after{
 	position:absolute;
-	width:5px;
-	height:5px;
-	background-color:#444;
+	width:3px;
+	height:3px;
+//	background-color:#444;
+	background-color:$pearl;
 	border-radius:50%;
 	left:50%;
-	margin-left:-3px;
+	margin-left:-2px;
 	top:0.5em;
-	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+//	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+//	box-shadow:1px 1px 1px $peppercorn;
 	content:'';
 }
 .countDiv:after{
