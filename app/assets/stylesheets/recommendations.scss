@@ -7,29 +7,16 @@
 	justify-content: center;
 }
 
-
 #userform, #more-options, #thank-you {
 	display:none;
 }
-.rem1 {
-  font-size: 1rem;
-  line-height: 1rem;
-}
-////COUNTDOWN
+
+//BEGIN COUNTDOWN
 #countdown {
   background-color: $salmon;
 }
-.countdownHolder{
-//	width:450px;
-//	margin:0 auto;
-//	font: 40px/1.5 'Open Sans Condensed',sans-serif;
-//	text-align:center;
-//	letter-spacing:-3px;
-//  display: inline-block;
-}
 .position{
 	display: inline-block;
-//	height: 1.4em;
 	height: 0.9rem;
 	overflow: hidden;
 	position: relative;
@@ -38,22 +25,12 @@
 .digit{
 	position:absolute;
 	display:block;
-//	width:1em;
-//	background-color:#444;
 	background-color:$salmon;
-//	border-radius:0.2em;
 	text-align:center;
-//	color:#fff;
-	color: $pearl;
-//	letter-spacing:-1px;
+	color: $shade;
 }
-.digit.static{
-//	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
-}
-
 .countDiv{
 	display:inline-block;
-//	width:16px;
 	width:8px;
 	height:1.2rem;
 	position:relative;
@@ -63,17 +40,27 @@
 	position:absolute;
 	width:3px;
 	height:3px;
-//	background-color:#444;
-	background-color:$pearl;
+	background-color:$shade;
 	border-radius:50%;
 	left:50%;
-	margin-left:-2px;
+	margin-left:-1px;
 	top:0.5em;
-//	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
-//	box-shadow:1px 1px 1px $peppercorn;
 	content:'';
 }
 .countDiv:after{
 	top:0.9em;
 }
-////END COUNTDOWN
+//END COUNTDOWN
+.savebar-push {//TBU with javascript
+  height: 170px;
+//  width: 100%;
+}
+.savebar {
+  background-color: $shade;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.savebar .button {
+  padding: 0.5em 1em;
+}

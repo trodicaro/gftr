@@ -1,6 +1,7 @@
+@import 'foundation_and_overrides.scss';
+
 //Global
 $pearl: #f8f5f2;
-$black: #020509;
 
 $lapis: #556dac;
 $salmon: #f79b77;
@@ -10,16 +11,7 @@ $stoneground: #4b4345;
 $lightblue: #0066ff;//Giftr logo color
 $blue: #000066;//Giftr logo color
 
-//Foundation Colors
-$secondary-color: #777;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$shade: #211F30;
 
 $navheight: 67px;
 $negnavheight: -67px;
@@ -33,6 +25,13 @@ $negnavheight: -67px;
 .wrapper {
   min-height: 100vh;
   padding-top: $navheight;
+}
+.rem1 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.zero-auto {
+  margin: 0 auto;
 }
 @media screen and (max-width: 39.9375em) {
   .jumbotron {

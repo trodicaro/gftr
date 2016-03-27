@@ -1,5 +1,6 @@
-span.savebar
-  h5.stoneground.uppercase.text-center
+div.savebar-push
+div.savebar
+  h5.pearl.uppercase.text-center
     | We're holding your gift ideas 
     span.rem1
       span#countdown.countdownHolder
@@ -27,13 +28,12 @@ span.savebar
           span.position
             span.digit.static
         /span.countDiv.countDiv3
-  p.rem1
-    | After 10 minutes, our algorithm may match you with alternate ideas from our community. 
-
-
-  .button.radius#save-options[href="#ideas" onclick="ga('send', 'event', 'Save', 'saveIdeas')"]
-      h6.pearl.zerotbmargin
-          | Save my Gift Ideas
+  p.medium-gray.text-center
+    | After 10 minutes, our algorithm may match you with alternate ideas from our community.  Save your ideas to refer back to them later.
+  div.text-center
+    .button.radius.pearl#save-options[href="#ideas" onclick="ga('send', 'event', 'Save', 'saveIdeas')"]
+      .zerotbmargin
+        | Save my Gift Ideas
 #userform
 	= render 'users/form'
   
