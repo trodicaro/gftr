@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
     root 'pages#index'
+    
     get 'users/new' => 'users#new'
     post 'users', to: 'users#create'
+    
+    get 'visitors/new' => 'visitors#new'
+    post 'visitors', to: 'visitors#create'  
+
     get 'pages/media' => 'pages#media'
     get 'pages/thankyou' => 'pages#thankyou'
     

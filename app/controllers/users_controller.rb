@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
       @errorMessage = []
 
-      if params[:submit] == @user.save
+      if @user.save
         UserNotifier.send_signup_email(@user).deliver_now 
         format.js {flash[:notice] = "Thanks for signing up to Giftr! We'll be in touch soon."}
         @resetForm = "1"

@@ -15,6 +15,7 @@ class IdeasController < ApplicationController
 
   def saveideas
     @user=User.new
+    @visitor = Visitor.new
   end
 
 end
