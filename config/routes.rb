@@ -7,13 +7,15 @@ Rails.application.routes.draw do
     
     get 'ideas/index' => 'ideas#index'
     get '/ideas' => 'ideas#index'
-
+    get 'ideas/one' => 'ideas#one'
+    get 'ideas/moreinfo' => 'ideas#moreinfo'
+    get 'ideas/thankyou' => 'ideas#thankyou'
 
     PagesController.action_methods.each do |action|
     	get "/#{action}", to: "pages##{action}", as: "#{action}_page"
 		end
 
-    IdeasController.action_methods.each do |action|
-    	get "/#{action}", to: "ideas##{action}", as: "#{action}_page"
-  	end
+   #  IdeasController.action_methods.each do |action|
+   #  	get "/#{action}", to: "ideas##{action}", as: "#{action}_page"
+  	# end
   end

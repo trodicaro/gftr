@@ -1,0 +1,88 @@
+= render 'partials/savebar'
+
+#pagetop
+.row[style="margin-bottom: 10px; -webkit-box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50); -moz-box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50); box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50);"]
+  .columns
+      a href="#pagetop" id="navlogo"
+        = image_tag '/assets/Giftr_Logo.png', style: "max-height: 30px;"
+.row
+  .columns.small-12
+    p.stoneground#hello_message Hi! We've looked through gift stories collected from our community and found a few that we think could inspire your next gift idea:
+
+.row
+  .columns
+    span.label.secondary
+      | Idea 1
+.gift-container.row[data-equalizer data-equalize-on="medium"]
+    .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
+      div
+        .gift-photo.in-vc[data-equalizer-watch]
+            img.thumbnail.zerotbmargin.out-vc src="http://placehold.it/350x250" 
+    .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
+      .gift-details[data-equalizer-watch]
+          h3.uppercase.text-center Hobby Gift
+          p.blockquote.stoneground
+              | "He got me a special camera lense, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
+          .recipient-details
+            .row
+              .columns.small-11
+                cite.float-right Female, 36
+              .columns.small-1
+            .row
+              .columns.small-12
+                p.dark-gray.recipient-background
+                  | She received this gift from her 
+                  span.story-details
+                    | significant other
+                  |  for her 
+                  span.story-details
+                    | birthday
+                  |  after they had been dating for 
+                  span.story-details
+                    | 6 months
+                  | .
+.giftr-tips
+  .row
+    .columns.medium-offset-1.medium-10.end
+      h6 Check out our tips for a successful gift:
+      p Put tips here...
+
+.gift-similar.row[data-equalizer data-equalize-on="medium"]
+    .columns.medium-offset-1.medium-3.idea-bot-left
+      div
+        .gift-photo.in-vc[data-equalizer-watch]
+            img.thumbnail.zerotbmargin.out-vc src="http://placehold.it/350x250" 
+    .columns.medium-7.end.idea-bot-right
+      .purchase[data-equalizer-watch]
+          h5 We've found something similar.
+          p.strong.dark-gray Title of the item on Etsy
+          p.price.dark-gray $39.99
+          .button.radius.small.zerotbmargin#first-idea[href="#ideas" onclick="ga('send', 'event', 'Ideas', 'buyFirstIdea')"] 
+            | Buy now
+.row
+  .columns
+    span.label.secondary
+      | Idea 2   
+
+.gift-container
+	.gift-photo
+		img src="http://placehold.it/350x250" 
+
+	.gift-details
+		h4.stoneground Personalized Book Stamp
+
+		h5.quote
+			| "The stamp was personalized to say "From the library of (my name)". I loved the gift because I love reading and lending out my books, so it was a cute thoughtful gift. "
+
+		.recipient-details
+			h5 Age: 36
+			h5 Relationship type & length: Dating for 6 months
+			h5 Occasion: Christmas
+
+		.purchase
+			h5 $49.99
+			.button#second-idea[href="#ideas" onclick="ga('send', 'event', 'Ideas', 'buySecondIdea')"] 
+				| Buy now!
+
+.button#more-help
+  =link_to 'I still have no idea what to get', ideas_moreinfo_path, {onClick: "ga('send', 'event', 'Help', 'moreHelp');"} 
