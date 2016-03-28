@@ -51,16 +51,17 @@ h5.stoneground#hello_message Hi, these are your recommendations from Giftr
 #more-options 
 	p That's ok, we have you covered! What would you like to do?
 
-	.button#rerun-algorithm[href="#help" onclick="ga('send', 'event', 'moreHelp', 'rerunAlgorithm')"] 
-		|	Run the Giftr algorithm again and show me more ideas
+	.button#rerun-algorithm
+		 =link_to 'Run the Giftr algorithm again and show me more ideas', pages_thankyou_path, {onClick: "ga('send', 'event', 'moreHelp', 'rerunAlgorithm');"} 
 
-	.button#gift-concierge[href="#help" onclick="ga('send', 'event', 'moreHelp', 'giftConcierge')"] 
-		| Chat 1 with a gift concierge to understand your recipient better & match u with a gift
+	.button#gift-concierge 
+		=link_to 'Chat 1 with a gift concierge to understand your recipient better & match u with a gift', pages_thankyou_path, {onClick: "ga('send', 'event', 'moreHelp', 'giftConcierge');"}
 
-	.button#second-opinion[href="#help" onclick="ga('send', 'event', 'moreHelp', 'secondOpinion')"]  Get a second opinion from a friend
+	.button#second-opinion
+		=link_to 'Get a second opinion from a friend', pages_thankyou_path, {onClick: "ga('send', 'event', 'moreHelp', 'secondOpinion');"}
+	
 
-#thank-you
-	p Thanks for letting us know! We will be in touch with you soon!
+
 
 
 

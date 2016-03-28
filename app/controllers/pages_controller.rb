@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+	class PagesController < ApplicationController
 
   def index
     @user = User.new
@@ -11,4 +11,7 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
+  def thankyou
+  end
+  
 end
