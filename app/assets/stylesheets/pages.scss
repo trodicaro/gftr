@@ -16,10 +16,16 @@ $shade: #211F30;
 $navheight: 67px;
 $negnavheight: -67px;
 
+.shade {
+  color: $shade;
+}
+
 .strong {
   font-weight: bold;
 }
-
+.justify {
+  text-align: justify;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -118,6 +124,9 @@ $negnavheight: -67px;
 .out-vc {
   display: table;
   width: 100%;
+}
+.out-vcW {
+  display: table;
 }
 .in-vc {
   display: table-cell;

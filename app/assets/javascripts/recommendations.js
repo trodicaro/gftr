@@ -25,4 +25,9 @@ $(document).ready(function(){
 		$('#more-options').hide();
 		$('#thank-you').show();
 	});	
+  
+  $('.savebar-push').each(function() {
+    $(this).css("height", "");
+    $(this).height($('.savebar').height());
+  });
 })
