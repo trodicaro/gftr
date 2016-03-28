@@ -1,8 +1,8 @@
 div.savebar-push
 div.savebar
-  h5.pearl.uppercase.text-center
+  h5.pearl.uppercase.text-center.zerotbmargin
     | We're holding your gift ideas 
-    span.rem1
+    span.rem1[style="display: inline-block;"]
       span#countdown.countdownHolder
         span.countDays[style="display: none"]
           span.position
@@ -28,12 +28,12 @@ div.savebar
           span.position
             span.digit.static
         /span.countDiv.countDiv3
-  p.medium-gray.text-center
+  p.medium-gray.text-center.zerotbmargin.rem0875
     | After 10 minutes, our algorithm may match you with alternate ideas from our community.  Save your ideas to refer back to them later.
   div.text-center
-    .button.radius.pearl#save-options[href="#ideas" onclick="ga('send', 'event', 'Save', 'saveIdeas')"]
+    .button.small.radius.pearl.zerotbmargin.capitalize#save-options[href="#ideas" onclick="ga('send', 'event', 'Save', 'saveIdeas')"]
       .zerotbmargin
-        | Save my Gift Ideas
+      | Save my Gift Ideas
 #userform
 	= render 'users/form'
   

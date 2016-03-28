@@ -23,6 +23,9 @@ $negnavheight: -67px;
 .uppercase {
   text-transform: uppercase;
 }
+.capitalize {
+  text-transform: capitalize;
+}
 .jumbotron {
   padding: 3rem;
 }
@@ -33,6 +36,10 @@ $negnavheight: -67px;
 .rem1 {
   font-size: 1rem;
   line-height: 1rem;
+}
+.rem0875 {
+  font-size: 0.875rem;
+//  line-height: 0.875rem;
 }
 .zero-auto {
   margin: 0 auto;
