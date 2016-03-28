@@ -1,10 +1,11 @@
 = render 'partials/savebar'
 
 #pagetop
-.row[style="margin-bottom: 10px; -webkit-box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50); -moz-box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50); box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50);"]
-  .columns
-      a href="#pagetop" id="navlogo"
-        = image_tag '/assets/Giftr_Logo.png', style: "max-height: 30px;"
+.pseudotopbar
+  .row
+    .columns
+        a href="#pagetop" id="navlogo"
+          = image_tag '/assets/Giftr_Logo.png', style: "max-height: 30px;"
 .row
   .columns.small-12
     h5.stoneground#hello_message Hi! We've collected gift stories from our community and found a few that we think could inspire your next gift idea.

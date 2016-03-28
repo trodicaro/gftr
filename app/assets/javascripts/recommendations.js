@@ -1,3 +1,14 @@
+var resizeListener;
+function myfunction() {
+  clearTimeout(resizeListener);
+  resizeListener = setTimeout(function(){
+    $('.savebar-push').each(function() {
+      $(this).css("height", "");
+      $(this).height($('.savebar').height());
+    });
+  });
+}
+
 $(document).ready(function(){
 	$('#save-options').click(function(){
 		$('#userform').show();
@@ -25,9 +36,7 @@ $(document).ready(function(){
 		$('#more-options').hide();
 		$('#thank-you').show();
 	});	
-  
-  $('.savebar-push').each(function() {
-    $(this).css("height", "");
-    $(this).height($('.savebar').height());
-  });
+  myfunction();
 })
+
+$(window).resize(myfunction);
