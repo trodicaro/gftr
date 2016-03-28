@@ -13,4 +13,8 @@ class IdeasController < ApplicationController
   def moreinfo
   end
 
+  def saveideas
+    @user=User.new
+  end
+
 end

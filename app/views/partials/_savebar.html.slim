@@ -31,9 +31,6 @@ div.savebar
   p.medium-gray.text-center
     | After 10 minutes, our algorithm may match you with alternate ideas from our community.  Save your ideas to refer back to them later.
   div.text-center
-    .button.radius.pearl#save-options[href="#ideas" onclick="ga('send', 'event', 'Save', 'saveIdeas')"]
+    .button.radius.pearl#save-options
       .zerotbmargin
-        | Save my Gift Ideas
-#userform
-	= render 'users/form'
-  
+        =link_to 'Save my Gift Ideas', ideas_saveideas_path, {onClick: "ga('send', 'event', 'Save', 'saveIdeas');"}

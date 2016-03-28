@@ -13,5 +13,9 @@
 
   def thankyou
   end
+
+  def save
+    
+  end
    
 end

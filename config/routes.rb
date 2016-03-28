@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get 'ideas/one' => 'ideas#one'
     get 'ideas/moreinfo' => 'ideas#moreinfo'
     get 'ideas/thankyou' => 'ideas#thankyou'
+    get 'ideas/saveideas' => 'ideas#saveideas'
 
     PagesController.action_methods.each do |action|
     	get "/#{action}", to: "pages##{action}", as: "#{action}_page"
