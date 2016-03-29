@@ -1,32 +1,37 @@
 class UsersController < ApplicationController
-    
+
   def new
     @user = User.new
   end
-  
+
   def create
-      @user = User.new(user_params)
-        respond_to do |format|
+    @user = User.new(user_params)
+
+    respond_to do |format|
 
       @errorMessage = []
 
       if @user.save
-        UserNotifier.send_signup_email(@user).deliver_now
+        UserNotifier.send_signup_email(@user).deliver_now 
         format.js {flash[:notice] = "Thanks for signing up to Giftr! We'll be in touch soon."}
-		@resetForm = "1"
+        @resetForm = "1"
+
       else
         format.js
         @user.errors.any?
+
         if (@user.errors["email"] != nil)
-              @errorMessage.push(@user.errors["email"][0])
-        end  
-        @resetForm = "0"
+          @errorMessage.push(@user.errors["email"][0])
+        end
+
+        @resetForm = "0" 
       end
     end
   end
 
   private
+
   def user_params
-    params.require(:user).permit(:email)
+    params.require(:user).permit(:email, :first_name, :last_name)
   end
 end

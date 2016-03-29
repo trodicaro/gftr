@@ -1,0 +1,13 @@
+//REMOVE ANY PREVIOUS NOTICES
+$(".notice").remove();
+ 
+//DISPLAY ERROR MESSAGES
+$("#help_block").append('<div class="notice"><%=escape_javascript(@errorMessage[0])%></div>');
+ 
+//DISPLAY SUCCESS MESSAGE
+$("#help_block").append('<div class="notice"><%=escape_javascript(flash.discard(:notice))%></div>');
+ 
+//RESET FORM IF MESSAGE SAVED
+<% if @resetForm == "1" %>
+$(".signups .form-control")[0].reset();
+<% end %>
