@@ -161,14 +161,15 @@
   max-width: 50px;
 }
 .idealabel {
-  background-color: $peppercorn;
+  background-color: $dark-gray;
   font-size: 1.15rem;
+  border-radius: 3px;
 }
 .fa-star.lapis {
-  color: $lapis;
+  color: $salmon;
 }
-.fa-star.gray {
-  color: $light-gray;
+.fa-star-half-o.lapis {
+  color: $salmon;
 }
 //.border {
 //  width: 100%;
@@ -176,6 +177,9 @@
 //}
 .dontpanic .jumbotron {
   background-color: $medium-gray;
+}
+.dontpanic .button {
+//  background
 }
 @media all and (max-width: 639px) {
   .idea-left {
