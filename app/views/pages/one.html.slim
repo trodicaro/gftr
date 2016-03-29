@@ -101,18 +101,8 @@
   .jumbotron.text-center.stoneground
     h4 I still have no idea what to get!
     br
-    .button.large.radius#more-help[href="#more-help" onclick="ga('send', 'event', 'Help', 'moreHelp')"] 
-      | Don't Panic
+    .button.large.radius#more-help
+      =link_to "Don't Panic", ideas_moreinfo_path, {onClick: "ga('send', 'event', 'Help', 'moreHelp');"} 
 
 
-#more-options 
-	p That's ok, we have you covered! What would you like to do?
-
-	.button#rerun-algorithm
-		 =link_to 'Run the Giftr algorithm again and show me more ideas', pages_thankyou_path, {onClick: "ga('send', 'event', 'moreHelp', 'rerunAlgorithm');"} 
-
-	.button#gift-concierge 
-		=link_to 'Chat 1 with a gift concierge to understand your recipient better & match u with a gift', pages_thankyou_path, {onClick: "ga('send', 'event', 'moreHelp', 'giftConcierge');"}
-
-	.button#second-opinion
-		=link_to 'Get a second opinion from a friend', pages_thankyou_path, {onClick: "ga('send', 'event', 'moreHelp', 'secondOpinion');"}
+	
