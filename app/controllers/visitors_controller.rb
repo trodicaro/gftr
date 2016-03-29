@@ -13,7 +13,7 @@ class VisitorsController < ApplicationController
 
       if @visitor.save
         VisitorNotifier.send_saved_ideas(@visitor).deliver_now 
-          format.js { render :js => "window.location.href" = '#{ideas_thankyou_path}'}        
+          format.js { render :js => "window.location.href = '#{ideas_thankyou_path}'"}        
       else
         format.js
         @visitor.errors.any?
