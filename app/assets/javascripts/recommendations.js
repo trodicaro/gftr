@@ -62,4 +62,12 @@ $(function() {
         event.preventDefault();
         sendAnalytics('moreHelp', 'secondOpinion');
     });
+
+    $('#yesinfo1').click(function(){
+   			$('#yesinfo').hide(); 	
+    });
+
+     $('#maybeinfo1').click(function(){
+   			$('#maybeinfo').hide(); 	
+    });
 });
