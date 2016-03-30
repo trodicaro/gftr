@@ -16,7 +16,7 @@
     span.label.idealabel[style="margin-bottom: 1rem;"]
       | Idea 1
     
-.gift-container
+.gift-container.jumbotron#idea1
   .row[data-equalizer data-equalize-on="medium"]
     .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
@@ -66,10 +66,68 @@
         .button.three.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
-              =link_to "Save this Idea?", clicks_path(button_clicked: 'Save idea (story)', goto:'ideas/one/#maybe'), method: :post
+              | Save this Idea?
               .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
-                input.switch-input[id="yes-no", type="checkbox"]
-                  label.switch-paddle[for="yes-no", style="margin-bottom: -4px; margin-left: .5rem;"]
+                input.switch-input[id="yes-no1", type="checkbox"]
+                  label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem;"]
+                    span.show-for-sr Save this Idea?
+                    span.switch-active[aria-hidden="true"] Yes
+                    span.switch-inactive[aria-hidden="true"] No
+                    
+.gift-container.jumbotron#idea2
+  .row[data-equalizer data-equalize-on="medium"]
+    .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
+      div[style="display: table; width: 100%;"]
+        .gift-photo.in-vc[data-equalizer-watch]
+            img.thumbnail.zerotbmargin.out-vc[style="margin: 0 auto", src="http://placehold.it/350x250"]
+    .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
+      .gift-details[data-equalizer-watch]
+          .jumbotron
+            h4.text-center
+              | How about a 
+              span.strong.lapis.uppercare
+                | Hobby Gift
+              | ?
+          div.row
+            .columns.small-12
+              p.dark-gray
+                | Someone got an awesome hobby gift from her 
+                span.story-details
+                  | boyfriend
+                |  on her 
+                span.story-details
+                  | birthday
+                |  after they had been 
+                span.story-details
+                  | dating for 6 months
+                | .
+          h6.stoneground.strong
+            | Here's her story:
+          p.blockquote.stoneground.justify[style="font-style: italic"]
+              | "He got me a special camera lense, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
+          .recipient-details
+            .row
+              .columns.small-11
+                cite.float-right Female, 36
+              .columns.small-1
+  .ideaActions.row[style="margin-bottom: 1rem;"]
+    .columns.small-offset-1.small-10.zerolrpadding.end
+      .button-group.expanded.expand[data-equalizer , style="margin: 0;"]
+        .button.radius.zerotbpadding#test
+          .out-vc[data-equalizer-watch]
+            .in-vc
+              =link_to "Yes!", clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), method: :post
+        .button.two.secondary.radius.zerotbpadding
+          .out-vc[data-equalizer-watch]
+            .in-vc
+              =link_to "Maybe", clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe'), method: :post
+        .button.three.radius.hollow.primary[data-equalizer-watch]
+          .out-vc
+            .in-vc
+              | Save this Idea?
+              .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                input.switch-input[id="yes-no2", type="checkbox"]
+                  label.switch-paddle[for="yes-no2", style="margin-bottom: -4px; margin-left: .5rem;"]
                     span.show-for-sr Save this Idea?
                     span.switch-active[aria-hidden="true"] Yes
                     span.switch-inactive[aria-hidden="true"] No
@@ -173,6 +231,9 @@ dontpanic
   .jumbotron.text-center.stoneground
     h4 Still have no idea what to get?
     br
-       =link_to "Don't panic", clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo'), {class: " button large radius", id: "#save-options", method: :post}
+       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo'), {class: " button large radius zerotbmargin", id: "save-options", method: :post}
+        .out-vc
+          .in-vc
+            h4 Don't Panic
   
   

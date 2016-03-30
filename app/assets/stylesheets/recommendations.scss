@@ -302,3 +302,16 @@
 #option1 {
   display: none;
 }
+#save-options {
+  border-radius: 100%;
+  background: $salmon;
+  height: 125px;
+  width: 125px;
+}
+#save-options .in-vc{
+  height: 89px;
+}
+//#save-options:before {
+//  height: 100px;
+//  width: 100px;
+//}
