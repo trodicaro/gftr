@@ -100,12 +100,27 @@ $negnavheight: -67px;
 .stoneground {
   color: $stoneground;
 }
+.bg-stoneground {
+  background-color: $stoneground;
+}
+.bg-peppercorn {
+  background-color: $peppercorn;
+}
+
 .button.radius {
     border-radius: 3px;
 }
 .zerotbmargin {
     margin-top: 0;
     margin-bottom: 0;
+}
+.zerotbpadding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.zerolrpadding {
+    padding-left: 0;
+    padding-right: 0;
 }
 .zerolrmargin {
     margin-left: 0 !important;

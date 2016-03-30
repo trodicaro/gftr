@@ -1,5 +1,5 @@
 @import 'pages.scss';
-  
+
 .outline {
   border: 1px solid black;
 }
@@ -75,42 +75,42 @@
 //  width: auto;//toggle if we want thumbnail to take up 100% width of parent
 }
 
-//.idea-top-left {
-//  border: 1px solid $lapis;
-//  border-right: none;
-//  border-bottom: none;
-//  padding-top: .9375rem;
-//  padding-bottom: .9375rem;
-//  border-top-left-radius: 6px;
-//}
-//.idea-top-right {
-//  border: 1px solid $lapis;
-//  border-left: none;
-//  border-bottom: none;
-//  padding-top: .9375rem;
-//  padding-bottom: .9375rem;
-//  border-top-right-radius: 6px;
-//}
-.idea-left {
-//  border: 1px solid $lapis;
+.idea-top-left {
   border: 1px solid $light-gray;
   border-right: none;
-//  border-bottom: none;
+  border-bottom: none;
   padding-top: .9375rem;
   padding-bottom: .9375rem;
   border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
 }
-.idea-right {
-//  border: 1px solid $lapis;
+.idea-top-right {
   border: 1px solid $light-gray;
   border-left: none;
-//  border-bottom: none;
+  border-bottom: none;
   padding-top: .9375rem;
   padding-bottom: .9375rem;
   border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
 }
+//.idea-left {
+////  border: 1px solid $lapis;
+//  border: 1px solid $light-gray;
+//  border-right: none;
+////  border-bottom: none;
+//  padding-top: .9375rem;
+//  padding-bottom: .9375rem;
+//  border-top-left-radius: 6px;
+//  border-bottom-left-radius: 6px;
+//}
+//.idea-right {
+////  border: 1px solid $lapis;
+//  border: 1px solid $light-gray;
+//  border-left: none;
+////  border-bottom: none;
+//  padding-top: .9375rem;
+//  padding-bottom: .9375rem;
+//  border-top-right-radius: 6px;
+//  border-bottom-right-radius: 6px;
+//}
 //.idea-bot-left {
 //  border: 1px solid $lapis;
 //  border-right: none;
@@ -181,6 +181,76 @@
 .dontpanic .button {
 //  background
 }
+.button-group {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+  &:before {
+    content: attr(data-grouptype);
+    z-index: 99999;
+    color: #999;
+    display: block;
+    font-size: 1rem;
+    padding: 0.25em;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 42.5%;
+    top: 0.35rem;
+  }
+  button + button {
+    margin-left: 5px;
+  }
+}
+.button-group.expand {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.button-group.expand .button {
+  display: table-cell;
+  float: none;
+}
+.button-group .two:before {
+  content: "OR";
+  z-index: 9999;
+  color: #999;
+  display: block;
+  font-size: 1rem;
+  padding: 0.25em;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -moz-calc(33% - 1em);
+  left: -webkit-calc(33% - 1em);
+  left: -o-calc(33% - 1em);
+  left: calc(33% -  1em);
+  top: -moz-calc(50% - 12px);
+  top: -webkit-calc(50% - 12px);
+  top: -o-calc(50% - 12px);
+  top: calc(50% -  12px);
+}
+.button-group .three:before {
+  content: "OR";
+  z-index: 9999;
+  color: #999;
+  display: block;
+  font-size: 1rem;
+  padding: 0.25em;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -moz-calc(66.6% - 1em);
+  left: -webkit-calc(66.6% - 1em);
+  left: -o-calc(66.6% - 1em);
+  left: calc(66.6% -  1em);
+  top: -moz-calc(50% - 12px);
+  top: -webkit-calc(50% - 12px);
+  top: -o-calc(50% - 12px);
+  top: calc(50% -  12px);
+  border-right: 2px solid $lapis;
+}
+
 @media all and (max-width: 639px) {
   .idea-left {
     border-right: 1px solid $light-gray;
@@ -194,4 +264,38 @@
     border-bottom-left-radius: 6px;
     border-left: 1px solid $light-gray;
   }
+}
+.switch-on {
+  position: absolute;
+  left: -55px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.switch-off {
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.button.hollow.primary {//general override
+  border: 1px solid $lapis;
+  color: $lapis;
+}
+.ideaActions .button-group .button {
+  font-size: 1.25rem;
+}
+.ideaActions .button.hollow {
+  padding-top: .25rem;
+  padding-bottom: .35rem;
+}
+.ideaActions .button.hollow:hover {
+  cursor: default;
+  border: 1px solid $lapis;
+  color: $lapis;
 }

@@ -19,11 +19,11 @@
     
 .gift-container
   .row[data-equalizer data-equalize-on="medium"]
-    .columns.medium-offset-1.medium-5.idea-left.small-offset-1.small-10.end
+    .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
             img.thumbnail.zerotbmargin.out-vc[style="margin: 0 auto", src="http://placehold.it/350x250"]
-    .columns.medium-offset-0.medium-5.idea-right.small-offset-1.small-10.end
+    .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
           .jumbotron
             h4.text-center
@@ -34,7 +34,7 @@
           div.row
             .columns.small-12
               p.dark-gray
-                | Here's someone who got an awesome hobby gift from her 
+                | Someone got an awesome hobby gift from her 
                 span.story-details
                   | boyfriend
                 |  on her 
@@ -53,6 +53,32 @@
               .columns.small-11
                 cite.float-right Female, 36
               .columns.small-1
+  .ideaActions.row
+    .columns.small-offset-1.small-10.zerolrpadding.end
+      .button-group.expanded.expand[data-equalizer , style="margin: 0;"]
+        .button.radius.zerotbpadding
+          .out-vc[data-equalizer-watch]
+            .in-vc
+              |Yes!
+        .button.two.secondary.radius.zerotbpadding
+          .out-vc[data-equalizer-watch]
+            .in-vc
+              |Maybe
+        .button.three.radius.hollow.primary[data-equalizer-watch]
+          .out-vc
+            .in-vc
+              |Save this Idea?
+              .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                input.switch-input[id="yes-no", type="checkbox"]
+                  label.switch-paddle[for="yes-no", style="margin-bottom: -4px; margin-left: .5rem;"]
+                    span.show-for-sr Do you like me?
+                    span.switch-active[aria-hidden="true"] Yes
+                    span.switch-inactive[aria-hidden="true"] No
+      
+
+
+        
+        
   .row[data-equalizer data-equalize-on="medium"]
     .columns.medium-offset-1.medium-5.idea-left.small-offset-1.small-10.end[data-equalizer-watch]
       div.jumbotron.text-center
