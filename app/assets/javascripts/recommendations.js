@@ -14,17 +14,12 @@ $(window).resize(myfunction);
 
 $(function() {
 
-    function sayHi(name) {
-        console.log("hi " + name);
-    };
-
     function sendAnalytics(eventCategory, eventAction) {
     	ga('send', 'event', eventCategory, eventAction);
     };
 
     $('#click-panic').on("click", function(event) {
         event.preventDefault();
-        sendAnalytics('Help', 'moreHelp');
-        sayHi('dalal');
+        sendAnalytics('Help', 'moreHelp');        
     });
 });

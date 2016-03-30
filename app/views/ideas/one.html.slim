@@ -102,6 +102,6 @@ dontpanic
     h4 I still have no idea what to get!
     br
     .button.large.radius#click-panic
-         =link_to "Don't panic", ideas_moreinfo_path
+         =link_to "Don't panic", clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo'), method: :post
   
   
