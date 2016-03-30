@@ -1,7 +1,4 @@
 class IdeasController < ApplicationController
-
-	def index
-	end
 	
 	def one
    @user = User.new
