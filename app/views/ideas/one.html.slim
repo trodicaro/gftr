@@ -70,7 +70,7 @@
               .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                 input.switch-input[id="yes-no", type="checkbox"]
                   label.switch-paddle[for="yes-no", style="margin-bottom: -4px; margin-left: .5rem;"]
-                    span.show-for-sr Do you like me?
+                    span.show-for-sr Save this Idea?
                     span.switch-active[aria-hidden="true"] Yes
                     span.switch-inactive[aria-hidden="true"] No
       
@@ -123,45 +123,51 @@
             | Buy now
 /= render 'partials/savebar'
 .jumbotron.bg-stoneground.text-center
-  h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
-    | Congratulations! You've collected 
-  h3.pearl.text-center.zerotbmargin.strong#test2[style="display: inline-block;"]
-    | 0
-  h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
-    |  ideas
-  p.medium-gray.text-center.zerotbmargin.rem0875
-    | We'll hold them for 10 minutes. Afterwards, we might match you with alternate gift stories from our community. Save your ideas to refer back to them later.
-  div.text-center
-    div
-      = link_to 'Save my Gift Ideas', ideas_saveideas_path, {onClick: "ga('send', 'event', 'Save', 'saveIdeas');", style: "color: $pearl;", class: " button small radius pearl zerotbmargin capitalize", id: "#save-options"}
-    p[style="display: inline-block;"]
-      | Time remaining: 
-    span.rem1[style="display: inline-block;"]
-      span#countdown.countdownHolder
-        span.countDays[style="display: none"]
-          span.position
-            span.digit.static
-          span.position
-            span.digit.static
-        /span.countDiv.countDiv0
-        span.countHours[style="display: none"]
-          span.position
-            span.digit.static
-          span.position
-            span.digit.static
-        /span.countDiv.countDiv1
-        span.countMinutes
-          span.position
-            span.digit.static
-          span.position
-            span.digit.static
-        span.countDiv.countDiv2
-        span.countSeconds
-          span.position
-            span.digit.static
-          span.position
-            span.digit.static
-        /span.countDiv.countDiv3
+  span#option1
+    h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
+      | Awesome! You've collected 
+    h3.pearl.text-center.zerotbmargin.strong#test2[style="display: inline-block;"]
+      | 0
+    h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
+      |  ideas.
+    p.medium-gray.text-center.rem0875
+      | Save your ideas to refer back to them later.
+    div.text-center
+      div
+        = link_to 'Save my Gift Ideas', ideas_saveideas_path, {onClick: "ga('send', 'event', 'Save', 'saveIdeas');", style: "color: $pearl;", class: " button radius pearl capitalize", id: "#save-options"}
+  span#option2
+    h5.pearl.text-center.zerotbmargin
+      | Select which ideas you'd like to save for later.
+    p.medium-gray.text-center.zerotbmargin.rem0875
+      | After 10 minutes we might show you alternate gift stories from our community. Save the ideas you'd like to keep. 
+      span[style="font-style: italic;"]
+        | Time remaining: 
+        span.rem1[style="display: inline-block;"]
+          span#countdown.countdownHolder
+            span.countDays[style="display: none"]
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            /span.countDiv.countDiv0
+            span.countHours[style="display: none"]
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            /span.countDiv.countDiv1
+            span.countMinutes
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            span.countDiv.countDiv2
+            span.countSeconds
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            /span.countDiv.countDiv3
       
 dontpanic
   .jumbotron.text-center.stoneground
