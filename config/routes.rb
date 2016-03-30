@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get 'ideas/thankyou' => 'ideas#thankyou'
   get 'ideas/saveideas' => 'ideas#saveideas'
 
+  post 'clicks', to: "clicks#create"
+
   PagesController.action_methods.each do |action|
     get "/#{action}", to: "pages##{action}", as: "#{action}_page"
   end
