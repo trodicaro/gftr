@@ -1,4 +1,3 @@
-/ = render 'partials/savebar'
 
 #pagetop
 .pseudotopbar
@@ -53,10 +52,10 @@
               .columns.small-11
                 cite.float-right Female, 36
               .columns.small-1
-  .ideaActions.row
+  .ideaActions.row[style="margin-bottom: 1rem;"]
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer , style="margin: 0;"]
-        .button.radius.zerotbpadding
+        .button.radius.zerotbpadding#test
           .out-vc[data-equalizer-watch]
             .in-vc
               |Yes!
@@ -79,7 +78,7 @@
 
         
         
-  .row[data-equalizer data-equalize-on="medium"]
+  /.row[data-equalizer data-equalize-on="medium"]
     .columns.medium-offset-1.medium-5.idea-left.small-offset-1.small-10.end[data-equalizer-watch]
       div.jumbotron.text-center
         .button.radius.medium.zerotbmargin
@@ -110,7 +109,7 @@
           .circle
             img[src="/assets/Giftr_square.png"]
           h6.text-center.zerotbmargin.lapis.strong TIPS
-  .gift-similar.row[data-equalizer data-equalize-on="medium", style="margin-bottom: 1rem;"]
+  /.gift-similar.row[data-equalizer data-equalize-on="medium", style="margin-bottom: 1rem;"]
     .columns.medium-offset-1.medium-5.small-offset-1.small-10.end.idea-left
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
@@ -122,7 +121,48 @@
           p.price.dark-gray $39.99
           .button.radius.small.zerotbmargin#first-idea[href="#ideas" onclick="ga('send', 'event', 'Ideas', 'buyFirstIdea')"] 
             | Buy now
-
+/= render 'partials/savebar'
+.jumbotron.bg-stoneground.text-center
+  h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
+    | Congratulations! You've collected 
+  h3.pearl.text-center.zerotbmargin.strong#test2[style="display: inline-block;"]
+    | 0
+  h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
+    |  ideas
+  p.medium-gray.text-center.zerotbmargin.rem0875
+    | We'll hold them for 10 minutes. Afterwards, we might match you with alternate gift stories from our community. Save your ideas to refer back to them later.
+  div.text-center
+    div
+      = link_to 'Save my Gift Ideas', ideas_saveideas_path, {onClick: "ga('send', 'event', 'Save', 'saveIdeas');", style: "color: $pearl;", class: " button small radius pearl zerotbmargin capitalize", id: "#save-options"}
+    p[style="display: inline-block;"]
+      | Time remaining: 
+    span.rem1[style="display: inline-block;"]
+      span#countdown.countdownHolder
+        span.countDays[style="display: none"]
+          span.position
+            span.digit.static
+          span.position
+            span.digit.static
+        /span.countDiv.countDiv0
+        span.countHours[style="display: none"]
+          span.position
+            span.digit.static
+          span.position
+            span.digit.static
+        /span.countDiv.countDiv1
+        span.countMinutes
+          span.position
+            span.digit.static
+          span.position
+            span.digit.static
+        span.countDiv.countDiv2
+        span.countSeconds
+          span.position
+            span.digit.static
+          span.position
+            span.digit.static
+        /span.countDiv.countDiv3
+      
 dontpanic
   .jumbotron.text-center.stoneground
     h4 I still have no idea what to get!
