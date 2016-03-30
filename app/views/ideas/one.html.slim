@@ -58,15 +58,15 @@
         .button.radius.zerotbpadding#test
           .out-vc[data-equalizer-watch]
             .in-vc
-              |Yes!
+              =link_to "Yes!", clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), method: :post
         .button.two.secondary.radius.zerotbpadding
           .out-vc[data-equalizer-watch]
             .in-vc
-              |Maybe
+              =link_to "Maybe", clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe'), method: :post
         .button.three.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
-              |Save this Idea?
+              =link_to "Save this Idea?", clicks_path(button_clicked: 'Save idea (story)', goto:'ideas/one/#maybe'), method: :post
               .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                 input.switch-input[id="yes-no", type="checkbox"]
                   label.switch-paddle[for="yes-no", style="margin-bottom: -4px; margin-left: .5rem;"]
@@ -173,7 +173,6 @@ dontpanic
   .jumbotron.text-center.stoneground
     h4 Still have no idea what to get?
     br
-    .button.large.radius#click-panic
-         =link_to "Don't panic", clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo'), method: :post
+       =link_to "Don't panic", clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo'), {class: " button large radius", id: "#save-options", method: :post}
   
   
