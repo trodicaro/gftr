@@ -126,17 +126,17 @@
   span#option1
     h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
       | Awesome! You've collected 
-    h3.pearl.text-center.zerotbmargin.strong#test2[style="display: inline-block;"]
+    h3.pearl.text-center.zerotbmargin.strong#ideasCounter[style="display: inline-block;"]
       | 0
-    h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
+    h5.pearl.text-center.zerotbmargin#ideasPlural[style="display: inline-block;"]
       |  ideas.
     p.medium-gray.text-center.rem0875
       | Save your ideas to refer back to them later.
     div.text-center
       div
-        = link_to 'Save my Gift Ideas', ideas_saveideas_path, {onClick: "ga('send', 'event', 'Save', 'saveIdeas');", style: "color: $pearl;", class: " button radius pearl capitalize", id: "#save-options"}
+        = link_to 'Save my Gift Ideas', ideas_saveideas_path, {onClick: "ga('send', 'event', 'Save', 'saveIdeas');", style: "color: $pearl;", class: " button large radius pearl capitalize", id: "#save-options"}
   span#option2
-    h5.pearl.text-center.zerotbmargin
+    h4.pearl.text-center.zerotbmargin
       | Select which ideas you'd like to save for later.
     p.medium-gray.text-center.zerotbmargin.rem0875
       | After 10 minutes we might show you alternate gift stories from our community. Save the ideas you'd like to keep. 
@@ -171,7 +171,7 @@
       
 dontpanic
   .jumbotron.text-center.stoneground
-    h4 I still have no idea what to get!
+    h4 Still have no idea what to get?
     br
     .button.large.radius#click-panic
          =link_to "Don't panic", clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo'), method: :post

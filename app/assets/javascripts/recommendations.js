@@ -12,15 +12,29 @@ function myfunction() {
 
 $(window).resize(myfunction);
 
-var foo;
 
 $(function() {
   $('input[type="checkbox"]').click(function() {
-//    console.log("woohoo");
-    $('#test2').text(document.querySelectorAll('input[type="checkbox"]:checked').length);
-//    console.log(document.querySelectorAll('input[type="checkbox"]:checked').length);
-//    foo = document.querySelectorAll('input[type="checkbox"]:checked').length
-	  });
+    
+    
+    
+
+    var ideasCount = document.querySelectorAll('input[type="checkbox"]:checked').length;    
+    
+    if (ideasCount > 0) {
+      $('#ideasCounter').text(ideasCount);
+      $('#option1').css("display", "inherit");
+      $('#option2').css("display", "none");
+      if(ideasCount == 1) {
+        $('#ideasPlural').text(" idea.");
+      } else {
+        $('#ideasPlural').text(" ideas.");
+      }
+    } else {
+      $('#option1').css("display", "none");
+      $('#option2').css("display", "inherit");
+    }
+  });
 
     function sendAnalytics(eventCategory, eventAction) {
     	ga('send', 'event', eventCategory, eventAction);
