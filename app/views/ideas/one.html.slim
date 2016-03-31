@@ -8,13 +8,7 @@
 .jumbotron
   .row
     .columns.small-12
-      /h5.stoneground#hello_message Hi! We've collected gift stories from our community and found a few that we think could inspire your next gift idea.
       h3.stoneground.text-center.strong#hello_message Check out your gift ideas.
-
-/.row.text-center
-  .columns
-    span.label.idealabel[style="margin-bottom: 1rem;"]
-      | Idea 1
     
 .gift-container.jumbotron#idea1
   .row[data-equalizer data-equalize-on="medium"]
@@ -74,7 +68,7 @@
                         span.show-for-sr Save this Idea?
                         span.switch-active[aria-hidden="true"] Yes
                         span.switch-inactive[aria-hidden="true"] No
-  .actiondetails.row#yesinforow1[style="margin-bottom: 1rem;"]
+  .actiondetails.row#yesinforow1
     .columns.small-offset-1.small-10.end
       h6 We found similar gifts that you might like.
       .row
@@ -106,10 +100,12 @@
             h6.strong Fisheye Lense
           .price
             | $39.99
-      
-/.row#yesinfo1
-  h4 Looks like we hit the jackpot! 
-  p Here are some gifts that are similar
+  .actiondetails.row.maybe#maybeinforow1
+    .columns.small-offset-1.small-10.end
+      h6 TBU HEADLINE
+      .row
+        .columns.small-12.text-center
+          | This is a column
 
 /.row#maybeinforow1
   h4 Interested in a hobby gift but not this specific one?
@@ -151,7 +147,7 @@
               .columns.small-11
                 cite.float-right Female, 36
               .columns.small-1
-  .ideaActions.row[style="margin-bottom: 1rem;"]
+  .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
         =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), class: 'button radius zerotbpadding', id: 'yesinfo2', method: :post, remote: true
@@ -173,12 +169,44 @@
                         span.show-for-sr Save this Idea?
                         span.switch-active[aria-hidden="true"] Yes
                         span.switch-inactive[aria-hidden="true"] No
+  .actiondetails.row#yesinforow2
+    .columns.small-offset-1.small-10.end
+      h6 We found similar gifts that you might like.
+      .row
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)'), id: 'ONEbuyidea2option1', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)'), id: 'ONEbuyidea2option2', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)'), id: 'ONEbuyidea2option3', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)'), id: 'ONEbuyidea2option4', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
 
-.row#yesinfo2
+/.row#yesinfo2
   h4 Looks like we hit the jackpot! 
   p Here are some gifts that are similar
 
-.row#maybeinforow2
+/.row#maybeinforow2
   h4 Interested in a hobby gift but not this specific one?
   p Discover more hobbies
         
@@ -218,7 +246,7 @@
               .columns.small-11
                 cite.float-right Female, 36
               .columns.small-1
-  .ideaActions.row[style="margin-bottom: 1rem;"]
+  .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
         =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), class: 'button radius zerotbpadding', id: 'yesinfo3', method: :post, remote: true
@@ -240,12 +268,44 @@
                         span.show-for-sr Save this Idea?
                         span.switch-active[aria-hidden="true"] Yes
                         span.switch-inactive[aria-hidden="true"] No
+  .actiondetails.row#yesinforow3
+    .columns.small-offset-1.small-10.end
+      h6 We found similar gifts that you might like.
+      .row
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)'), id: 'ONEbuyidea3option1', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)'), id: 'ONEbuyidea3option2', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)'), id: 'ONEbuyidea3option3', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)'), id: 'ONEbuyidea3option4', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
 
-.row#yesinfo3
+/.row#yesinfo3
   h4 Looks like we hit the jackpot! 
   p Here are some gifts that are similar
 
-.row#maybeinforow3
+/.row#maybeinforow3
   h4 Interested in a hobby gift but not this specific one?
   p Discover more hobbies
 

@@ -66,10 +66,16 @@ $(function() {
     });
 
     $('#yesinfo1').click(function(){
-   			$('#yesinforow1').slideToggle(200); 	
+   			$('#yesinforow1').slideToggle(200); 
     });
+  $('#yesinfo2').click(function(){
+   			$('#yesinforow2').slideToggle(200); 
+    })
+  $('#yesinfo3').click(function(){
+   			$('#yesinforow3').slideToggle(200); 
+    })
 
-     $('#maybeinfo1').click(function(){
-   			$('#maybeinforow1').hide(); 	
+   $('#maybeinfo1').click(function(){
+          $('#maybeinforow1').slideToggle(200); 	
     });
 });

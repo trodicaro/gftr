@@ -302,16 +302,16 @@
 #option1 {
   display: none;
 }
-#save-options {
+#click-panic {
   border-radius: 100%;
   background: darken($salmon, 5%);
   height: 125px;
   width: 125px;
 }
-#save-options .in-vc{
+#click-panic .in-vc{
   height: 89px;
 }
-#save-options:hover {
+#click-panic:hover {
   background: darken($salmon, 15%);
 }
 .actiondetails>.columns {
@@ -319,6 +319,9 @@
   padding-bottom: 15px;
   background-color: lighten($lapis, 40%);
   color: $stoneground;
+}
+.actiondetails>.columns {
+  
 }
 .actiondetails a {
   font-size: .8125rem;
