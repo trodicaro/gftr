@@ -66,14 +66,16 @@
         .button.three.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
-              /=link_to clicks_path(button_clicked: 'save story)', goto:'ideas/one/#maybe'), id: 'maybeinfo1', class: 'switch tiny round zerotbmargin', method: :post, remote: true
-                / .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
-                input.switch-input[id="yes-no", type="checkbox"]
-                  label.switch-paddle[for="yes-no", style="margin-bottom: -4px; margin-left: .5rem;"]
-                    span.show-for-sr Save this Idea?
-                    span.switch-active[aria-hidden="true"] Yes
-                    span.switch-inactive[aria-hidden="true"] No
-.row#yesinforow1
+              | Save Idea?
+              =form_for(@click, url: clicks_path(button_clicked: 'save story', goto:'ideas/one/#save'), html: {id: 'saveinfo1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+                  .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                    input.switch-input[id="yes-no", type="checkbox"]
+                      label.switch-paddle[for="yes-no", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
+                        span.show-for-sr Save this Idea?
+                        span.switch-active[aria-hidden="true"] Yes
+                        span.switch-inactive[aria-hidden="true"] No
+
+.row#yesinfo
   h4 Looks like we hit the jackpot! 
   p Here are some gifts that are similar
 

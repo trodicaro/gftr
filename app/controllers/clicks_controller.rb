@@ -1,5 +1,10 @@
 class ClicksController < ApplicationController
-
+	
+	def new
+		@click = Click.new
+	end
+		
+	
 	def create
 		@click = Click.new
 		@click.source = params[:button_clicked]

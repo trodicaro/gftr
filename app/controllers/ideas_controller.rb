@@ -2,6 +2,7 @@ class IdeasController < ApplicationController
 	
 	def one
    @user = User.new
+   @click = Click.new
   end
 
   def thankyou

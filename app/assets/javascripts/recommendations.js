@@ -31,6 +31,8 @@ $(function() {
             $('#option1').css("display", "none");
             $('#option2').css("display", "inherit");
         }
+
+        $(this).closest('form').submit();
     });
 
 
