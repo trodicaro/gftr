@@ -8,6 +8,8 @@ class ClicksController < ApplicationController
 	def create
 		@click = Click.new
 		@click.source = params[:button_clicked]
+	
+		@click.user_code = params[:uu]
 		@click.save
 		
 		@where = params[:goto].to_s

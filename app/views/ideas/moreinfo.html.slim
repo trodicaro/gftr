@@ -1,11 +1,11 @@
 .wrapper
 	h2 That's ok, we have you covered! What would you like to do?
 
-	=link_to 'Run the Giftr algorithm again and show me more ideas', clicks_path(button_clicked: "Rerun algorithm", goto: 'ideas/thankyou'), {class: "button", id: "rerun-algorithm", method: :post} 
+	=link_to 'Run the Giftr algorithm again and show me more ideas', clicks_path(button_clicked: "Rerun algorithm", goto: 'ideas/thankyou', uu: @unique_url), {class: "button", id: "rerun-algorithm", method: :post} 
 	
 	br
 
-	=link_to 'Chat 1 on 1 with a gift concierge to understand your recipient better & match u with a gift', clicks_path(button_clicked: "Gift concierge", goto: 'ideas/thankyou'), {class: "button", id: "gift-concierge", method: :post} 
+	=link_to 'Chat 1 on 1 with a gift concierge to understand your recipient better & match u with a gift', clicks_path(button_clicked: "Gift concierge", goto: 'ideas/thankyou', uu: @unique_url), {class: "button", id: "gift-concierge", method: :post} 
 
 	br
-	=link_to 'Get more gift recommendations from our partners', clicks_path(button_clicked: "Second opinion", goto: 'ideas/thankyou'), {class: "button", id: "second-opinion", method: :post} 
+	=link_to 'Get more gift recommendations from our partners', clicks_path(button_clicked: "Second opinion", goto: 'ideas/thankyou', uu: @unique_url), {class: "button", id: "second-opinion", method: :post} 

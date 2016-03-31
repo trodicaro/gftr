@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160329220840) do
 
   create_table "clicks", force: :cascade do |t|
     t.string   "source"
+    t.string   "user_code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -49,11 +49,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), class: 'button radius zerotbpadding', id: 'yesinfo1', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe'), id: 'maybeinfo1', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -61,7 +61,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'save story', goto:'ideas/one/#save'), html: {id: 'saveinfo1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save (idea 1)', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo1', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no1", type="checkbox"]
                       label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -150,11 +150,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), class: 'button radius zerotbpadding', id: 'yesinfo2', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yesinfo2', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe'), id: 'maybeinfo2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybeinfo2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -162,7 +162,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'save story', goto:'ideas/one/#save'), html: {id: 'saveinfo2', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo2', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no2", type="checkbox"]
                       label.switch-paddle[for="yes-no2", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -249,11 +249,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), class: 'button radius zerotbpadding', id: 'yesinfo3', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yesinfo3', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe'), id: 'maybeinfo3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybeinfo3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -261,7 +261,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'save story', goto:'ideas/one/#save'), html: {id: 'saveinfo3', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo3', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no3", type="checkbox"]
                       label.switch-paddle[for="yes-no3", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -367,7 +367,7 @@
       | Save your ideas to refer back to them later.
     div.text-center
       div
-        = link_to 'Save my Gift Ideas', ideas_saveideas_path, {onClick: "ga('send', 'event', 'Save', 'saveIdeas');", style: "color: $pearl;", class: " button large radius pearl capitalize", id: "#save-options"}
+        = link_to 'Save my Gift Ideas', ideas_saveideas_path, {style: "color: $pearl;", class: " button large radius pearl capitalize", id: "#save-options"}
   span#option2
     h4.pearl.text-center.zerotbmargin
       | Select ideas you'd like to save for later.
@@ -406,7 +406,7 @@ dontpanic
   .jumbotron.text-center.stoneground
     h4 Still have no idea what to get?
     br
-       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo'), {class: " button large radius zerotbmargin", id: "save-options", method: :post}
+       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo', uu: @unique_url), {class: " button large radius zerotbmargin", id: "click-panic", method: :post}
         .out-vc
           .in-vc
             h4 Don't Panic
