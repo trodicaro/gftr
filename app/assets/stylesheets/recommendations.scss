@@ -304,12 +304,15 @@
 }
 #save-options {
   border-radius: 100%;
-  background: $salmon;
+  background: darken($salmon, 5%);
   height: 125px;
   width: 125px;
 }
 #save-options .in-vc{
   height: 89px;
+}
+#save-options:hover {
+  background: darken($salmon, 15%);
 }
 //#save-options:before {
 //  height: 100px;

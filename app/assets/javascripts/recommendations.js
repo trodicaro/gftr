@@ -64,10 +64,10 @@ $(function() {
     });
 
     $('#yesinfo1').click(function(){
-   			$('#yesinfo').hide(); 	
+   			$('#yesinforow1').hide(); 	
     });
 
      $('#maybeinfo1').click(function(){
-   			$('#maybeinfo').hide(); 	
+   			$('#maybeinforow1').hide(); 	
     });
 });
