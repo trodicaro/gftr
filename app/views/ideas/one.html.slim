@@ -52,7 +52,7 @@
               .columns.small-11
                 cite.float-right Female, 36
               .columns.small-1
-  .ideaActions.row[style="margin-bottom: 1rem;"]
+  .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
         =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes'), class: 'button radius zerotbpadding', id: 'yesinfo1', method: :post, remote: true
@@ -74,15 +74,46 @@
                         span.show-for-sr Save this Idea?
                         span.switch-active[aria-hidden="true"] Yes
                         span.switch-inactive[aria-hidden="true"] No
-
-.row#yesinfo1
+  .actiondetails.row#yesinforow1[style="margin-bottom: 1rem;"]
+    .columns.small-offset-1.small-10.end
+      h6 We found similar gifts that you might like.
+      .row
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)'), id: 'ONEbuyidea1option1', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)'), id: 'ONEbuyidea1option2', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)'), id: 'ONEbuyidea1option3', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+        .columns.medium-3.small-6
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)'), id: 'ONEbuyidea1option4', method: :post, remote: true do
+            img.thumbnail[src="http://placehold.it/350x250"]
+          .title
+            h6.strong Fisheye Lense
+          .price
+            | $39.99
+      
+/.row#yesinfo1
   h4 Looks like we hit the jackpot! 
   p Here are some gifts that are similar
 
-.row#maybeinforow1
+/.row#maybeinforow1
   h4 Interested in a hobby gift but not this specific one?
   p Discover more hobbies
-  .button here
 
 .gift-container.jumbotron#idea2
   .row[data-equalizer data-equalize-on="medium"]
@@ -92,7 +123,7 @@
             img.thumbnail.zerotbmargin.out-vc[style="margin: 0 auto", src="http://placehold.it/350x250"]
     .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
-          .jumbotron
+          .jumbotron[style="padding-left: 0; padding-right: 0;"]
             h4.text-center
               | How about a 
               span.strong.lapis.uppercare
@@ -150,7 +181,6 @@
 .row#maybeinforow2
   h4 Interested in a hobby gift but not this specific one?
   p Discover more hobbies
-  .button here
         
 .gift-container.jumbotron#idea3
   .row[data-equalizer data-equalize-on="medium"]
@@ -218,7 +248,9 @@
 .row#maybeinforow3
   h4 Interested in a hobby gift but not this specific one?
   p Discover more hobbies
-  .button here
+
+
+/  .button here
   /.row[data-equalizer data-equalize-on="medium"]
     .columns.medium-offset-1.medium-5.idea-left.small-offset-1.small-10.end[data-equalizer-watch]
       div.jumbotron.text-center

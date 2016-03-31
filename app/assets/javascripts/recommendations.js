@@ -66,7 +66,7 @@ $(function() {
     });
 
     $('#yesinfo1').click(function(){
-   			$('#yesinforow1').hide(); 	
+   			$('#yesinforow1').slideToggle(200); 	
     });
 
      $('#maybeinfo1').click(function(){

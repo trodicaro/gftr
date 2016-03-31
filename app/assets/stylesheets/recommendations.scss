@@ -314,7 +314,19 @@
 #save-options:hover {
   background: darken($salmon, 15%);
 }
-//#save-options:before {
-//  height: 100px;
-//  width: 100px;
-//}
+.actiondetails>.columns {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: lighten($lapis, 40%);
+  color: $stoneground;
+}
+.actiondetails a {
+  font-size: .8125rem;
+  font-style: oblique;
+}
+.actiondetails .thumbnail {
+  margin-top: 15px;
+}
+.actiondetails {
+  display: none;
+}
