@@ -73,28 +73,28 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)'), id: 'ONEbuyidea1option1', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: 'ONEbuyidea1option1', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)'), id: 'ONEbuyidea1option2', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: 'ONEbuyidea1option2', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)'), id: 'ONEbuyidea1option3', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: 'ONEbuyidea1option3', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)'), id: 'ONEbuyidea1option4', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: 'ONEbuyidea1option4', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
@@ -150,11 +150,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yesinfo2', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybeinfo2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -174,28 +174,28 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)'), id: 'ONEbuyidea2option1', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: 'ONEbuyidea2option1', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)'), id: 'ONEbuyidea2option2', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: 'ONEbuyidea2option2', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)'), id: 'ONEbuyidea2option3', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: 'ONEbuyidea2option3', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)'), id: 'ONEbuyidea2option4', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: 'ONEbuyidea2option4', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
@@ -249,11 +249,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (to story)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yesinfo3', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 3)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-3', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (to story)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybeinfo3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -273,28 +273,28 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)'), id: 'ONEbuyidea3option1', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id: 'ONEbuyidea3option1', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)'), id: 'ONEbuyidea3option2', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: 'ONEbuyidea3option2', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)'), id: 'ONEbuyidea3option3', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: 'ONEbuyidea3option3', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)'), id: 'ONEbuyidea3option4', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: 'ONEbuyidea3option4', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense

@@ -87,15 +87,6 @@ $(function() {
         sendAnalytics('IdeaActions', 'save-3');
     });
 
-    //TOGGLE GIFT ACTIONS
-    $('#yesinfo1').click(function() {
-        $('#yesinforow1').hide();
-    });
-
-    $('#maybeinfo1').click(function() {
-        $('#maybeinforow1').hide();
-    });
-
     //PANIC BUTTON
     $('#click-panic').on("click", function(event) {
         event.preventDefault();
@@ -127,17 +118,23 @@ $(function() {
     });
 
     //GIFT ACTIONS SECTION TOGGLE
-    $('#yesinfo1').click(function() {
+    $('#yes-idea-1').click(function() {
         $('#yesinforow1').slideToggle(200);
     });
-    $('#yesinfo2').click(function() {
+    $('#yes-idea-2').click(function() {
         $('#yesinforow2').slideToggle(200);
     })
-    $('#yesinfo3').click(function() {
+    $('#yes-idea-3').click(function() {
         $('#yesinforow3').slideToggle(200);
     })
 
-    $('#maybeinfo1').click(function() {
+    $('#maybe-idea-1').click(function() {
+        $('#maybeinforow1').slideToggle(200);
+    });
+   $('#maybe-idea-2').click(function() {
+        $('#maybeinforow1').slideToggle(200);
+    });
+   $('#maybe-idea-3').click(function() {
         $('#maybeinforow1').slideToggle(200);
     });
 
