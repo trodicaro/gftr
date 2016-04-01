@@ -61,13 +61,13 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo1', style: "display: inline-block"}, method: :post, remote:true) do |f|
-                  .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
-                    input.switch-input[id="yes-no1", type="checkbox"]
-                      label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
-                        span.show-for-sr Save this Idea?
-                        span.switch-active[aria-hidden="true"] Yes
-                        span.switch-inactive[aria-hidden="true"] No
+              = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+                .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                  input.switch-input[id="yes-no1", type="checkbox"]
+                    label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
+                      span.show-for-sr Save this Idea?
+                      span.switch-active[aria-hidden="true"] Yes
+                      span.switch-inactive[aria-hidden="true"] No
   .actiondetails.row#yesinforow1
     .columns.small-offset-1.small-10.end
       h6 We found similar gifts that you might like.
@@ -160,7 +160,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo2', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no2", type="checkbox"]
                       label.switch-paddle[for="yes-no2", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -259,7 +259,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo3', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no3", type="checkbox"]
                       label.switch-paddle[for="yes-no3", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -382,5 +382,3 @@ dontpanic
         .out-vc
           .in-vc
             h4 Don't Panic
-  
-  

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'pages/media' => 'pages#media'
   get 'pages/thankyou' => 'pages#thankyou'
 
-  get 'ideas/index' => 'ideas#index'
+#  get 'ideas/index' => 'ideas#index'
   # get '/ideas' => 'ideas#index'
   get 'ideas/one' => 'ideas#one'
   get 'ideas/moreinfo' => 'ideas#moreinfo'
