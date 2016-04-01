@@ -1,11 +1,40 @@
-.wrapper
-	h2 That's ok, we have you covered! What would you like to do?
+.pseudotopbar
+  .row
+    .columns
+        a href="#pagetop" id="navlogo"
+          = image_tag '/assets/Giftr_Logo.png', style: "max-height: 30px;"
 
-	=link_to 'Run the Giftr algorithm again and show me more ideas', clicks_path(button_clicked: "Rerun algorithm", goto: 'ideas/thankyou', uu: @unique_url), {class: "button", id: "rerun-algorithm", method: :post} 
-	
-	br
-
-	=link_to 'Chat 1 on 1 with a gift concierge to understand your recipient better & match u with a gift', clicks_path(button_clicked: "Gift concierge", goto: 'ideas/thankyou', uu: @unique_url), {class: "button", id: "gift-concierge", method: :post} 
-
-	br
-	=link_to 'Get more gift recommendations from our partners', clicks_path(button_clicked: "Second opinion", goto: 'ideas/thankyou', uu: @unique_url), {class: "button", id: "second-opinion", method: :post} 
+#moreinfoblock
+  .out-vc
+    .in-vc
+      h2.text-center That's ok, we've got your back!
+      p.text-center Choose how you'd like to get your next batch of gift ideas.
+      .jumbotron
+        .row.text-center#shuffleinfo[data-equalizer data-equalize-on="medium" data-equalize-by-row="true"]
+          .columns.medium-4
+            .clearfix
+              .out-vc[data-equalizer-watch]
+                .in-vc
+                  h5
+                    | Show More Stories
+                  p.dark-gray We'll re-run our algorithm and match you with alternate gift stories from our community. 
+              = link_to clicks_path(button_clicked: "rerun algorithm", goto: 'ideas/thankyou', uu: @unique_url), {class: "button radius", id: "rerun-algorithm", method: :post} 
+                h5.zerotbmargin Select
+          .columns.medium-4
+            .clearfix
+              .out-vc[data-equalizer-watch]
+                .in-vc
+                  h5
+                    | 1-on-1 Chat
+                  p.dark-gray Quick chat with one of our gifting concierges. We'll better understand you &amp; your recipient, and then suggest a few gift ideas.
+              =link_to clicks_path(button_clicked: "Gift concierge", goto: 'ideas/thankyou', uu: @unique_url), {class: "button radius", id: "gift-concierge", method: :post} 
+                h5.zerotbmargin Select
+          .columns.medium-4
+            .clearfix
+              .out-vc[data-equalizer-watch]
+                .in-vc
+                  h5
+                    | 3 Pictures
+                  p.dark-gray Pictures tell 1,000 words. Send us 3 pics of your significant other. We'll gauge her personality &amp; recommend a few gifts.
+              =link_to clicks_path(button_clicked: "3 Pictures", goto: 'ideas/thankyou', uu: @unique_url), {class: "button radius", id: "three-pictures", method: :post}
+                h5.zerotbmargin Select

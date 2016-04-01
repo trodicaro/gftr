@@ -13,6 +13,17 @@
 //$(window).resize(myfunction);
 
 
+///RANDOM ORDER SMOKESCREEN DIVS
+var random;
+random = function() {
+  console.log("test");
+  var maindiv = $("#shuffleinfo");
+    var divs = maindiv.children();
+    while (divs.length) {
+        maindiv.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+}
+
 $(function() {
     //COUNTS NUMBER OF SAVED GIFT IDEAS
     $('input[type="checkbox"]').click(function() {
@@ -141,9 +152,13 @@ $(function() {
         sendAnalytics('clickPanic', 'giftConcierge');
     });
 
-    $('#second-opinion').on("click", function(event) {
+    $('#three-pictures').on("click", function(event) {
         event.preventDefault();
-        sendAnalytics('clickPanic', 'secondOpinion');
+        sendAnalytics('clickPanic', 'threePictures');
     });
 
 });
+
+//CALL RANDOM ORDER FUNCTION
+$(document).ready(random);
+$(document).on('page:load', random);
