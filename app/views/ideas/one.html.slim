@@ -8,7 +8,7 @@
 .jumbotron
   .row
     .columns.small-12
-      h3.stoneground.text-center.strong#hello_message Check out your gift ideas.
+      h3.stoneground.text-center.strong#hello_message Hi, Tom! Check out your gift ideas.
     
 .gift-container.jumbotron#idea1
   .row[data-equalizer data-equalize-on="medium"]
@@ -61,7 +61,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save (idea 1)', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'saveinfo1', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no1", type="checkbox"]
                       label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -102,14 +102,12 @@
             | $39.99
   .actiondetails.row.maybe#maybeinforow1
     .columns.small-offset-1.small-10.end
-      h6 TBU HEADLINE
+      h5.strong Join our community, get inspired.
+      /p Browse our full collection of hobby gift stories given between significant others.
+      p Women told us about the best HOBBY GIFTS they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
         .columns.small-12.text-center
-          | This is a column
-
-/.row#maybeinforow1
-  h4 Interested in a hobby gift but not this specific one?
-  p Discover more hobbies
+          = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 1) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-1-join", method: :post}
 
 .gift-container.jumbotron#idea2
   .row[data-equalizer data-equalize-on="medium"]
@@ -201,14 +199,14 @@
             h6.strong Fisheye Lense
           .price
             | $39.99
-
-/.row#yesinfo2
-  h4 Looks like we hit the jackpot! 
-  p Here are some gifts that are similar
-
-/.row#maybeinforow2
-  h4 Interested in a hobby gift but not this specific one?
-  p Discover more hobbies
+  .actiondetails.row.maybe#maybeinforow2
+    .columns.small-offset-1.small-10.end
+      h5.strong Join our community, get inspired.
+      /p Browse our full collection of hobby gift stories given between significant others.
+      p Women told us about the best HOBBY GIFTS they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      .row
+        .columns.small-12.text-center
+          = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 2) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-2-join", method: :post}
         
 .gift-container.jumbotron#idea3
   .row[data-equalizer data-equalize-on="medium"]
@@ -300,61 +298,34 @@
             h6.strong Fisheye Lense
           .price
             | $39.99
-
-/.row#yesinfo3
-  h4 Looks like we hit the jackpot! 
-  p Here are some gifts that are similar
-
-/.row#maybeinforow3
-  h4 Interested in a hobby gift but not this specific one?
-  p Discover more hobbies
-
-
-/  .button here
-  /.row[data-equalizer data-equalize-on="medium"]
-    .columns.medium-offset-1.medium-5.idea-left.small-offset-1.small-10.end[data-equalizer-watch]
-      div.jumbotron.text-center
-        .button.radius.medium.zerotbmargin
-            | Buy Similar Gifts
-        p Check out great options from our partners on gifts related to this story.
-    .columns.medium-offset-0.medium-5.idea-right.small-offset-1.small-10.end[data-equalizer-watch]
-      div.jumbotron.text-center
-        .button.radius.medium.zerotbmargin
-            | See Other Hobby Gifts
-        p Does she have other hobbies? See our collection of best gift stories, organized by hobby.
+  .actiondetails.row.maybe#maybeinforow3
+    .columns.small-offset-1.small-10.end
+      h5.strong Join our community, get inspired.
+      p Women told us about the best HOBBY GIFTS they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      .row
+        .columns.small-12.text-center
+          = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 3) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-3-join", method: :post}
     
-    /p.zerotbmargin.dark-gray.recipient-background[style="display: inline-block; font-style: italic"] Gift satisfaction:
-            /div[style="display: inline-block"]
-              - (1..4).each do
-                i.fa.fa-star.fa-1x.lapis
-              i.fa.fa-star-half-o.lapis
-  /.giftr-tips
-    .row
-      .columns.medium-offset-1.medium-10.small-offset-1.small-10.end[data-equalizer]
-        .columns.medium-10.small-9.out-vcW[data-equalizer-watch]
-          div.in-vc
-            p.zerotbmargin
-              | When giving a 
-              span.story-details
-                | hobby gift
-              |  make sure to...
-        .columns.medium-2.small-3.text-center[style="padding: 0;", data-equalizer-watch]
-          .circle
-            img[src="/assets/Giftr_square.png"]
-          h6.text-center.zerotbmargin.lapis.strong TIPS
-  /.gift-similar.row[data-equalizer data-equalize-on="medium", style="margin-bottom: 1rem;"]
-    .columns.medium-offset-1.medium-5.small-offset-1.small-10.end.idea-left
-      div[style="display: table; width: 100%;"]
-        .gift-photo.in-vc[data-equalizer-watch]
-            img.thumbnail.zerotbmargin.out-vc[style="margin: 0 auto", src="http://placehold.it/350x250"]
-    .columns.medium-5.end.small-10.small-offset-1.medium-offset-0.idea-right
-      .purchase[data-equalizer-watch]
-          h6.capitalize We found something similar
-          p.strong.dark-gray Title of the item on Etsy
-          p.price.dark-gray $39.99
-          .button.radius.small.zerotbmargin#first-idea[href="#ideas" onclick="ga('send', 'event', 'Ideas', 'buyFirstIdea')"] 
-            | Buy now
-/= render 'partials/savebar'
+/p.zerotbmargin.dark-gray.recipient-background[style="display: inline-block; font-style: italic"] Gift satisfaction:
+/div[style="display: inline-block"]
+  - (1..4).each do
+    i.fa.fa-star.fa-1x.lapis
+  i.fa.fa-star-half-o.lapis
+/.giftr-tips
+  .row
+    .columns.medium-offset-1.medium-10.small-offset-1.small-10.end[data-equalizer]
+      .columns.medium-10.small-9.out-vcW[data-equalizer-watch]
+        div.in-vc
+          p.zerotbmargin
+            | When giving a 
+            span.story-details
+              | hobby gift
+            |  make sure to...
+      .columns.medium-2.small-3.text-center[style="padding: 0;", data-equalizer-watch]
+        .circle
+          img[src="/assets/Giftr_square.png"]
+        h6.text-center.zerotbmargin.lapis.strong TIPS
+
 .jumbotron.bg-stoneground.text-center
   span#option1
     h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
@@ -367,7 +338,8 @@
       | Save your ideas to refer back to them later.
     div.text-center
       div
-        = link_to 'Save my Gift Ideas', ideas_saveideas_path, {style: "color: $pearl;", class: " button large radius pearl capitalize", id: "#save-options"}
+        = link_to 'Save my Gift Ideas', clicks_path(button_clicked: 'Save Ideas Collection', goto: 'ideas/saveideas', uu: @unique_url), {class: "button large radius radius pearl", id: "save-options", method: :post}
+        /= link_to 'Save my Gift Ideas', ideas_saveideas_path, {style: "color: $pearl;", class: " button large radius pearl capitalize", id: "#save-options"}
   span#option2
     h4.pearl.text-center.zerotbmargin
       | Select ideas you'd like to save for later.

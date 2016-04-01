@@ -16,8 +16,5 @@ class ClicksController < ApplicationController
 
 		redirect_to "/#{@where}"
 	end
-  
-  def new
-    @click = Click.new
-  end
+
 end

@@ -51,6 +51,26 @@ $(function() {
         event.preventDefault();
         sendAnalytics('IdeaActions', 'maybe-1');
     });
+    $('#maybe-idea-1-join').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('IdeaActions', 'maybe-1-join');
+    });
+    $('#maybe-idea-2').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('IdeaActions', 'maybe-2');
+    });
+    $('#maybe-idea-2-join').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('IdeaActions', 'maybe-2-join');
+    });
+    $('#maybe-idea-3').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('IdeaActions', 'maybe-3');
+    });
+    $('#maybe-idea-3-join').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('IdeaActions', 'maybe-3-join');
+    });
 
     $('#save-idea-1').on("click", function(event) {
         event.preventDefault();
@@ -132,10 +152,10 @@ $(function() {
         $('#maybeinforow1').slideToggle(200);
     });
    $('#maybe-idea-2').click(function() {
-        $('#maybeinforow1').slideToggle(200);
+        $('#maybeinforow2').slideToggle(200);
     });
    $('#maybe-idea-3').click(function() {
-        $('#maybeinforow1').slideToggle(200);
+        $('#maybeinforow3').slideToggle(200);
     });
 
 });

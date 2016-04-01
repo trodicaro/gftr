@@ -1,12 +1,13 @@
 class IdeasController < ApplicationController
 	
-	def one
+  def one
    @user = User.new
    @click = Click.new
    @unique_url = params[:uu]
   end
 
   def thankyou
+    @user=User.new
   end
 
   def moreinfo
@@ -14,7 +15,12 @@ class IdeasController < ApplicationController
   end
 
   def saveideas
-    @user=User.new
+#    @user=User.new
+    @visitor = Visitor.new
+  end
+  
+  def inspireme
+#    @user=User.new
     @visitor = Visitor.new
   end
 

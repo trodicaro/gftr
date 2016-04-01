@@ -333,3 +333,9 @@
 .actiondetails {
   display: none;
 }
+.actiondetails.maybe>.columns {
+  background-color: lighten($light-gray, 5%);
+}
+.actiondetails.maybe a {
+  font-style: normal;
+}
