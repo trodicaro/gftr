@@ -1,8 +1,8 @@
 .signups
   div
     = form_for @user, remote: true do |f|
-      = f.text_field :first_name, placeholder: "First Name"
-      = f.text_field :last_name, placeholder: "Last Name"      
+      /= f.text_field :first_name, placeholder: "First Name"
+      /= f.text_field :last_name, placeholder: "Last Name"      
       = f.email_field :email, placeholder: "Email Address"
 
       span#help_block.lapis

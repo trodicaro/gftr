@@ -1,3 +1,24 @@
+.pseudotopbar
+  .row
+    .columns
+        a href="#pagetop" id="navlogo"
+          = image_tag '/assets/Giftr_Logo.png', style: "max-height: 30px;"
 .wrapper
-	h2 Thank you!
-	p Thanks for your input, we will be in touch with you soon!
+  .row
+    .columns.small-12.text-center
+      h4 Thank you for participating in our concept test!
+      P Seriously, thank you. We're working very hard to reinvent gifting, and to empower our users with story-worthy gift ideas.
+  .jumbotron
+    .row
+      .columns.small-12.text-center
+        h1.text-center.lapis Want to help shape our product?
+        p We're inviting our future users into the process of shaping our product. Would you like to join our pre-launch community and influence our product development? We'd love to hear your insights. Please sign up below.
+    .row.jumbotron
+      .medium-6.medium-centered.large-4.large-centered.columns
+        .row.column
+          = form_for @user, html: {class: "log-in-form"}, remote: true do |f|
+            h4.text-center Join our Pre-Launch Community
+            = f.email_field :email, placeholder: "Email Address"
+            span#help_block.lapis
+            p[style="margin-top: 15px;"]
+              = f.submit "Sign up", class: "button expanded", id: "submit", data: {disable_with: "Loading..."}, onclick: "ga('send', 'event', 'SignUp', 'signup')"
