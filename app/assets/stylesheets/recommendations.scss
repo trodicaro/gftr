@@ -71,9 +71,7 @@
   padding-left: 0;
   
 }
-.gift-container .thumbnail, .gift-similar .thumbnail {
-//  width: auto;//toggle if we want thumbnail to take up 100% width of parent
-}
+
 
 .idea-top-left {
   border: 1px solid $light-gray;
@@ -136,7 +134,7 @@
 .recipient-background {
   font-size: .8125rem;
 }
-.giftr-tips .row, .gift-similar .row {
+.giftr-humbnail .row, .gift-similar .row {
   margin-bottom: 1rem;
 }
 .giftr-tips>.row>.columns {
@@ -329,6 +327,7 @@
 }
 .actiondetails .thumbnail {
   margin-top: 15px;
+//  max-height: 100px;
 }
 .actiondetails {
   display: none;
@@ -423,4 +422,55 @@
   border: 1px solid $medium-gray;
   padding: $global-padding;
   border-radius: $global-radius;
+}
+
+//STYLE 
+div.thumbnail {
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  -webkit-filter: sepia(50%);
+-moz-filter: sepia(50%);
+-o-filter: sepia(50%);
+-ms-filter: sepia(50%);
+filter: sepia(50%);
+}
+#thumb1 {
+  background-image: url( "http://static.bhphoto.com/images/images500x500/Canon_2519A003_85mm_f_1_8_USM_Autofocus_1266943629000_12182.jpg");
+}
+#thumb2 {
+  background-image: url("http://ecx.images-amazon.com/images/I/5175F8Q8J1L._SX355_.jpg");
+}
+#thumb3 {
+  background-image: url("http://ecx.images-amazon.com/images/I/51aPiO8IpsL._SY355_.jpg");
+}
+#thumb4 {
+  background-image: url("http://ecx.images-amazon.com/images/I/71CioDNrjLL._SY355_.jpg");
+}
+#thumb5 {
+  background-image: url( "http://econblue.com/wp-content/uploads/2016/02/Panama-Jetty-620x264.jpg");
+}
+#thumb6 {
+  background-image: url("http://www.punta-cana-airport.com/images/punta-cana-beaches.jpg");
+}
+#thumb7 {
+  background-image: url("http://www.holidayhomecamp.org/images/home-camp-pier.jpg");
+}
+#thumb8 {
+  background-image: url("http://www.planetware.com/photos-large/USCO/colorado-springs-garden-of-the-gods.jpg
+");
+}
+#thumb9 {
+  background-image: url( "http://cdn.notonthehighstreet.com/system/product_images/images/002/195/362/original_calla-lily-personalised-necklace.jpg");
+}
+#thumb10 {
+  background-image: url("https://img0.etsystatic.com/111/2/8595828/il_570xN.859850420_b57a.jpg");
+}
+#thumb11 {
+  background-image: url("https://img1.etsystatic.com/105/0/9341476/il_570xN.919716169_n2rk.jpg");
+}
+#thumb12 {
+  background-image: url("https://img1.etsystatic.com/139/0/10158348/il_570xN.872830957_240a.jpg");
 }

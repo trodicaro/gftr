@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'ideas/thankyou' => 'ideas#thankyou'
   get 'ideas/saveideas' => 'ideas#saveideas'
   get 'ideas/inspireme' => 'ideas#inspireme'
+  get 'ideas/ae4lh' => 'ideas#ae4lh'
 
   post 'clicks', to: "clicks#create"
 

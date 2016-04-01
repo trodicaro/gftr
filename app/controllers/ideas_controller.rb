@@ -23,5 +23,12 @@ class IdeasController < ApplicationController
 #    @user=User.new
     @visitor = Visitor.new
   end
+  
+#  CONCEPT TEST
+  def ae4lh
+   @user = User.new
+   @click = Click.new
+   @unique_url = params[:uu]
+  end
 
 end
