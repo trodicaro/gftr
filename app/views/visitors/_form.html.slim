@@ -1,9 +1,16 @@
-.signups
-  div
-    = form_for @visitor, remote: true do |f|
-      = f.text_field :first_name, placeholder: "First Name"
-      = f.text_field :last_name, placeholder: "Last Name"      
-      = f.email_field :email, placeholder: "Email Address"
-
-      span#help_block.lapis
-      = f.submit "Sign up", class: "button radius", id: "submit", data: {disable_with: "Loading..."}, onclick: "ga('send', 'event', 'SignUp', 'signup')"
+.row
+  .medium-6.medium-centered.large-4.large-centered.columns
+    .row.column
+      = form_for @visitor, html: {class: "log-in-form"}, remote: true do |f|
+        h4.text-center Create a Giftr Login
+        label
+          | First Name
+          = f.text_field :first_name, placeholder: "First Name"
+        label
+          | Last Name
+          = f.text_field :last_name, placeholder: "Last Name"
+        label
+          | Email
+          = f.email_field :email, placeholder: "Email Address"
+        p
+          = f.submit "Sign up", class: "button expanded", id: "submit", data: {disable_with: "Loading..."}, onclick: "ga('send', 'event', 'SignUpVisitor', 'signupVisitor')"

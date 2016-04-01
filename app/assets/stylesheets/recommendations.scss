@@ -421,3 +421,10 @@
   vertical-align: top;
   }
 }
+
+//// STYLE LOGIN PAGES
+.log-in-form {
+  border: 1px solid $medium-gray;
+  padding: $global-padding;
+  border-radius: $global-radius;
+}
