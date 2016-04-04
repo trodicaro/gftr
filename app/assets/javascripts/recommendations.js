@@ -109,7 +109,6 @@ $(function() {
     });
     $('#save-idea-2').on("click", function(event) {
         sendAnalytics('IdeaActions', 'save-2');
-        
     });
     $('#yes-idea-3').on("click", function(event) {
         event.preventDefault();
