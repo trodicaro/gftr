@@ -3,7 +3,11 @@ class IdeasController < ApplicationController
   def one
    @user = User.new
    @click = Click.new
-   @unique_url = params[:uu]
+     if params[:uu]
+      @unique_url = params[:uu]
+    else
+      @unique_url = 'ae4lh'
+    end
   end
 
   def thankyou
