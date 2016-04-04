@@ -44,12 +44,11 @@ $(function() {
   });
   
   $("#ae4lhbuyidea3option3").click(function() {
-    window.open("https://www.etsy.com/listing/253937414/personalized-cat-necklace-kitty-necklace?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=initial&ref=sr_gallery_21
-');
+    window.open('https://www.etsy.com/listing/253937414/personalized-cat-necklace-kitty-necklace?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=initial&ref=sr_gallery_21','_blank');
   });
   
   $("#ae4lhbuyidea3option4").click(function() {
-    window.open("https://www.etsy.com/listing/262470619/custom-name-necklace-rose-gold-initial?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=custom%20name&ref=sr_gallery_3');
+    window.open("https://www.etsy.com/listing/262470619/custom-name-necklace-rose-gold-initial?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=custom%20name&ref=sr_gallery_3",'_blank');
   });
   
 });

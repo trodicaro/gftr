@@ -16,7 +16,6 @@
 ///RANDOM ORDER SMOKESCREEN DIVS
 var random;
 random = function() {
-  console.log("test");
   var maindiv = $("#shuffleinfo");
     var divs = maindiv.children();
     while (divs.length) {

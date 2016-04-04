@@ -14,7 +14,7 @@
     .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
-            img.thumbnail.zerotbmargin.out-vc[style="margin: 0 auto", src="http://placehold.it/350x250"]
+            div.thumbnail#ONEidea1
     .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
           .jumbotron
@@ -28,7 +28,7 @@
               p.dark-gray
                 | Someone got an awesome hobby gift from her 
                 span.story-details
-                  | boyfriend
+                  | significant other
                 |  on her 
                 span.story-details
                   | birthday
@@ -61,7 +61,7 @@
             .in-vc
               | Save Idea?
               = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
-                .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                .switch.round.zerotbmargin[style="display: inline-block;"]
                   input.switch-input[id="yes-no1", type="checkbox"]
                     label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
                       span.show-for-sr Save this Idea?
@@ -73,28 +73,28 @@
       .row
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: 'ONEbuyidea1option1', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb1
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: 'ONEbuyidea1option2', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb2
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: 'ONEbuyidea1option3', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb3
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: 'ONEbuyidea1option4', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb4
           .title
             h6.strong Fisheye Lense
           .price
@@ -102,7 +102,6 @@
   .actiondetails.row.maybe#maybeinforow1
     .columns.small-offset-1.small-10.end
       h5.strong Join our community, get inspired.
-      /p Browse our full collection of hobby gift stories given between significant others.
       p Women told us about the best HOBBY GIFTS they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
         .columns.small-12.text-center
@@ -113,7 +112,7 @@
     .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
-            img.thumbnail.zerotbmargin.out-vc[style="margin: 0 auto", src="http://placehold.it/350x250"]
+          div.thumbnail#ONEidea2
     .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
           .jumbotron[style="padding-left: 0; padding-right: 0;"]
@@ -127,7 +126,7 @@
               p.dark-gray
                 | Someone got an awesome hobby gift from her 
                 span.story-details
-                  | boyfriend
+                  | significant other
                 |  on her 
                 span.story-details
                   | birthday
@@ -172,28 +171,28 @@
       .row
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: 'ONEbuyidea2option1', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb5
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: 'ONEbuyidea2option2', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb6
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: 'ONEbuyidea2option3', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb7
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: 'ONEbuyidea2option4', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb8
           .title
             h6.strong Fisheye Lense
           .price
@@ -201,7 +200,6 @@
   .actiondetails.row.maybe#maybeinforow2
     .columns.small-offset-1.small-10.end
       h5.strong Join our community, get inspired.
-      /p Browse our full collection of hobby gift stories given between significant others.
       p Women told us about the best HOBBY GIFTS they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
         .columns.small-12.text-center
@@ -212,7 +210,7 @@
     .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
-            img.thumbnail.zerotbmargin.out-vc[style="margin: 0 auto", src="http://placehold.it/350x250"]
+          div.thumbnail#ONEidea3
     .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
           .jumbotron
@@ -226,7 +224,7 @@
               p.dark-gray
                 | Someone got an awesome hobby gift from her 
                 span.story-details
-                  | boyfriend
+                  | significant other
                 |  on her 
                 span.story-details
                   | birthday
@@ -271,28 +269,28 @@
       .row
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id: 'ONEbuyidea3option1', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb9
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: 'ONEbuyidea3option2', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb10
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: 'ONEbuyidea3option3', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb11
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: 'ONEbuyidea3option4', method: :post, remote: true do
-            img.thumbnail[src="http://placehold.it/350x250"]
+            div.thumbnail#ONEthumb12
           .title
             h6.strong Fisheye Lense
           .price
@@ -338,7 +336,6 @@
     div.text-center
       div
         = link_to 'Save my Gift Ideas', clicks_path(button_clicked: 'Save Ideas Collection', goto: 'ideas/saveideas', uu: @unique_url), {class: "button large radius radius pearl", id: "save-options", method: :post}
-        /= link_to 'Save my Gift Ideas', ideas_saveideas_path, {style: "color: $pearl;", class: " button large radius pearl capitalize", id: "#save-options"}
   span#option2
     h4.pearl.text-center.zerotbmargin
       | Select ideas you'd like to save for later.
