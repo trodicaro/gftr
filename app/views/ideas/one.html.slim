@@ -377,7 +377,7 @@ dontpanic
   .jumbotron.text-center.stoneground
     h4 Still have no idea what to get?
     br
-       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo', uu: @unique_url), {class: " button large radius zerotbmargin", id: "click-panic", method: :post}
+       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo', uu: "#{@unique_url}"), {class: " button large radius zerotbmargin", id: "click-panic", method: :post}
         .out-vc
           .in-vc
             h4 Don't Panic
