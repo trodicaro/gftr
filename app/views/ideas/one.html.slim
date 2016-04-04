@@ -48,11 +48,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -60,7 +60,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
                 .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                   input.switch-input[id="yes-no1", type="checkbox"]
                     label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -72,28 +72,28 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: 'ONEbuyidea1option1', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: @unique_url+':BuyIdea1_Option1', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: 'ONEbuyidea1option2', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + ':BuyIdea1_Option2', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: 'ONEbuyidea1option3', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + ':BuyIdea1_Option3', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: 'ONEbuyidea1option4', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: @unique_url + ':BuyIdea1_Option4', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
@@ -147,11 +147,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -159,7 +159,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no2", type="checkbox"]
                       label.switch-paddle[for="yes-no2", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -171,28 +171,28 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: 'ONEbuyidea2option1', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: @unique_url + ':BuyIdea2_Option1', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: 'ONEbuyidea2option2', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: @unique_url + ':BuyIdea2_Option2', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: 'ONEbuyidea2option3', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: @unique_url + ':BuyIdea2_Option3', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: 'ONEbuyidea2option4', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: @unique_url + ':BuyIdea2_Option4', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
@@ -246,11 +246,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 3)', goto:'ideas/one/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-3', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 3)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-3', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/one/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -258,7 +258,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/one/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no3", type="checkbox"]
                       label.switch-paddle[for="yes-no3", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -270,28 +270,28 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id: 'ONEbuyidea3option1', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id: @unique_url + ':BuyIdea3_Option1', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: 'ONEbuyidea3option2', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option2', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: 'ONEbuyidea3option3', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: @unique_url + ':BuyIdea3_Option3', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
           .price
             | $39.99
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: 'ONEbuyidea3option4', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option4', method: :post, remote: true do
             img.thumbnail[src="http://placehold.it/350x250"]
           .title
             h6.strong Fisheye Lense
