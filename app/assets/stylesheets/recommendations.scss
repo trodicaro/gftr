@@ -451,6 +451,6 @@ filter: sepia(50%);
   background-size: cover;
   background-position: center center;
 }
-.switch.round {
-  border-radius: 100%;
+.switch.round .switch-paddle, .switch.round .switch-paddle:after {
+  border-radius: 1000px;
 }
