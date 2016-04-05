@@ -14,7 +14,7 @@
     .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
-          div.thumbnail#ae4lhidea1
+          div.thumbnail[id= '#{@unique_url}idea1']
     .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
           .jumbotron
@@ -48,11 +48,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/ae4lh/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/ae4lh/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -60,7 +60,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/ae4lh/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
                 .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                   input.switch-input[id="yes-no1", type="checkbox"]
                     label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -72,29 +72,29 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: 'ae4lhbuyidea1option1', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb1
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: @unique_url +'BuyIdea1_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb1"]
           .title
             h6.strong Canon 85mm Lens
           .price
             | $369.00
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: 'ae4lhbuyidea1option2', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb2
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb2"]
           .title
             h6.strong Canon SLR Camera Kit
           .price
             | $84.97
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: 'ae4lhbuyidea1option3', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
             div.thumbnail#ae4lhthumb3
           .title
             h6.strong Nikon Digital Camera Kit
           .price
             | $185.95
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: 'ae4lhbuyidea1option4', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb4
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb4"]
           .title
             h6.strong Opteka Fisheye Lense
           .price
@@ -112,7 +112,7 @@
     .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
-          div.thumbnail#ae4lhidea2
+          div.thumbnail[id="#{@unique_url}idea2"]
     .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
           .jumbotron[style="padding-left: 0; padding-right: 0;"]
@@ -146,11 +146,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto:'ideas/ae4lh/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto: 'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/ae4lh/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -158,7 +158,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/ae4lh/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no2", type="checkbox"]
                       label.switch-paddle[for="yes-no2", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -170,29 +170,29 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: 'ae4lhbuyidea2option1', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb5
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb5"]
           .title
             h6.strong 4-Day Panama Trip w/Air
           .price
             | $329 p.p.
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: 'ae4lhbuyidea2option2', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb6
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb6"]
           .title
             h6.strong 4 night Punta Cana Vacation
           .price
             | $599 p.p.
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: 'ae4lhbuyidea2option3', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb7
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb7"]
           .title
             h6.strong Trip to Lake Geneva, WI
           .price
             | $90.30/night
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: 'ae4lhbuyidea2option4', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb8
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb8"]
           .title
             h6.strong Colorado Springs Getaway
           .price
@@ -210,7 +210,7 @@
     .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
-          div.thumbnail#ae4lhidea3
+          div.thumbnail[id= "#{@unique_url}idea3"]
     .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
       .gift-details[data-equalizer-watch]
           .jumbotron
@@ -244,11 +244,11 @@
   .ideaActions.row
     .columns.small-offset-1.small-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 3)', goto:'ideas/ae4lh/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-3', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 3)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-3', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/ae4lh/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -256,7 +256,7 @@
           .out-vc
             .in-vc
               | Save Idea?
-              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/ae4lh/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no3", type="checkbox"]
                       label.switch-paddle[for="yes-no3", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
@@ -268,29 +268,29 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id: 'ae4lhbuyidea3option1', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb9
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id:  @unique_url + 'BuyIdea3_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb9"]
           .title
             h6.strong Personalised Lily Necklace
           .price
             | $45.97
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: 'ae4lhbuyidea3option2', method: :post, remote: true do
-             div.thumbnail#ae4lhthumb10
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb10"]
           .title
             h6.strong Custom Name Ring
           .price
             | $25.00
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: 'ae4lhbuyidea3option3', method: :post, remote: true do
-             div.thumbnail#ae4lhthumb11
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb11"]
           .title
             h6.strong Personalized cat necklace
           .price
             | $10.00
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: 'ae4lhbuyidea3option4', method: :post, remote: true do
-             div.thumbnail#ae4lhthumb12
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb12"]
           .title
             h6.strong Custom Name Necklace
           .price

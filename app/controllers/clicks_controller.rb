@@ -13,8 +13,9 @@ class ClicksController < ApplicationController
 		@click.save
 		
 		@where = params[:goto].to_s
-
-		redirect_to "/#{@where}"
+		
+		redirect_to "/#{@where}/?uu=#{@click.user_code}"
+		# redirect_to "/#{@where}"
 	end
 
 end

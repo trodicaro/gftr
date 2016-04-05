@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 #  get 'ideas/index' => 'ideas#index'
   # get '/ideas' => 'ideas#index'
   get 'ideas/one' => 'ideas#one'
+  get 'ideas/ONE' => 'ideas#one'
   get 'ideas/moreinfo' => 'ideas#moreinfo'
   get 'ideas/thankyou' => 'ideas#thankyou'
   get 'ideas/saveideas' => 'ideas#saveideas'

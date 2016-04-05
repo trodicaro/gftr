@@ -2,52 +2,52 @@
 
 $(function() {
   //idea1
-  $("#ONEbuyidea1option1").click(function() {
+  $("#ONEBuyIdea1_Option1").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea1option2").click(function() {
+  $("#ONEBuyIdea1_Option2").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea1option3").click(function() {
+  $("#ONEBuyIdea1_Option3").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea1option4").click(function() {
+  $("#ONEBuyIdea1_Option4").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
   //idea2
-  $("#ONEbuyidea2option1").click(function() {
+  $("#ONEBuyIdea2_Option1").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea2option2").click(function() {
+  $("#ONEBuyIdea2_Option2").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea2option3").click(function() {
+  $("#ONEBuyIdea2_Option3").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea2option4").click(function() {
+  $("#ONEBuyIdea2_Option4").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   //idea3
-  $("#ONEbuyidea3option1").click(function() {
+  $("#ONEBuyIdea3_Option1").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea3option2").click(function() {
+  $("#ONEBuyIdea3_Option2").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea3option3").click(function() {
+  $("#ONEBuyIdea3_Option3").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
-  $("#ONEbuyidea3option4").click(function() {
+  $("#ONEBuyIdea3_Option4").click(function() {
     window.open("http://www.google.com",'_blank');
   });
   
