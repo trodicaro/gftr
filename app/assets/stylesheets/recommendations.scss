@@ -287,10 +287,12 @@
 }
 .ideaActions .button-group .button {
   font-size: 1.25rem;
+  padding: 0;
 }
 .ideaActions .button.hollow {
-  padding-top: .25rem;
-  padding-bottom: .35rem;
+//  padding-top: 0;
+//  padding-bottom: 0;
+  padding-left: 17px;
 }
 .ideaActions .button.hollow:hover {
   cursor: default;
@@ -451,6 +453,55 @@ filter: sepia(50%);
   background-size: cover;
   background-position: center center;
 }
+.switch.round .switch-paddle {
+//  margin-top: 0;
+  margin: 0 5px;
+  margin-bottom: -4px;
+}
+.switch {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
 .switch.round .switch-paddle, .switch.round .switch-paddle:after {
   border-radius: 1000px;
+}
+@media all and (max-width: 64em) { 
+  .gift-container.jumbotron, .gift-details .jumbotron {
+    padding-left: 0;
+    padding-right: 0;  
+  }
+
+}
+@media all and (max-width: 40em) {
+  .gift-photo .thumbnail {
+    margin-bottom: 0;
+  }
+  .gift-details .jumbotron {
+    padding-top: 0;
+  }
+  .gift-container > .row,  {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+  .idea-top-left {
+    border-right: 1px solid $light-gray;
+    border-top-right-radius: 6px;
+  }
+  .idea-top-right {
+    border-left: 1px solid $light-gray;
+    border-top: none;
+    border-top-right-radius: 0;
+  } 
+  .ideaActions .button-group .button {
+    font-size: .875rem;
+  }
+  .switch {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+}
+@media all and (max-width: 450px) {
+  .switch {
+    padding-top: 0;
+  }
 }
