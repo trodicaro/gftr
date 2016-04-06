@@ -18,8 +18,11 @@ Rails.application.routes.draw do
   get 'ideas/thankyou' => 'ideas#thankyou'
   get 'ideas/saveideas' => 'ideas#saveideas'
   get 'ideas/inspireme' => 'ideas#inspireme'
+  #Concept Test
   get 'ideas/ae4lh' => 'ideas#ae4lh'
+  get 'ideas/euoy6' => 'ideas#euoy6'
 
+  
   post 'clicks', to: "clicks#create"
 
   PagesController.action_methods.each do |action|

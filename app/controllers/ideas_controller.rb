@@ -38,4 +38,14 @@ class IdeasController < ApplicationController
       @unique_url = 'ae4lh'
     end  
   end
+  
+  def euoy6
+   @user = User.new
+   @click = Click.new
+    if params[:uu]
+      @unique_url = params[:uu]
+    else
+      @unique_url = 'euoy6'
+    end  
+  end
 end
