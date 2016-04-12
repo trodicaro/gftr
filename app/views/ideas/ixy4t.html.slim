@@ -11,11 +11,11 @@
       p.text-center We collected successful gift stories from hundreds of women and curated the stories most relevant to you.  
 .gift-container.jumbotron#idea1
   .row[data-equalizer]
-    .columns.medium-offset-1.medium-5.idea-top-left.small-offset-1.small-10.end
+    .columns.medium-offset-1.medium-5.idea-top-left.end
       div[style="display: table; width: 100%;"]
         .gift-photo.in-vc[data-equalizer-watch]
           div.thumbnail[id= '#{@unique_url}idea1']
-    .columns.medium-offset-0.medium-5.idea-top-right.small-offset-1.small-10.end
+    .columns.medium-offset-0.medium-5.idea-top-right.end
       .gift-details[data-equalizer-watch]
           .jumbotron
             h4.text-center
@@ -46,7 +46,7 @@
                 cite.float-right Female, 24
               .columns.small-1
   .ideaActions.row
-    .columns.small-offset-1.small-10.zerolrpadding.end
+    .columns.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
         =link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
           .out-vc[data-equalizer-watch]
@@ -68,7 +68,7 @@
                       span.switch-active[aria-hidden="true"] Yes
                       span.switch-inactive[aria-hidden="true"] No
   .actiondetails.row#yesinforow1
-    .columns.small-offset-1.small-10.end
+    .columns.end
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
@@ -100,7 +100,7 @@
           .price
             | $29.95/month
   .actiondetails.row.maybe#maybeinforow1
-    .columns.small-offset-1.small-10.end
+    .columns.end
       h5.strong Join our community, get inspired.
       p Women told us about the best hobby gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
