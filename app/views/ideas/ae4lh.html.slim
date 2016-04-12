@@ -87,7 +87,7 @@
             | $84.97
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
-            div.thumbnail#ae4lhthumb3
+            div.thumbnail[id= "#{@unique_url}thumb3"]
           .title
             h6.strong Nikon Digital Camera Kit
           .price
@@ -124,7 +124,7 @@
           div.row
             .columns.small-12
               p.dark-gray
-                | Someone got an vacation gift from her 
+                | Someone got a vacation gift from her 
                 span.story-details
                   | significant other
                 |  on her 

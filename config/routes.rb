@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   #Concept Test
   get 'ideas/ae4lh' => 'ideas#ae4lh'
   get 'ideas/euoy6' => 'ideas#euoy6'
+  get 'ideas/ixy4t' => 'ideas#ixy4t'
 
   
   post 'clicks', to: "clicks#create"

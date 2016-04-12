@@ -14,7 +14,7 @@ $(function() {
   });
   
   $("#" + userid2 + "BuyIdea1_Option3").click(function() {
-    window.open("meshu.io",'_blank');
+    window.open("https://meshu.io",'_blank');
   });
   
   $("#" + userid2 + "BuyIdea1_Option4").click(function() {
