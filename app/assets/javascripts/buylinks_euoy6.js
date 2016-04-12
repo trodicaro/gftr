@@ -10,7 +10,7 @@ $(function() {
   });
   
   $("#" + userid2 + "BuyIdea1_Option2").click(function() {
-    window.open("https://www.etsy.com/listing/245777240/20-off-custom-name-ring-personalized?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=custom%20name&ref=sr_gallery_2",'_blank');
+    window.open("https://www.etsy.com/listing/254880726/custom-initial-necklace-gold-initial?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=custom%20initials%20necklace&ref=sr_gallery_9",'_blank');
   });
   
   $("#" + userid2 + "BuyIdea1_Option3").click(function() {
@@ -39,7 +39,7 @@ $(function() {
   });
   //idea3
   $("#" + userid2 + "BuyIdea3_Option1").click(function() {
-    window.open("https://www.groupon.com/deals/ga-great-value-vacations-panama-city-4",'_blank');
+    window.open("https://www.groupon.com/deals/ga-great-value-vacations-killkenny-killarney-limerick-dublin",'_blank');
   });
   
   $("#" + userid2 + "BuyIdea3_Option2").click(function() {
