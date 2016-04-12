@@ -63,12 +63,12 @@
               = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
                 .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                   input.switch-input[id="yes-no1", type="checkbox"]
-                    label.switch-paddle[for="yes-no1", style="margin-bottom: -4px; margin-left: .5rem; margin-top: 0.5rem"]
+                    label.switch-paddle[for="yes-no1"]
                       span.show-for-sr Save this Idea?
                       span.switch-active[aria-hidden="true"] Yes
                       span.switch-inactive[aria-hidden="true"] No
   .actiondetails.row#yesinforow1
-    .columns.end
+    .columns.medium-offset-1.medium-10.end
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
@@ -100,7 +100,7 @@
           .price
             | $29.95/month
   .actiondetails.row.maybe#maybeinforow1
-    .columns.end
+    .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.
       p Women told us about the best hobby gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
