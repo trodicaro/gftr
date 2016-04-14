@@ -8,6 +8,7 @@
   .row
     .columns.small-12
       h3.stoneground.text-center.strong#hello_message Hi, Demetrius! Check out your gift ideas.
+      p.text-center We collected successful gift stories from hundreds of women and curated the stories most relevant to you.
     
 .gift-container.jumbotron#idea1
   .row[data-equalizer]
@@ -19,31 +20,31 @@
       .gift-details[data-equalizer-watch]
           .jumbotron
             h4.text-center
-              | How about a 
+              | How about  
               span.strong.lapis.uppercare
-                | Hobby Gift
+                | Jewelry
               | ?
           div.row
             .columns.small-12
               p.dark-gray
-                | Someone got an awesome hobby gift from her 
+                | Someone got beautiful jewelry from her 
+                /span.story-details
+                  /| partner
+                |  partner, 
                 span.story-details
-                  | significant other
-                |  on her 
+                  | just because
+                | , after they had been 
                 span.story-details
-                  | birthday
-                |  after they had been 
-                span.story-details
-                  | dating for 6 months
+                  | married for 15 years
                 | .
           h6.stoneground.strong
             | Here's her story:
           p.blockquote.stoneground.justify[style="font-style: italic"]
-              | "He got me a special camera lense, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
+              | "I got a gold bracelet. I loved that it was a surprise - no special occasion! This way it meant more to me."
           .recipient-details
             .row
               .columns.small-11
-                cite.float-right Female, 36
+                cite.float-right Female, 35
               .columns.small-1
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
@@ -56,10 +57,11 @@
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
-        .button.three.radius.hollow.primary[data-equalizer-watch]
-          .out-vc
+        .button.three.radius.hollow.primary
+          .out-vc[data-equalizer-watch]
             .in-vc
-              | Save Idea?
+              div[style="display: inline-block; padding: 5px 0"]
+                | Save Idea?
               = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
                 .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                   input.switch-input[id="yes-no1", type="checkbox"]
@@ -75,34 +77,34 @@
           = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: @unique_url +'BuyIdea1_Option1', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb1"]
           .title
-            h6.strong Canon 85mm Lens
+            h6.strong 18K Gold Bracelet
           .price
-            | $369.00
+            | $32.00
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option2', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb2"]
           .title
-            h6.strong Canon SLR Camera Kit
+            h6.strong Custom Initial Necklace
           .price
-            | $84.97
+            | $52.00
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb3"]
           .title
-            h6.strong Nikon Digital Camera Kit
+            h6.strong Custom 3D-Printed Meshu Pendant
           .price
-            | $185.95
+            | $80-$135
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option4', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb4"]
           .title
-            h6.strong Opteka Fisheye Lense
+            h6.strong Designer Labradorite Necklace
           .price
-            | $149.95
+            | $185.00
   .actiondetails.row.maybe#maybeinforow1
     .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.
-      p Women told us about the best hobby gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      p Women told us about the best jewelry they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
         .columns.small-12.text-center
           = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 1) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-1-join", method: :post}
@@ -117,36 +119,36 @@
       .gift-details[data-equalizer-watch]
           .jumbotron[style="padding-left: 0; padding-right: 0;"]
             h4.text-center
-              | How about a 
+              | How about a gift for someone 
               span.strong.lapis.uppercare
-                | Vacation Together
+                | always on the go
               | ?
           div.row
             .columns.small-12
               p.dark-gray
-                | Someone got a vacation gift from her 
-                span.story-details
+                | Someone got an awesome gift from her 
+                /span.story-details
                   | significant other
-                |  on her 
+                | partner, 
                 span.story-details
-                  | birthday
-                |  after they had been 
+                  | just because
+                | , after they had been 
                 span.story-details
-                  | dating for 1 year
+                  | married for 20 years
                 | .
           h6.stoneground.strong
             | Here's her story:
           p.blockquote.stoneground.justify[style="font-style: italic"]
-              | "I needed a break, and the fact that my boyfriend recognized this &amp; took the time and effort to plan something for me was sweet. What a fantastic trip! "
+              | "The best gift I ever received was a remote starter for my car. I loved the fact that I could start the car from inside my house and let it warm up."
           .recipient-details
             .row
               .columns.small-11
-                cite.float-right Female, 28
+                cite.float-right Female, 40
               .columns.small-1
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto: 'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
@@ -154,10 +156,11 @@
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
-        .button.three.radius.hollow.primary[data-equalizer-watch]
-          .out-vc
+        .button.three.radius.hollow.primary
+          .out-vc[data-equalizer-watch]
             .in-vc
-              | Save Idea?
+              div[style="display: inline-block; padding: 5px 0"]
+                | Save Idea?
               =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no2", type="checkbox"]
@@ -173,34 +176,34 @@
           = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option1', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb5"]
           .title
-            h6.strong 4-Day Panama Trip w/Air
+            h6.strong Car Alarm &amp; Remote Start System
           .price
-            | $329 p.p.
+            | $72.20
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option2', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb6"]
           .title
-            h6.strong 4 night Punta Cana Vacation
+            h6.strong Car Air Vent Phone Holder
           .price
-            | $599 p.p.
+            | $7.05
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option3', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb7"]
           .title
-            h6.strong Trip to Lake Geneva, WI
+            h6.strong Bon Voyage Gift Package
           .price
-            | $90.30/night
+            | DIY
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option4', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb8"]
           .title
-            h6.strong Colorado Springs Getaway
+            h6.strong Kindle Paperwhite
           .price
-            | $74/night
+            | $139.99
   .actiondetails.row.maybe#maybeinforow2
     .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.
-      p Women told us about the best travel gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      p Women told us about the best gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
         .columns.small-12.text-center
           = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 2) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-2-join", method: :post}
@@ -215,31 +218,31 @@
       .gift-details[data-equalizer-watch]
           .jumbotron
             h4.text-center
-              | How about 
+              | How about a 
               span.strong.lapis.uppercare
-                | Personalized Jewelry
+                | Vacation Together
               | ?
           div.row
             .columns.small-12
               p.dark-gray
-                | Someone got an awesome piece from her 
+                /| Someone got an awesome hobby gift from her 
                 span.story-details
-                  | significant other
-                |  for 
+                  | 32%
+                |  of our community reported that their most memorable 
                 span.story-details
-                  | the holidays
-                |  after they had been 
+                  | "just because"
+                |  gifts from significant others were 
                 span.story-details
-                  | dating for 1 year
+                  | trips together
                 | .
-          h6.stoneground.strong
+          /h6.stoneground.strong
             | Here's her story:
-          p.blockquote.stoneground.justify[style="font-style: italic"]
-              | "He got me a gold pendant of a hockey player. I loved it because I love hockey and the pendant was perfect for everyday wear. However, it didn't come with a chain so I had to use an old one."
-          .recipient-details
+          /p.blockquote.stoneground.justify[style="font-style: italic"]
+              | "He got me a special camera lense, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
+          /.recipient-details
             .row
               .columns.small-11
-                cite.float-right Female, 20
+                cite.float-right Female, 36
               .columns.small-1
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
@@ -252,10 +255,11 @@
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
-        .button.three.radius.hollow.primary[data-equalizer-watch]
-          .out-vc
+        .button.three.radius.hollow.primary
+          .out-vc[data-equalizer-watch]
             .in-vc
-              | Save Idea?
+              div[style="display: inline-block; padding: 5px 0;"]
+                | Save Idea?
               =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no3", type="checkbox"]
@@ -268,37 +272,37 @@
       h6 We found similar gifts that you might like.
       .row
         .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id:  @unique_url + 'BuyIdea3_Option1', method: :post, remote: true do
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option1', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb9"]
           .title
-            h6.strong Personalised Lily Necklace
+            h6.strong 8-Day Ireland Trip w/Air
           .price
-            | $45.97
+            | $799 p.p.
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option2', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb10"]
           .title
-            h6.strong Custom Name Ring
+            h6.strong 4 night Punta Cana Vacation
           .price
-            | $25.00
+            | $599 p.p.
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option3', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb11"]
           .title
-            h6.strong Personalized cat necklace
+            h6.strong Trip to Lake Geneva, WI
           .price
-            | $10.00
+            | $90 per night
         .columns.medium-3.small-6
           = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option4', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb12"]
           .title
-            h6.strong Custom Name Necklace
+            h6.strong Colorado Springs Getaway
           .price
-            | $13.50
+            | $74 per night
   .actiondetails.row.maybe#maybeinforow3
     .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.
-      p Women told us about the best personalized jewelry they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      p Women told us about the best travel gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
       .row
         .columns.small-12.text-center
           = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 3) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-3-join", method: :post}
@@ -310,7 +314,7 @@
   i.fa.fa-star-half-o.lapis
 /.giftr-tips
   .row
-    .columns.medium-offset-1.medium-10.end[data-equalizer]
+    .columns.medium-offset-1.medium-10.small-offset-1.small-10.end[data-equalizer]
       .columns.medium-10.small-9.out-vcW[data-equalizer-watch]
         div.in-vc
           p.zerotbmargin
@@ -374,7 +378,7 @@ dontpanic
   .jumbotron.text-center.stoneground
     h4 Still have no idea what to get?
     br
-       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo', uu: @unique_url), {class: " button large radius zerotbmargin", id: "click-panic", method: :post}
+       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo', uu: "#{@unique_url}"), {class: " button large radius zerotbmargin", id: "click-panic", method: :post}
         .out-vc
           .in-vc
             h4 Don't Panic
