@@ -27,7 +27,8 @@ class IdeasController < ApplicationController
 #    @user=User.new
     @visitor = Visitor.new
   end
-  
+
+#========================================  
 #  CONCEPT TEST
   def ae4lh
    @user = User.new
@@ -77,5 +78,10 @@ class IdeasController < ApplicationController
     else
       @unique_url = 'duh2y'
     end  
+  end
+
+  def r8xpb
+    @user = User.new && @click = Click.new
+      params[:uu] ? @unique_url = params[:uu] : @unique_url = 'r8xpb'
   end
 end
