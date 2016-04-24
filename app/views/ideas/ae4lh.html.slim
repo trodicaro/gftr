@@ -45,6 +45,38 @@
               .columns.small-11
                 cite.float-right Female, 36
               .columns.small-1
+  .actiondetails.row#yesinforow1
+    .columns.medium-offset-1.medium-10.end
+      h6 We found similar gifts that you might like.
+      .row[data-equalizer]
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: @unique_url +'BuyIdea1_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb1"]
+          .title
+            h6.strong Canon 85mm Lens
+          .price
+            | $369.00
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb2"]
+          .title
+            h6.strong Canon SLR Camera Kit
+          .price
+            | $84.97
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb3"]
+          .title
+            h6.strong Nikon Digital Camera Kit
+          .price
+            | $185.95
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb4"]
+          .title
+            h6.strong Opteka Fisheye Lense
+          .price
+            | $149.95
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
@@ -67,38 +99,6 @@
                       span.show-for-sr Save this Idea?
                       span.switch-active[aria-hidden="true"] Yes
                       span.switch-inactive[aria-hidden="true"] 
-  .actiondetails.row#yesinforow1
-    .columns.medium-offset-1.medium-10.end
-      h6 We found similar gifts that you might like.
-      .row
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: @unique_url +'BuyIdea1_Option1', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb1"]
-          .title
-            h6.strong Canon 85mm Lens
-          .price
-            | $369.00
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option2', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb2"]
-          .title
-            h6.strong Canon SLR Camera Kit
-          .price
-            | $84.97
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb3"]
-          .title
-            h6.strong Nikon Digital Camera Kit
-          .price
-            | $185.95
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option4', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb4"]
-          .title
-            h6.strong Opteka Fisheye Lense
-          .price
-            | $149.95
   .actiondetails.row.maybe#maybeinforow1
     .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.
@@ -143,10 +143,42 @@
               .columns.small-11
                 cite.float-right Female, 28
               .columns.small-1
+  .actiondetails.row#yesinforow2
+    .columns.medium-offset-1.medium-10.end
+      h6 We found similar gifts that you might like.
+      .row[data-equalizer]
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb5"]
+          .title
+            h6.strong 4-Day Panama Trip w/Air
+          .price
+            | $329 p.p.
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb6"]
+          .title
+            h6.strong 4 night Punta Cana Vacation
+          .price
+            | $599 p.p.
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb7"]
+          .title
+            h6.strong Trip to Lake Geneva, WI
+          .price
+            | $90.30/night
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb8"]
+          .title
+            h6.strong Colorado Springs Getaway
+          .price
+            | $74/night
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 2)', goto: 'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
+        /=link_to clicks_path(button_clicked: 'Yes (idea 2)', goto: 'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-2', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
@@ -164,39 +196,7 @@
                       label.switch-paddle[for="yes-no2"]
                         span.show-for-sr Save this Idea?
                         span.switch-active[aria-hidden="true"] Yes
-                        span.switch-inactive[aria-hidden="true"] No
-  .actiondetails.row#yesinforow2
-    .columns.medium-offset-1.medium-10.end
-      h6 We found similar gifts that you might like.
-      .row
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option1', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb5"]
-          .title
-            h6.strong 4-Day Panama Trip w/Air
-          .price
-            | $329 p.p.
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option2', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb6"]
-          .title
-            h6.strong 4 night Punta Cana Vacation
-          .price
-            | $599 p.p.
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option3', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb7"]
-          .title
-            h6.strong Trip to Lake Geneva, WI
-          .price
-            | $90.30/night
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option4', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb8"]
-          .title
-            h6.strong Colorado Springs Getaway
-          .price
-            | $74/night
+                        span.switch-inactive[aria-hidden="true"] 
   .actiondetails.row.maybe#maybeinforow2
     .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.
@@ -241,10 +241,42 @@
               .columns.small-11
                 cite.float-right Female, 20
               .columns.small-1
+  .actiondetails.row#yesinforow3
+    .columns.medium-offset-1.medium-10.end
+      h6 We found similar gifts that you might like.
+      .row[data-equalizer]
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id:  @unique_url + 'BuyIdea3_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb9"]
+          .title
+            h6.strong Personalised Lily Necklace
+          .price
+            | $45.97
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb10"]
+          .title
+            h6.strong Custom Name Ring
+          .price
+            | $25.00
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb11"]
+          .title
+            h6.strong Personalized cat necklace
+          .price
+            | $10.00
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb12"]
+          .title
+            h6.strong Custom Name Necklace
+          .price
+            | $13.50
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 3)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-3', method: :post, remote: true
+        /=link_to clicks_path(button_clicked: 'Yes (idea 3)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-3', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
@@ -262,39 +294,7 @@
                       label.switch-paddle[for="yes-no3"]
                         span.show-for-sr Save this Idea?
                         span.switch-active[aria-hidden="true"] Yes
-                        span.switch-inactive[aria-hidden="true"] No
-  .actiondetails.row#yesinforow3
-    .columns.medium-offset-1.medium-10.end
-      h6 We found similar gifts that you might like.
-      .row
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id:  @unique_url + 'BuyIdea3_Option1', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb9"]
-          .title
-            h6.strong Personalised Lily Necklace
-          .price
-            | $45.97
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option2', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb10"]
-          .title
-            h6.strong Custom Name Ring
-          .price
-            | $25.00
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option3', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb11"]
-          .title
-            h6.strong Personalized cat necklace
-          .price
-            | $10.00
-        .columns.medium-3.small-6
-          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option4', method: :post, remote: true do
-            div.thumbnail[id= "#{@unique_url}thumb12"]
-          .title
-            h6.strong Custom Name Necklace
-          .price
-            | $13.50
+                        span.switch-inactive[aria-hidden="true"]
   .actiondetails.row.maybe#maybeinforow3
     .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.

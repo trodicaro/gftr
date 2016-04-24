@@ -46,30 +46,30 @@ $(function() {
     });
   
     //GIFT ACTIONS SECTION TOGGLE
-    $('#yes-idea-1').click(function() {
-        $('#yesinforow1').slideToggle(200);
-        $('#maybeinforow1:visible').slideToggle(200);
-    });
-    $('#yes-idea-2').click(function() {
-        $('#yesinforow2').slideToggle(200);
-        $('#maybeinforow2:visible').slideToggle(200);
-    })
-    $('#yes-idea-3').click(function() {
-        $('#yesinforow3').slideToggle(200);
-        $('#maybeinforow3:visible').slideToggle(200);
-    })
+//    $('#yes-idea-1').click(function() {
+//        $('#yesinforow1').slideToggle(200);
+//        $('#maybeinforow1:visible').slideToggle(200);
+//    });
+//    $('#yes-idea-2').click(function() {
+//        $('#yesinforow2').slideToggle(200);
+//        $('#maybeinforow2:visible').slideToggle(200);
+//    })
+//    $('#yes-idea-3').click(function() {
+//        $('#yesinforow3').slideToggle(200);
+//        $('#maybeinforow3:visible').slideToggle(200);
+//    })
 
     $('#maybe-idea-1').click(function() {
         $('#maybeinforow1').slideToggle(200);
-        $('#yesinforow1:visible').slideToggle(200);
+//        $('#yesinforow1:visible').slideToggle(200);
     });
    $('#maybe-idea-2').click(function() {
         $('#maybeinforow2').slideToggle(200);
-        $('#yesinforow2:visible').slideToggle(200);
+//        $('#yesinforow2:visible').slideToggle(200);
     });
    $('#maybe-idea-3').click(function() {
         $('#maybeinforow3').slideToggle(200);
-        $('#yesinforow3:visible').slideToggle(200);
+//        $('#yesinforow3:visible').slideToggle(200);
     });
 
     //GOOGLE ANALYTICS IDEA PAGE
