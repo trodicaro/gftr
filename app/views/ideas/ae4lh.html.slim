@@ -48,7 +48,7 @@
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
+        /=link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
@@ -59,14 +59,14 @@
         .button.three.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
-              | Save Idea?
+              p Save Idea?
               = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
                 .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                   input.switch-input[id="yes-no1", type="checkbox"]
                     label.switch-paddle[for="yes-no1"]
                       span.show-for-sr Save this Idea?
                       span.switch-active[aria-hidden="true"] Yes
-                      span.switch-inactive[aria-hidden="true"] No
+                      span.switch-inactive[aria-hidden="true"] 
   .actiondetails.row#yesinforow1
     .columns.medium-offset-1.medium-10.end
       h6 We found similar gifts that you might like.
@@ -157,7 +157,7 @@
         .button.three.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
-              | Save Idea?
+              p Save Idea?
               =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no2", type="checkbox"]
@@ -255,7 +255,7 @@
         .button.three.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
-              | Save Idea?
+              p Save Idea?
               =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
                   .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
                     input.switch-input[id="yes-no3", type="checkbox"]

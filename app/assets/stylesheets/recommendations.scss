@@ -209,25 +209,25 @@
   display: table-cell;
   float: none;
 }
-.button-group .two:before {
-  content: "OR";
-  z-index: 9999;
-  color: #999;
-  display: block;
-  font-size: 1rem;
-  padding: 0.25em;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  left: -moz-calc(33% - 1em);
-  left: -webkit-calc(33% - 1em);
-  left: -o-calc(33% - 1em);
-  left: calc(33% -  1em);
-  top: -moz-calc(50% - 12px);
-  top: -webkit-calc(50% - 12px);
-  top: -o-calc(50% - 12px);
-  top: calc(50% -  12px);
-}
+//.button-group .two:before {
+//  content: "OR";
+//  z-index: 9999;
+//  color: #999;
+//  display: block;
+//  font-size: 1rem;
+//  padding: 0.25em;
+//  border-radius: 50%;
+//  background: #fff;
+//  position: absolute;
+//  left: -moz-calc(33% - 1em);
+//  left: -webkit-calc(33% - 1em);
+//  left: -o-calc(33% - 1em);
+//  left: calc(33% -  1em);
+//  top: -moz-calc(50% - 12px);
+//  top: -webkit-calc(50% - 12px);
+//  top: -o-calc(50% - 12px);
+//  top: calc(50% -  12px);
+//}
 .button-group .three:before {
   content: "OR";
   z-index: 9999;
@@ -238,10 +238,10 @@
   border-radius: 50%;
   background: #fff;
   position: absolute;
-  left: -moz-calc(66.6% - 1em);
-  left: -webkit-calc(66.6% - 1em);
-  left: -o-calc(66.6% - 1em);
-  left: calc(66.6% -  1em);
+  left: -moz-calc(50% - 1em);
+  left: -webkit-calc(50% - 1em);
+  left: -o-calc(50% - 1em);
+  left: calc(50% -  1em);
   top: -moz-calc(50% - 12px);
   top: -webkit-calc(50% - 12px);
   top: -o-calc(50% - 12px);
@@ -263,6 +263,7 @@
     border-left: 1px solid $light-gray;
   }
 }
+
 .switch-on {
   position: absolute;
   left: -55px;
@@ -453,14 +454,20 @@ filter: sepia(50%);
   background-size: cover;
   background-position: center center;
 }
-.switch.round .switch-paddle {
-//  margin-top: 0;
-  margin: 0 5px;
-  margin-bottom: -4px;
+.button .in-vc p {
+//  padding-bottom: 4px;
+  display: inline-block;
+  margin: 0;
+}
+.switch-input {
+  margin: 0;
 }
 .switch {
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+.switch.round .switch-paddle {
+  margin: 0 0 -4px 5px;
 }
 .switch.round .switch-paddle, .switch.round .switch-paddle:after {
   border-radius: 1000px;
@@ -470,7 +477,6 @@ filter: sepia(50%);
     padding-left: 0;
     padding-right: 0;  
   }
-
 }
 @media all and (max-width: 40em) {
   .gift-photo .thumbnail {
@@ -499,9 +505,15 @@ filter: sepia(50%);
     padding-top: .25rem;
     padding-bottom: .25rem;
   }
+  .button .in-vc p {
+  padding-bottom: 4px;
+  }
+  .switch.round .switch-paddle {
+  margin: 0 0 -8px 5px;
+  }
 }
 @media all and (max-width: 450px) {
   .switch {
-    padding-top: 0;
+//    padding-top: 0;
   }
 }
