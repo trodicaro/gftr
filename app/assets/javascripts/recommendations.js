@@ -28,19 +28,15 @@ $(function() {
     $('input[type="checkbox"]').click(function() {
 
         var ideasCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
-
         if (ideasCount > 0) {
-            $('#ideasCounter').text(ideasCount);
             $('#option1').css("display", "inherit");
-            $('#option2').css("display", "none");
             if (ideasCount == 1) {
-                $('#ideasPlural').text(" idea.");
+                $('#save-options').text("Save "+ideasCount+" Idea");
             } else {
-                $('#ideasPlural').text(" ideas.");
+                $('#save-options').text("Save "+ideasCount+" Ideas");
             }
         } else {
             $('#option1').css("display", "none");
-            $('#option2').css("display", "inherit");
         }
       $(this).closest('form').submit();
     });
