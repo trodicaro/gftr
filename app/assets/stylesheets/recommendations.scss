@@ -6,7 +6,32 @@
 #userform, #more-options, #thank-you {
 	display:none;
 }
-
+.button.secondary {
+  background-color: $ltyellow;
+  color: $stoneground;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.button.secondary:hover, .button.secondary:focus {
+  background-color: darken($ltyellow, 25%);
+  color: $stoneground;
+}
+.storyblock .suggestedGift {
+  padding-top: 25px;
+  font-size: 0.9rem;
+}
+.storyblock p, .storyblock .hidediv {
+  display: none;
+}
+.diy {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 800;
+  background-color: white;
+  color: $stoneground;
+  border-radius: 6px;
+}
 //BEGIN COUNTDOWN
 #countdown {
 //  background-color: $salmon;
@@ -164,10 +189,10 @@
   border-radius: 3px;
 }
 .fa-star.lapis {
-  color: $salmon;
+  color: $lapis;
 }
 .fa-star-half-o.lapis {
-  color: $salmon;
+  color: $lapis;
 }
 //.border {
 //  width: 100%;
@@ -340,7 +365,10 @@
 .actiondetails.maybe a {
   font-style: normal;
 }
-
+.relationship-details .columns {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 /////STYLES MORE OPTIONS PAGE
 #moreinfoblock, #signup {
@@ -471,13 +499,37 @@ filter: sepia(50%);
 .switch.round .switch-paddle, .switch.round .switch-paddle:after {
   border-radius: 1000px;
 }
+.gift-details .bg-ltyellow {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0 15px;
+}
+.gift-container .thumbnail {
+  margin-bottom: 0;
+}
+.gift-container .row .columns:nth-child(2) {
+  padding-left: 5px;
+}
+.storyblock .button {
+  padding: 0.5em;
+}
+.storyblock p {
+  font-size: 80%;
+  margin: 10px 0;
+  padding: 0 5px;
+  //background-color: $ltyellow;
+}
 @media all and (max-width: 64em) { 
   .gift-container.jumbotron, .gift-details .jumbotron {
     padding-left: 0;
     padding-right: 0;  
   }
 }
-@media all and (max-width: 40em) {
+@media all and (max-width: 639px) {
+  .gift-details .bg-ltyellow {
+  margin-left: -5px;
+  margin-right: -10px;
+}
   .gift-photo .thumbnail {
     margin-bottom: 0;
   }

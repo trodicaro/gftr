@@ -7,6 +7,7 @@ $lapis: #556dac;
 $salmon: #f79b77;
 $peppercorn: #755248;
 $stoneground: #4b4345;
+$ltyellow: #F7EF77;
 
 $lightblue: #0066ff;//Giftr logo color
 $blue: #000066;//Giftr logo color
@@ -31,6 +32,12 @@ $negnavheight: -67px;
 }
 .capitalize {
   text-transform: capitalize;
+}
+.italic {
+  font-style: italic;
+}
+.narrow {
+  font-family: Arial Narrow, Arial, sans-serif;
 }
 .jumbotron {
   padding: 3rem;
@@ -108,6 +115,9 @@ $negnavheight: -67px;
 }
 .bg-lightgray {
   background-color: $light-gray;
+}
+.bg-ltyellow {
+  background-color: $ltyellow;
 }
 .button.radius {
     border-radius: 3px;

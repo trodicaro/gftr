@@ -8,7 +8,67 @@
   .row
     .columns.small-12
       h3.stoneground.text-center.strong#hello_message Hi, Tom! Check out your gift ideas.
+.text-center
+  span#option1
+    h5.text-center.zerotbmargin[style="display: inline-block;"]
+      | You've collected 
+    h3.text-center.zerotbmargin.strong#ideasCounter[style="display: inline-block;"]
+      | 0
+    h5.text-center.zerotbmargin#ideasPlural[style="display: inline-block;"]
+      |  ideas.
+    div.text-center
+      div
+        = link_to 'Save Ideas', clicks_path(button_clicked: 'Save Ideas Collection', goto: 'ideas/saveideas', uu: @unique_url), {class: "button large radius radius pearl", id: "save-options", method: :post}
+  /span#option2
+    h4.text-center.zerotbmargin
+      | Select ideas to save for later.
     
+/.jumbotron.bg-stoneground.text-center
+  span#option1
+    h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
+      | Awesome! You've collected 
+    h3.pearl.text-center.zerotbmargin.strong#ideasCounter[style="display: inline-block;"]
+      | 0
+    h5.pearl.text-center.zerotbmargin#ideasPlural[style="display: inline-block;"]
+      |  ideas.
+    p.medium-gray.text-center.rem0875
+      | Save your ideas to refer back to them later.
+    div.text-center
+      div
+        = link_to 'Save my Gift Ideas', clicks_path(button_clicked: 'Save Ideas Collection', goto: 'ideas/saveideas', uu: @unique_url), {class: "button large radius radius pearl", id: "save-options", method: :post}
+  span#option2
+    h4.pearl.text-center.zerotbmargin
+      | Select ideas you'd like to save for later.
+    p.medium-gray.text-center.zerotbmargin.rem0875
+      | After 10 minutes we might show you alternate gift stories from our community. Save the ideas you'd like to keep. 
+      span[style="font-style: italic;"]
+        | Time remaining: 
+        span.rem1[style="display: inline-block;"]
+          span#countdown.countdownHolder
+            span.countDays[style="display: none"]
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            /span.countDiv.countDiv0
+            span.countHours[style="display: none"]
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            /span.countDiv.countDiv1
+            span.countMinutes
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            span.countDiv.countDiv2
+            span.countSeconds
+              span.position
+                span.digit.static
+              span.position
+                span.digit.static
+            /span.countDiv.countDiv3
 .gift-container.jumbotron#idea1
   .row[data-equalizer]
     .columns.medium-offset-1.medium-5.idea-top-left.end
@@ -17,74 +77,101 @@
           div.thumbnail[id= '#{@unique_url}idea1']
     .columns.medium-offset-0.medium-5.idea-top-right.end
       .gift-details[data-equalizer-watch]
-          .jumbotron
-            h4.text-center
-              | How about a 
-              span.strong.lapis.uppercare
-                | Hobby Gift
-              | ?
-          div.row
-            .columns.small-12
-              p.dark-gray
-                | Someone got an awesome hobby gift from her 
-                span.story-details
-                  | significant other
-                |  on her 
-                span.story-details
-                  | birthday
-                |  after they had been 
-                span.story-details
-                  | dating for 6 months
-                | .
-          h6.stoneground.strong
-            | Here's her story:
-          p.blockquote.stoneground.justify[style="font-style: italic"]
-              | "He got me a special camera lense, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
-          .recipient-details
-            .row
-              .columns.small-11
-                cite.float-right Female, 36
-              .columns.small-1
+          h4.text-center.stoneground.strong
+            | The Story
+          div.stoneground.justify.zerotbmargin.bg-ltyellow
+            p "He got me a special camera lens, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
+            .recipient-details
+              .row
+                .columns.small-11
+                  cite.float-right.black Rossi from Chicago, 36
+                .columns.small-1
+          br
+          .relationship-details.row.text-center.capitalize.narrow.peppercorn
+            .columns.small-4
+              .bg-lightgray
+                | dating
+            .columns.small-4
+              .bg-lightgray
+                | 6 months
+            .columns.small-4
+              .bg-lightgray
+                | birthday
   .actiondetails.row#yesinforow1
-    .columns.medium-offset-1.medium-10.end
-      h6 We found similar gifts that you might like.
-      .row[data-equalizer]
+    .columns.medium-offset-1.medium-10.end[data-equalizer]
+      h6 We found similar hobby gifts that you might like.
+      .row[data-equalizer="foo"]
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: @unique_url +'BuyIdea1_Option1', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb1"]
           .title
-            h6.strong Canon 85mm Lens
+            h6.strong.narrow[data-equalizer-watch="foo"] Canon 85mm Lens
           .price
             | $369.00
+          .storyblock
+            .button.radius.secondary.narrow#showstory1-1
+              .showdiv
+                | Show Story 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Hide Story 
+                i.fa.fa-chevron-up.fa-1x
+            p.black.justify
+              | "He got me a special camera lens, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option2', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb2"]
           .title
-            h6.strong Canon SLR Camera Kit
-          .price
-            | $84.97
+            h6.strong.narrow[data-equalizer-watch="foo"] Canon SLR Camera Kit
+          .price.diy
+            i.fa.fa-star.fa-1x.lapis
+            |  DIY 
+            i.fa.fa-star.fa-1x.lapis
+          .storyblock
+            .button.radius.secondary.narrow#showstory1-2
+              .showdiv
+                | Show Story 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Hide Story 
+                i.fa.fa-chevron-up.fa-1x
+            p.black.justify
+              | "There are better lenses out there, but I'm not greedy :)"
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb3"]
           .title
-            h6.strong Nikon Digital Camera Kit
+            h6.strong.narrow[data-equalizer-watch="foo"] Nikon Digital Camera Kit
           .price
             | $185.95
+          .storyblock.stoneground.narrow
+            .suggestedGift
+              |  Suggested Gift 
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option4', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb4"]
           .title
-            h6.strong Opteka Fisheye Lense
+            h6.strong.narrow[data-equalizer-watch="foo"] Opteka Fisheye Lense
           .price
             | $149.95
+          .storyblock
+            .button.radius.secondary.narrow#showstory1-4
+              .showdiv
+                | Show Story 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Hide Story 
+                i.fa.fa-chevron-up.fa-1x
+            p.black.justify
+              | "There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :)"
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        /=link_to clicks_path(button_clicked: 'Yes (idea 1)', goto:'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
+        /=link_to clicks_path(button_clicked: 'Yes (idea 2)', goto: 'ideas/' + @unique_url + '/#yes', uu: @unique_url), class: 'button radius zerotbpadding', id: 'yes-idea-1', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -92,13 +179,13 @@
           .out-vc
             .in-vc
               p Save Idea?
-              = form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
-                .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
-                  input.switch-input[id="yes-no1", type="checkbox"]
-                    label.switch-paddle[for="yes-no1"]
-                      span.show-for-sr Save this Idea?
-                      span.switch-active[aria-hidden="true"] Yes
-                      span.switch-inactive[aria-hidden="true"] 
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+                  .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                    input.switch-input[id="yes-no1", type="checkbox"]
+                      label.switch-paddle[for="yes-no1"]
+                        span.show-for-sr Save this Idea?
+                        span.switch-active[aria-hidden="true"] Yes
+                        span.switch-inactive[aria-hidden="true"]
   .actiondetails.row.maybe#maybeinforow1
     .columns.medium-offset-1.medium-10.end
       h5.strong Join our community, get inspired.
@@ -115,13 +202,33 @@
           div.thumbnail[id="#{@unique_url}idea2"]
     .columns.medium-offset-0.medium-5.idea-top-right.end
       .gift-details[data-equalizer-watch]
-          .jumbotron[style="padding-left: 0; padding-right: 0;"]
+        h4.text-center.stoneground.strong
+            | The Story
+        p.stoneground.justify.zerotbmargin
+          | "I needed a break, and the fact that my boyfriend recognized this &amp; took the time and effort to plan something for me was sweet. What a fantastic trip!"
+        .recipient-details
+          .row
+            .columns.small-11
+              cite.float-right Maggie from Chicago, 28
+            .columns.small-1
+        br
+        .relationship-details.row.text-center.capitalize.narrow.peppercorn
+          .columns.small-4
+            .bg-lightgray
+              | dating
+          .columns.small-4
+            .bg-lightgray
+              | 25 years
+          .columns.small-4
+            .bg-lightgray
+              | just because
+          /.jumbotron[style="padding-left: 0; padding-right: 0;"]
             h4.text-center
               | How about a 
               span.strong.lapis.uppercare
                 | Vacation Together
               | ?
-          div.row
+          /div.row
             .columns.small-12
               p.dark-gray
                 | Someone got a vacation gift from her 
@@ -134,18 +241,18 @@
                 span.story-details
                   | dating for 1 year
                 | .
-          h6.stoneground.strong
+          /h6.stoneground.strong
             | Here's her story:
-          p.blockquote.stoneground.justify[style="font-style: italic"]
-              | "I needed a break, and the fact that my boyfriend recognized this &amp; took the time and effort to plan something for me was sweet. What a fantastic trip! "
-          .recipient-details
+          /p.blockquote.stoneground.justify[style="font-style: italic"]
+              | "I needed a break, and the fact that my boyfriend recognized this &amp; took the time and effort to plan something for me was sweet. What a fantastic trip!"
+          /.recipient-details
             .row
               .columns.small-11
                 cite.float-right Female, 28
               .columns.small-1
   .actiondetails.row#yesinforow2
     .columns.medium-offset-1.medium-10.end
-      h6 We found similar gifts that you might like.
+      h6 We found similar trips that you might like to take together.
       .row[data-equalizer]
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option1', method: :post, remote: true do
@@ -182,7 +289,7 @@
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -244,33 +351,33 @@
   .actiondetails.row#yesinforow3
     .columns.medium-offset-1.medium-10.end
       h6 We found similar gifts that you might like.
-      .row[data-equalizer]
+      .row[data-equalizer, data-equalizer="foo"]
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id:  @unique_url + 'BuyIdea3_Option1', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb9"]
           .title
-            h6.strong Personalised Lily Necklace
+            h6.strong[data-equalizer-watch="foo"] Personalised Lily Necklace
           .price
             | $45.97
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option2', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb10"]
           .title
-            h6.strong Custom Name Ring
+            h6.strong[data-equalizer-watch="foo"] Custom Name Ring
           .price
             | $25.00
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option3', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb11"]
           .title
-            h6.strong Personalized cat necklace
+            h6.strong[data-equalizer-watch="foo"] Personalized cat necklace
           .price
             | $10.00
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option4', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb12"]
           .title
-            h6.strong Custom Name Necklace
+            h6.strong[data-equalizer-watch="foo"] Custom Name Necklace
           .price
             | $13.50
   .ideaActions.row
@@ -280,7 +387,7 @@
           .out-vc[data-equalizer-watch]
             .in-vc 
               |Yes!
-        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two secondary radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
@@ -321,55 +428,7 @@
       .columns.medium-2.small-3.text-center[style="padding: 0;", data-equalizer-watch]
         .circle
           img[src="/assets/Giftr_square.png"]
-        h6.text-center.zerotbmargin.lapis.strong TIPS
-
-.jumbotron.bg-stoneground.text-center
-  span#option1
-    h5.pearl.text-center.zerotbmargin[style="display: inline-block;"]
-      | Awesome! You've collected 
-    h3.pearl.text-center.zerotbmargin.strong#ideasCounter[style="display: inline-block;"]
-      | 0
-    h5.pearl.text-center.zerotbmargin#ideasPlural[style="display: inline-block;"]
-      |  ideas.
-    p.medium-gray.text-center.rem0875
-      | Save your ideas to refer back to them later.
-    div.text-center
-      div
-        = link_to 'Save my Gift Ideas', clicks_path(button_clicked: 'Save Ideas Collection', goto: 'ideas/saveideas', uu: @unique_url), {class: "button large radius radius pearl", id: "save-options", method: :post}
-  span#option2
-    h4.pearl.text-center.zerotbmargin
-      | Select ideas you'd like to save for later.
-    p.medium-gray.text-center.zerotbmargin.rem0875
-      | After 10 minutes we might show you alternate gift stories from our community. Save the ideas you'd like to keep. 
-      span[style="font-style: italic;"]
-        | Time remaining: 
-        span.rem1[style="display: inline-block;"]
-          span#countdown.countdownHolder
-            span.countDays[style="display: none"]
-              span.position
-                span.digit.static
-              span.position
-                span.digit.static
-            /span.countDiv.countDiv0
-            span.countHours[style="display: none"]
-              span.position
-                span.digit.static
-              span.position
-                span.digit.static
-            /span.countDiv.countDiv1
-            span.countMinutes
-              span.position
-                span.digit.static
-              span.position
-                span.digit.static
-            span.countDiv.countDiv2
-            span.countSeconds
-              span.position
-                span.digit.static
-              span.position
-                span.digit.static
-            /span.countDiv.countDiv3
-      
+        h6.text-center.zerotbmargin.lapis.strong TIPS      
 dontpanic
   .jumbotron.text-center.stoneground
     h4 Still have no idea what to get?
