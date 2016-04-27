@@ -155,7 +155,7 @@ $(function() {
   for (i=0; i<4; i++) {
     for (j=0; j<5; j++) {
       $('#showstory'+i+'-'+j).on("click", function(event) {
-        $(this).siblings('p').toggle();
+        $(this).siblings().toggle();
         $(this).children('.hidediv').toggle();
         $(this).children('.showdiv').toggle();
         window.dispatchEvent(new Event('resize'));

@@ -59,17 +59,20 @@ span#option1
               .hidediv
                 | Hide Story 
                 i.fa.fa-chevron-up.fa-1x
-            p.black.justify
-              | "He got me a special camera lens, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
+            .black.justify.substory
+              .row
+                p "He got me a special camera lens, exactly what I needed to take my photography business further. There are better lenses out there, but I'm not greedy :)"
+              .row
+                .columns.small-11
+                  cite.float-right.black Rossi from Chicago, 36
+                .columns.small-1
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option2', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb2"]
           .title
             h6.strong.narrow[data-equalizer-watch="foo"] Canon SLR Camera Kit
           .price.diy
-            i.fa.fa-star.fa-1x.lapis
-            |  DIY 
-            i.fa.fa-star.fa-1x.lapis
+            |  Do It Yourself
           .storyblock
             .button.radius.secondary.narrow#showstory1-2
               .showdiv
@@ -78,8 +81,13 @@ span#option1
               .hidediv
                 | Hide Story 
                 i.fa.fa-chevron-up.fa-1x
-            p.black.justify
-              | "There are better lenses out there, but I'm not greedy :)"
+            .black.justify.substory
+              .row
+                p "There are better lenses out there, but I'm not greedy :)"
+              .row
+                .columns.small-11
+                  cite.float-right.black Rossi from Chicago, 36
+                .columns.small-1
         .columns.medium-3.small-6[data-equalizer-watch]
           = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
             div.thumbnail[id= "#{@unique_url}thumb3"]
@@ -105,8 +113,13 @@ span#option1
               .hidediv
                 | Hide Story 
                 i.fa.fa-chevron-up.fa-1x
-            p.black.justify
-              | "There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :)"
+            .black.justify.substory
+              .row
+                p "There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :) There are better lenses out there, but I'm not greedy :)"
+              .row
+                .columns.small-11
+                  cite.float-right.black Rossi from Chicago, 36
+                .columns.small-1
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
