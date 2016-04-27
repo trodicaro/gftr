@@ -8,7 +8,7 @@
   .row
     .columns.small-12
       h3.stoneground.text-center.strong#hello_message Hi, Tom! Check out your gift ideas.
-span#option1
+span#savecounter
   div.text-center
     div
       = link_to 'Save Ideas', clicks_path(button_clicked: 'Save Ideas Collection', goto: 'ideas/saveideas', uu: @unique_url), {class: "button large radius radius pearl", id: "save-options", method: :post}
@@ -40,7 +40,7 @@ span#option1
             .columns.small-4
               .bg-lightgray
                 | birthday
-  .actiondetails.row#yesinforow1
+  .actiondetails.row.yes
     .columns.medium-offset-1.medium-10.end[data-equalizer]
       h6 We found similar hobby gifts that you might like.
       .row[data-equalizer="foo"]
@@ -123,11 +123,11 @@ span#option1
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button two radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
-        .button.three.radius.hollow.primary[data-equalizer-watch]
+        .button.mid.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
               p Save Idea?
@@ -202,7 +202,7 @@ span#option1
               .columns.small-11
                 cite.float-right Female, 28
               .columns.small-1
-  .actiondetails.row#yesinforow2
+  .actiondetails.row.yes
     .columns.medium-offset-1.medium-10.end
       h6 We found similar trips that you might like to take together.
       .row[data-equalizer]
@@ -237,11 +237,11 @@ span#option1
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button two radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
-        .button.three.radius.hollow.primary[data-equalizer-watch]
+        .button.mid.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
               p Save Idea?
@@ -296,7 +296,7 @@ span#option1
               .columns.small-11
                 cite.float-right Female, 20
               .columns.small-1
-  .actiondetails.row#yesinforow3
+  .actiondetails.row.yes
     .columns.medium-offset-1.medium-10.end
       h6 We found similar gifts that you might like.
       .row[data-equalizer, data-equalizer="foo"]
@@ -331,11 +331,11 @@ span#option1
   .ideaActions.row
     .columns.medium-offset-1.medium-10.zerolrpadding.end
       .button-group.expanded.expand[data-equalizer style="margin: 0;"]
-        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button two radius zerotbpadding', method: :post, remote: true
+        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button radius zerotbpadding', method: :post, remote: true
           .out-vc[data-equalizer-watch]
             .in-vc
               | Maybe
-        .button.three.radius.hollow.primary[data-equalizer-watch]
+        .button.mid.radius.hollow.primary[data-equalizer-watch]
           .out-vc
             .in-vc
               p Save Idea?

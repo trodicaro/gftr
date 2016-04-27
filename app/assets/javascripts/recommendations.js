@@ -28,44 +28,62 @@ $(function() {
     $('input[type="checkbox"]').click(function() {
 
         var ideasCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+      //conept test guys 1-5
+        if (ideasCount > 0) {      
+          $('#ideasCounter').text(ideasCount);
+          $('#option1').css("display", "inherit");
+          $('#option2').css("display", "none");
+          if (ideasCount == 1) {
+             $('#ideasPlural').text(" idea.");
+          } else {
+             $('#ideasPlural').text(" ideas.");
+          }
+        } else {
+          $('#option1').css("display", "none");
+          $('#option2').css("display", "inherit");
+        }
+      //conecpt test guys 5+  
         if (ideasCount > 0) {
-            $('#option1').css("display", "inherit");
+            $('#savecounter').css("display", "inherit");
             if (ideasCount == 1) {
                 $('#save-options').text("Save "+ideasCount+" Idea");
             } else {
                 $('#save-options').text("Save "+ideasCount+" Ideas");
             }
         } else {
-            $('#option1').css("display", "none");
+            $('#savecounter').css("display", "none");
         }
       $(this).closest('form').submit();
     });
   
     //GIFT ACTIONS SECTION TOGGLE
-//    $('#yes-idea-1').click(function() {
-//        $('#yesinforow1').slideToggle(200);
-//        $('#maybeinforow1:visible').slideToggle(200);
-//    });
-//    $('#yes-idea-2').click(function() {
-//        $('#yesinforow2').slideToggle(200);
-//        $('#maybeinforow2:visible').slideToggle(200);
-//    })
-//    $('#yes-idea-3').click(function() {
-//        $('#yesinforow3').slideToggle(200);
-//        $('#maybeinforow3:visible').slideToggle(200);
-//    })
-
+    
+    //concept test guys 1-5
+    $('#yes-idea-1').click(function() {
+        $('#yesinforow1').slideToggle(200);
+        $('#maybeinforow1:visible').slideToggle(200);
+    });
+    $('#yes-idea-2').click(function() {
+        $('#yesinforow2').slideToggle(200);
+        $('#maybeinforow2:visible').slideToggle(200);
+    })
+    $('#yes-idea-3').click(function() {
+        $('#yesinforow3').slideToggle(200);
+        $('#maybeinforow3:visible').slideToggle(200);
+    })
+    
+    //concept test guys 5+
     $('#maybe-idea-1').click(function() {
         $('#maybeinforow1').slideToggle(200);
-//        $('#yesinforow1:visible').slideToggle(200);
+        $('#yesinforow1:visible').slideToggle(200);
     });
    $('#maybe-idea-2').click(function() {
         $('#maybeinforow2').slideToggle(200);
-//        $('#yesinforow2:visible').slideToggle(200);
+        $('#yesinforow2:visible').slideToggle(200);
     });
    $('#maybe-idea-3').click(function() {
         $('#maybeinforow3').slideToggle(200);
-//        $('#yesinforow3:visible').slideToggle(200);
+        $('#yesinforow3:visible').slideToggle(200);
     });
 
     //GOOGLE ANALYTICS IDEA PAGE

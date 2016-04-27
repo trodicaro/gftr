@@ -6,13 +6,13 @@
 #userform, #more-options, #thank-you {
 	display:none;
 }
-.button.secondary {
+.storyblock .button.secondary {
   background-color: $lapis;
   color: $pearl;
   margin-bottom: 0;
   margin-top: 20px;
 }
-.button.secondary:hover, .button.secondary:focus {
+.storyblock .button.secondary:hover, .storyblock .button.secondary:focus {
   background-color: darken($lapis, 25%);
   color: $pearl;
 }
@@ -237,26 +237,46 @@
   display: table-cell;
   float: none;
 }
-//.button-group .two:before {
-//  content: "OR";
-//  z-index: 9999;
-//  color: #999;
-//  display: block;
-//  font-size: 1rem;
-//  padding: 0.25em;
-//  border-radius: 50%;
-//  background: #fff;
-//  position: absolute;
-//  left: -moz-calc(33% - 1em);
-//  left: -webkit-calc(33% - 1em);
-//  left: -o-calc(33% - 1em);
-//  left: calc(33% -  1em);
-//  top: -moz-calc(50% - 12px);
-//  top: -webkit-calc(50% - 12px);
-//  top: -o-calc(50% - 12px);
-//  top: calc(50% -  12px);
-//}
+.button-group .two:before {
+  content: "OR";
+  z-index: 9999;
+  color: #999;
+  display: block;
+  font-size: 1rem;
+  padding: 0.25em;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -moz-calc(33% - 1em);
+  left: -webkit-calc(33% - 1em);
+  left: -o-calc(33% - 1em);
+  left: calc(33% -  1em);
+  top: -moz-calc(50% - 12px);
+  top: -webkit-calc(50% - 12px);
+  top: -o-calc(50% - 12px);
+  top: calc(50% -  12px);
+}
 .button-group .three:before {
+  content: "OR";
+  z-index: 9999;
+  color: #999;
+  display: block;
+  font-size: 1rem;
+  padding: 0.25em;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -moz-calc(66.6% - 1em);
+  left: -webkit-calc(66.6% - 1em);
+  left: -o-calc(66.6% - 1em);
+  left: calc(66.6% -  1em);
+  top: -moz-calc(50% - 12px);
+  top: -webkit-calc(50% - 12px);
+  top: -o-calc(50% - 12px);
+  top: calc(50% -  12px);
+  border-right: 2px solid $lapis;
+}
+.button-group .mid:before {
   content: "OR";
   z-index: 9999;
   color: #999;
@@ -330,12 +350,15 @@
 }
 #option1 {
   display: none;
+}
+#savecounter {
+  display: none;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 100;
 }
-#option1 .button {
+#savecounter .button {
   padding: 10px;
 }
 #click-panic {
@@ -356,8 +379,6 @@
   background-color: lighten($lapis, 40%);
   color: $stoneground;
 }
-.actiondetails>.columns { 
-}
 .actiondetails a {
   font-size: .8125rem;
   font-style: oblique;
@@ -366,8 +387,11 @@
   margin-top: 15px;
 //  max-height: 100px;
 }
-.actiondetails.maybe {
+.actiondetails {
   display: none;
+}
+.actiondetails.yes {
+  display: inherit;
 }
 .actiondetails.maybe>.columns {
   background-color: lighten($light-gray, 5%);
