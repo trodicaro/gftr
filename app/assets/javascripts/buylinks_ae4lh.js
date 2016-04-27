@@ -23,19 +23,19 @@ $(function() {
   
   //idea2
   $("#" + userid1 + "BuyIdea2_Option1").click(function() {
-    window.open("https://www.groupon.com/deals/ga-great-value-vacations-panama-city-4",'_blank');
+    window.open("https://www.groupon.com/deals/ga-bk-top-secret-new-orleans-hotel-1-1",'_blank');
   });
   
   $("#" + userid1 + "BuyIdea2_Option2").click(function() {
-    window.open("https://www.groupon.com/deals/ga-travel-by-jen-alsol-luxury-village-2",'_blank');
+    window.open("https://www.groupon.com/deals/ga-blue-ridge-manor-bed-breakfast-7",'_blank');
   });
   
   $("#" + userid1 + "BuyIdea2_Option3").click(function() {
-    window.open("https://www.groupon.com/deals/ga-bk-the-cove-of-lake-geneva-7",'_blank');
+    window.open("https://www.groupon.com/deals/ga-great-value-vacations-panama-city-4",'_blank');
   });
   
   $("#" + userid1 + "BuyIdea2_Option4").click(function() {
-    window.open("https://www.groupon.com/deals/ga-bk-best-western-plus-peak-vista-inn-suites-14",'_blank');
+    window.open("https://www.groupon.com/deals/ga-travel-by-jen-alsol-luxury-village-2",'_blank');
   });
   //idea3
   $("#" + userid1 + "BuyIdea3_Option1").click(function() {

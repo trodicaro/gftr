@@ -84,4 +84,14 @@ class IdeasController < ApplicationController
     @user = User.new && @click = Click.new
       params[:uu] ? @unique_url = params[:uu] : @unique_url = 'r8xpb'
   end
+  
+  def e5rd6
+    @user = User.new && @click = Click.new
+      params[:uu] ? @unique_url = params[:uu] : @unique_url = 'e5rd6'
+  end
+  
+  def bto30
+    @user = User.new && @click = Click.new
+      params[:uu] ? @unique_url = params[:uu] : @unique_url = 'bto30'
+  end
 end
