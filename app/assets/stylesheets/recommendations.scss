@@ -502,6 +502,9 @@
 -ms-filter: sepia(50%);
 filter: sepia(50%);
 }
+.actiondetails .thumbnail.bottom {
+  background-position: center bottom;
+}
 #ONEthumb1, #ONEthumb2, #ONEthumb3, #ONEthumb4, #ONEthumb5, #ONEthumb6, #ONEthumb7, #ONEthumb8, #ONEthumb9, #ONEthumb10, #ONEthumb11, #ONEthumb12 {
   background-image: url("http://placehold.it/350x250");
 }
@@ -514,7 +517,9 @@ filter: sepia(50%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  min-height: 125px;
 }
+
 .button .in-vc p {
 //  padding-bottom: 4px;
   display: inline-block;

@@ -6,52 +6,52 @@ userid7 = "e5rd6";
 $(function() {
   //idea1
   $("#" + userid7 + "BuyIdea1_Option1").click(function() {
-    window.open("http://www.punkybunnydesigns.com/shop/index.php?main_page=product_info&cPath=95&products_id=182",'_blank');
+    window.open("http://www.virginballoonflights.co.uk/product/birthday-sunrise-gift-package-two/",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea1_Option2").click(function() {
-    window.open("http://meshu.io",'_blank');
+    window.open("http://trulyexperiences.com/uk/kew-gardens-private-tour.html",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea1_Option3").click(function() {
-    window.open("http://www.tiffany.com/jewelry/bracelets/elsa-peretti-open-heart-bracelet-23318768",'_blank');
+    window.open("http://www.ridinginlondon.com/activities-horseriding/horseriding-adults/",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea1_Option4").click(function() {
-    window.open("https://www.net-a-porter.com/us/en/product/676497/cornelia_webb/set-of-two-gold-plated-labradorite-necklaces",'_blank');
+    window.open("https://www.skydivelondon.co.uk/skydives/tandem-skydive",'_blank');
   });
   
   //idea2
   $("#" + userid7 + "BuyIdea2_Option1").click(function() {
-    window.open("https://www.etsy.com/listing/84152546/you-and-me-on-a-bicycle-original?ref=shop_home_listings",'_blank');
+    window.open("https://www.groupon.co.uk/deals/ga-clear-sky-holidays-553",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea2_Option2").click(function() {
-    window.open("https://www.etsy.com/listing/258726283/custom-letters-words-images-on-wood",'_blank');
+    window.open("https://www.groupon.co.uk/deals/ga-tour-center-294",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea2_Option3").click(function() {
-    window.open("http://www.michaels.com/studio-decor-basics-metro-frame/M10137858.html",'_blank');
+    window.open("https://www.groupon.co.uk/deals/ga-weekender-breaks-484",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea2_Option4").click(function() {
-    window.open("http://www.eatsleepdecorate.blogspot.com/2012/03/diy-jewelry-box.html",'_blank');
+    window.open("https://www.thegrove.co.uk/spa/offers-short-breaks/",'_blank');
   });
   //idea3
   $("#" + userid7 + "BuyIdea3_Option1").click(function() {
-    window.open("https://www.groupon.com/deals/chicago-balloon-rides",'_blank');
+    window.open("https://www.etsy.com/listing/244918381/9k-rose-gold-natural-emerald-white-opal?ga_order=price_asc&ga_search_type=handmade&ga_view_type=gallery&ga_search_query=opal%20ring&ref=sr_gallery_23",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea3_Option2").click(function() {
-    window.open("https://www.whittl.com/result?query=couples+massage&location=Chicago%2C+IL&view=map",'_blank');
+    window.open("https://www.net-a-porter.com/gb/en/product/714490/kenneth_jay_lane/tasseled-gold-plated-beaded-turquoise-necklace",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea3_Option3").click(function() {
-    window.open("https://atyourschool.youritdept.com/tcb/jsp/Calendar.jsp?GROUP=B7&TIME=Y&TYPE=M&YEAR=2016&MONTH=5",'_blank');
+    window.open("https://www.net-a-porter.com/gb/en/product/638574/rosantica/gold-tone-faux-pearl-earrings",'_blank');
   });
   
   $("#" + userid7 + "BuyIdea3_Option4").click(function() {
-    window.open("http://www.vivo-chicago.com/private-events-2/table-70",'_blank');
+    window.open("http://meshu.io",'_blank');
   });
   
 });

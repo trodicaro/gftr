@@ -1,0 +1,371 @@
+
+/#pagetop
+.pseudotopbar
+  .row
+    .columns
+      = image_tag '/assets/Giftr_Logo.png', style: "max-height: 30px;"
+.jumbotron
+  .row
+    .columns.small-12
+      h3.stoneground.text-center.strong#hello_message Hi, Rami! Check out your gift ideas.
+span#savecounter
+  div.text-center
+    div
+      = link_to 'Save Ideas', clicks_path(button_clicked: 'Save Ideas Collection', goto: 'ideas/saveideas', uu: @unique_url), {class: "button large radius radius pearl", id: "save-options", method: :post}
+.gift-container.jumbotron#idea1
+  .row[data-equalizer]
+    .columns.medium-offset-1.medium-5.idea-top-left.end
+      div[style="display: table; width: 100%;"]
+        .gift-photo.in-vc[data-equalizer-watch]
+          div.thumbnail[id= '#{@unique_url}idea1']
+    .columns.medium-offset-0.medium-5.idea-top-right.end
+      .gift-details[data-equalizer-watch]
+          h4.text-center.stoneground.strong
+            | The Inspiration
+          div.stoneground.justify.zerotbmargin.bg-ltyellow
+            p "The best gift I ever got was a hot air balloon ride from my boyfriend. He co-ordinated with my mom and I knew absolutely nothing about it in advance. Such a surprise, I would've never paid for something like that myself (it's too expensive usually) and I'm so happy I got to experience this."
+            .recipient-details
+              .row
+                .columns.small-11
+                  cite.float-right.black Jenna from Chicago, 34
+                .columns.small-1
+          br
+          .relationship-details.row.text-center.capitalize.narrow.peppercorn
+            .columns.small-4
+              .bg-lightgray
+                | dating
+            .columns.small-4
+              .bg-lightgray
+                | 2 years
+            .columns.small-4
+              .bg-lightgray
+                | birthday
+  .actiondetails.row.yes
+    .columns.medium-offset-1.medium-10.end[data-equalizer]
+      h6 We found a few experience gifts that you might like to share together.
+      .row[data-equalizer="foo"]
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option1)', uu: @unique_url), id: @unique_url +'BuyIdea1_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb1"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Sunrise Birthday Ride
+          .price
+            | £229
+          .storyblock
+            .suggestedGift.stoneground.narrow
+              |  Suggested Gift
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb2"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Private tour of Kew Gardens &amp; Michelin dinner
+          .price
+            |  £200
+          .storyblock
+            .button.radius.secondary.narrow#showstory1-2
+              .showdiv
+                | Inspired By 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Inspired By 
+                i.fa.fa-chevron-up.fa-1x
+            .black.justify.substory
+              .row
+                p "My best gift was a private five course meal with a private server at a 5 star restaurant with my boyfriend. I liked it because I love wine and they had an extensive menu and great food and it was really romantic. I loved that it was so thoughtful and it was an experience we could have together."
+              .row
+                .columns.small-11
+                  cite.float-right.black Erin from Chicago, 25
+                .columns.small-1
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb3"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Horse Riding Experience
+          .price
+            | From £50
+          .storyblock.stoneground.narrow
+            .button.radius.secondary.narrow#showstory1-3
+              .showdiv
+                | Inspired By 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Inspired By 
+                i.fa.fa-chevron-up.fa-1x
+            .black.justify.substory
+              .row
+                p "I had and rode horses for years when I was younger, but hadn't in years. The best gift I received was that he took me to a horse barn for a trail ride! I loved that the gift was thoughtful and cute."
+              .row
+                .columns.small-11
+                  cite.float-right.black Rena from Chicago, 23
+                .columns.small-1
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea1 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea1_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb4"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Skydiving &amp; Dinner
+          .price
+            | £225
+          .storyblock.stoneground.narrow
+            .button.radius.secondary.narrow#showstory1-4
+              .showdiv
+                | Inspired By 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Inspired By 
+                i.fa.fa-chevron-up.fa-1x
+            .black.justify.substory
+              .row
+                p "The best gift I got was my boyfriend taking me on a skydiving adventure followed by a nice dinner. I loved that it was a surprise, an adventure, and so thoughtful that he knew exactly what I wanted."
+              .row
+                .columns.small-11
+                  cite.float-right.black Julie from Boulder, 22
+                .columns.small-1
+  .ideaActions.row
+    .columns.medium-offset-1.medium-10.zerolrpadding.end
+      .button-group.expanded.expand[data-equalizer style="margin: 0;"]
+        =link_to clicks_path(button_clicked: 'Maybe (idea 1)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-1', class: 'button radius zerotbpadding', method: :post, remote: true
+          .out-vc[data-equalizer-watch]
+            .in-vc
+              | Maybe
+        .button.mid.radius.hollow.primary[data-equalizer-watch]
+          .out-vc
+            .in-vc
+              p Save Idea?
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 1', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-1', style: "display: inline-block"}, method: :post, remote:true) do |f|
+                  .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                    input.switch-input[id="yes-no1", type="checkbox"]
+                      label.switch-paddle[for="yes-no1"]
+                        span.show-for-sr Save this Idea?
+                        span.switch-active[aria-hidden="true"] Yes
+                        span.switch-inactive[aria-hidden="true"]
+  .actiondetails.row.maybe#maybeinforow1
+    .columns.medium-offset-1.medium-10.end
+      h5.strong Join our community, get inspired.
+      p Women told us about the best experience gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      .row
+        .columns.small-12.text-center
+          = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 1) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-1-join", method: :post}
+
+.gift-container.jumbotron#idea2
+  .row[data-equalizer]
+    .columns.medium-offset-1.medium-5.idea-top-left.end
+      div[style="display: table; width: 100%;"]
+        .gift-photo.in-vc[data-equalizer-watch]
+          div.thumbnail[id= '#{@unique_url}idea2']
+    .columns.medium-offset-0.medium-5.idea-top-right.end
+      .gift-details[data-equalizer-watch]
+          h4.text-center.stoneground.strong
+            | The Inspiration
+          div.stoneground.justify.zerotbmargin.bg-ltyellow
+            p "“The best gift I ever got was a romantic trip to the Dominican Republic with my boyfriend. I loved that we could spend that time together, and it is also beautiful in the DR.“"
+            .recipient-details
+              .row
+                .columns.small-11
+                  cite.float-right.black Monika from Chicago, 25
+                .columns.small-1
+          br
+          .relationship-details.row.text-center.capitalize.narrow.peppercorn
+            .columns.small-4
+              .bg-lightgray
+                | dating
+            .columns.small-4
+              .bg-lightgray
+                | 2 years
+            .columns.small-4
+              .bg-lightgray
+                | birthday
+  .actiondetails.row.yes
+    .columns.medium-offset-1.medium-10.end[data-equalizer]
+      h6 We found a few trips that you might like to take together.
+      .row[data-equalizer="foo"]
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option1)', uu: @unique_url), id: @unique_url +'BuyIdea2_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb5"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Beach Getaway to Algarve
+          .price
+            | From £129 p.p.
+          .storyblock
+            .suggestedGift.stoneground.narrow
+              | Suggested Gift
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option2', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb6"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Weekend Getaway to Barcelona
+          .price
+            | From £89 p.p.
+          .storyblock
+            .button.radius.secondary.narrow#showstory2-2
+              .showdiv
+                | Inspired By 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Inspired By 
+                i.fa.fa-chevron-up.fa-1x
+            .black.justify.substory
+              .row
+                p "The best gift I received was a weekend in Barcelona. I loved that it was spontaneous, romantic, and incredibly fun to do something together."
+              .row
+                .columns.small-11
+                  cite.float-right.black Liz from London, 26
+                .columns.small-1
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb7"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Trip to Marrakech
+          .price
+            | From £89 p.p.
+          .storyblock.stoneground.narrow
+            .suggestedGift
+              | Suggested Gift 
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea2 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea2_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb8"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] London Spacation
+          .price
+            | £293 p.p.
+          .storyblock
+            .suggestedGift
+              | Suggested Gift
+  .ideaActions.row
+    .columns.medium-offset-1.medium-10.zerolrpadding.end
+      .button-group.expanded.expand[data-equalizer style="margin: 0;"]
+        =link_to clicks_path(button_clicked: 'Maybe (idea 2)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-2', class: 'button radius zerotbpadding', method: :post, remote: true
+          .out-vc[data-equalizer-watch]
+            .in-vc
+              | Maybe
+        .button.mid.radius.hollow.primary[data-equalizer-watch]
+          .out-vc
+            .in-vc
+              p Save Idea?
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 2', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-2', style: "display: inline-block"}, method: :post, remote:true) do |f|
+                  .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                    input.switch-input[id="yes-no2", type="checkbox"]
+                      label.switch-paddle[for="yes-no2"]
+                        span.show-for-sr Save this Idea?
+                        span.switch-active[aria-hidden="true"] Yes
+                        span.switch-inactive[aria-hidden="true"]
+  .actiondetails.row.maybe#maybeinforow2
+    .columns.medium-offset-1.medium-10.end
+      h5.strong Join our community, get inspired.
+      p Women told us about the best travel gifts they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      .row
+        .columns.small-12.text-center
+          = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 2) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-2-join", method: :post}
+
+.gift-container.jumbotron#idea3
+  .row[data-equalizer]
+    .columns.medium-offset-1.medium-5.idea-top-left.end
+      div[style="display: table; width: 100%;"]
+        .gift-photo.in-vc[data-equalizer-watch]
+          div.thumbnail[id= '#{@unique_url}idea3']
+    .columns.medium-offset-0.medium-5.idea-top-right.end
+      .gift-details[data-equalizer-watch]
+          h4.text-center.stoneground.strong
+            | The Inspiration
+          div.stoneground.justify.zerotbmargin.bg-ltyellow
+            p 20% of our community reported jewelry as their most memorable birthday gift.
+  .actiondetails.row.yes
+    .columns.medium-offset-1.medium-10.end[data-equalizer]
+      h6 We found some jewelry that might inspire you.
+      .row[data-equalizer="foo"]
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option1)', uu: @unique_url), id: @unique_url +'BuyIdea3_Option1', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb9"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Opal Ring
+          .price
+            | £200
+          .storyblock
+            .button.radius.secondary.narrow#showstory3-1
+              .showdiv
+                | Inspired By 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Inspired By 
+                i.fa.fa-chevron-up.fa-1x
+            .black.justify.substory
+              .row
+                p "The best gift I received was an opal ring from my boyfriend. I loved it because it was so unique and beautiful, and he knew I loved opals."
+              .row
+                .columns.small-11
+                  cite.float-right.black Linda from Chicago, 28
+                .columns.small-1
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option2)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option2', method: :post, remote: true do
+            div.thumbnail.bottom[id= "#{@unique_url}thumb10"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Tasseled Turquoise Necklace
+          .price
+            |  £115
+          .storyblock
+            .suggestedGift.stoneground.narrow
+              |  Suggested Gift 
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option3)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option3', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb11"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Pearl Earrings
+          .price
+            | £140
+          .storyblock.stoneground.narrow
+            .suggestedGift
+              |  Suggested Gift 
+        .columns.medium-3.small-6[data-equalizer-watch]
+          = link_to clicks_path(button_clicked: 'Buy (idea3 option4)', uu: @unique_url), id: @unique_url + 'BuyIdea3_Option4', method: :post, remote: true do
+            div.thumbnail[id= "#{@unique_url}thumb12"]
+          .title
+            h6.strong.narrow[data-equalizer-watch="foo"] Custom 3D-Printed Meshu Pendant
+          .price
+            | £55-£89
+          .storyblock
+            .button.radius.secondary.narrow#showstory3-4
+              .showdiv
+                | Inspired By 
+                i.fa.fa-chevron-down.fa-1x
+              .hidediv
+                | Inspired By 
+                i.fa.fa-chevron-up.fa-1x
+            .black.justify.substory
+              .row
+                p "The best gift I received had to be when my boyfriend put in the map coordinates of places we've lived together, where we're both from, etc, and then had these coordinates 3D-printed into a Meshu pendant! I LOVE how personal it is, and every time someone asks about this pendant, I get to tell the story of what it means."
+              .row
+                .columns.small-11
+                  cite.float-right.black Jenna from Chicago, 25
+                .columns.small-1
+  .ideaActions.row
+    .columns.medium-offset-1.medium-10.zerolrpadding.end
+      .button-group.expanded.expand[data-equalizer style="margin: 0;"]
+        =link_to clicks_path(button_clicked: 'Maybe (idea 3)', goto:'ideas/' + @unique_url + '/#maybe', uu: @unique_url), id: 'maybe-idea-3', class: 'button radius zerotbpadding', method: :post, remote: true
+          .out-vc[data-equalizer-watch]
+            .in-vc
+              | Maybe
+        .button.mid.radius.hollow.primary[data-equalizer-watch]
+          .out-vc
+            .in-vc
+              p Save Idea?
+              =form_for(@click, url: clicks_path(button_clicked: 'Save Idea 3', goto:'ideas/' + @unique_url + '/#save', uu: @unique_url), html: {id: 'save-idea-3', style: "display: inline-block"}, method: :post, remote:true) do |f|
+                  .switch.tiny.round.zerotbmargin[style="display: inline-block;"]
+                    input.switch-input[id="yes-no3", type="checkbox"]
+                      label.switch-paddle[for="yes-no3"]
+                        span.show-for-sr Save this Idea?
+                        span.switch-active[aria-hidden="true"] Yes
+                        span.switch-inactive[aria-hidden="true"]
+  .actiondetails.row.maybe#maybeinforow3
+    .columns.medium-offset-1.medium-10.end
+      h5.strong Join our community, get inspired.
+      p Women told us about the best jewelry they received from their partners. Join us &amp; access our complete collection of gift stories, for free.
+      .row
+        .columns.small-12.text-center
+          = link_to 'Inspire Me', clicks_path(button_clicked: 'Maybe (idea 3) join', goto: 'ideas/inspireme', uu: @unique_url), {class: "button large radius pearl", id: "maybe-idea-3-join", method: :post}    
+dontpanic
+  .jumbotron.text-center.stoneground
+    h4 Still have no idea what to get?
+    br
+       =link_to clicks_path(button_clicked: "don't panic", goto: 'ideas/moreinfo', uu: @unique_url), {class: " button large radius zerotbmargin", id: "click-panic", method: :post}
+        .out-vc
+          .in-vc
+            h4 Don't Panic
