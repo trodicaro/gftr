@@ -1,5 +1,5 @@
 class VisitorNotifier < ApplicationMailer
-  default :from => "givegiftr@gmail.com"
+  default :from => "letsgifton@gmail.com"
 
   def send_saved_ideas(visitor)
     @visitor = visitor

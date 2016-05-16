@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
       if @user.save
         UserNotifier.send_signup_email(@user).deliver_now 
-        format.js {flash[:notice] = "Thanks for signing up to Giftr! We'll be in touch soon."}
+        format.js {flash[:notice] = "Thanks for joining GiftOn! We'll be in touch soon."}
         @resetForm = "1"
 
       else
