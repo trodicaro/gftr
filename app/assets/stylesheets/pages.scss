@@ -358,7 +358,7 @@ nav.column {
 #signup {
   min-height: 100vh;
   background-color: lighten($peppercorn, 25%);
-  display: none;
+  display: table;
 }
 .form .jumbotron>div {
   background-color: rgba($pearl, 0.5);
