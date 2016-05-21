@@ -44,7 +44,7 @@
     <%= render partial: 'partials/google_analytics' %>
   </head>
   <body>
-    <% if current_page?('/') || current_page?('/pages/media') %>
+    <% if current_page?('/') || current_page?('/pages/media') || current_page?('/pages/unsubscribe') %>
       <%= render partial: 'layouts/navbar' %>
       <div class="wrapper">
         <%= yield %>
