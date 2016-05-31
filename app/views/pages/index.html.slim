@@ -53,23 +53,20 @@
             cite.float-right.black Sophie from Chicago, 35
           .columns.small-1
               
-/ #signup
-/   .out-vc
-/     .in-vc
-/       .jumbotron
-/         div
-/           .row
-/             .jumbotron
-/               h3.pearl.text-center
-/                 | Want to help shape our product?
-/               h6.shade.text-center
-/                 | We're inviting our future users into the process of shaping our product. Would you like to join our pre-launch community and guide our product development? We'd love to hear your insights.
-/           .row.form
-/             .jumbotron
-/               div
-/                 h5.peppercorn
-/                   | Join our Pre-Launch Community
-/                 = render partial: "users/form"
+#signup
+  .out-vc
+    .in-vc
+      .jumbotron
+        div
+          .row
+            .jumbotron
+              h3.pearl.text-center
+                | Love gifts but not on Facebook?
+              h6.shade.text-center
+                | Sign up to be the first to know when our site launches 
+          .row.form
+            .jumbotron
+                = render partial: "users/form"
 
 
 
