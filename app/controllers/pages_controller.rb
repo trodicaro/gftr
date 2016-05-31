@@ -7,7 +7,9 @@
   def media
   end
   
-      def unsubscribe
-      end
-   
+  def unsubscribe
+  end
+  
+  def about
+  end 
 end

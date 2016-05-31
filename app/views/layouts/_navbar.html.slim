@@ -2,7 +2,7 @@ nav.column.row
   .top-bar
     .top-bar-left
       ul.dropdown.menu[data-dropdown-menu]
-        - if current_page?('/pages/media') || current_page?('/pages/unsubscribe')
+        - unless current_page?(root_path)
           li = link_to(root_path) do
             = image_tag '/assets/GiftOnLogo.png'
         - else
@@ -13,5 +13,5 @@ nav.column.row
         p
           a href='#join' Join the Fun  
           | |  
-          a href='#about-us' About Us
+          = link_to 'About Us', pages_about_us_path 
   
