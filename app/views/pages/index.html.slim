@@ -1,32 +1,40 @@
 / .index.imagecover#pagetop
-.centered.jumbotron.text-center
-    h1.stoneground#join-section
-      | Share memories of the best gifts you've received
+.container-fl
+  h1.stoneground#join-section
+    | Share memories of the best gifts you've received
+    
+  .fl-description    
     h3.stoneground
       | Tell your gift story to others
     h5.stoneground
       | A fun place for celebrating the human connection that happens when we give authentic gifts. 
-    div
-     .row
-        a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#join-cta[href="https://www.facebook.com/groups/letsgifton" target="_blank"]
-          h4.pearl.zerotbmargin
-            | Join the fun
-        
-        h5.stoneground.italic 
-          i.fa.fa-facebook-official
-          |  Request to join our Facebook community & relive your gift moment*
-    div.bg-ltyellow
-      .row
-        h5.italic * We care about our users and want to create the best experience. We are accepting invitations to our community in batches. This month we will be accepting 50 new members.  
     
+    .join-cta
+      a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#join-cta[href="https://www.facebook.com/groups/letsgifton" target="_blank"]
+        h4.pearl.zerotbmargin
+          | Join the fun
+      
+      h6.stoneground.italic 
+        i.fa.fa-facebook-official
+        |  Request to join our Facebook community & relive your gift moment*
+  
+  .fl-image
+    img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"  
+  
+  .fl-note
+    div
+      h6.italic.note * We care about our users and want to create the best experience. We are accepting invitations to our community in batches. This month we will be accepting 50 new members.  
+   
+  .fl-features 
     div#features
       h2.stoneground
         | What's inside the GiftOn community? 
       
     div#feature-1
-      h4.stoneground
-        | A place to discover stories from other gift recipients 
+      h4.featitle.w700 A place to discover stories from other gift recipients 
       p "The best gift I ever received was a fully-loaded kindle for my birthday from my boyfriend. I had been talking about all these books I wanted to read, and the kindle came pre-loaded with the titles! I loved that the gift showed that he had been listening to me.” 
+      img src="https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/Kindle.jpeg"
+  
       .recipient-details
         .row
           .columns.small-11
@@ -34,18 +42,18 @@
           .columns.small-1
     
     div#feature-2
-      h4.stoneground
-        | Gift advice and tips to up your game 
-      p “Some pendants like this don’t come with a chain. It’s a good idea to get a chain so she doesn’t have to use an old one”
+      h4.featitle.w700 Gift advice and tips to up your game 
+      p “My partner got me a gold pendant of a hockey player. I loved it because I love hockey and the pendant was perfect for everyday wear.” 
+      p Advice for Gifters: "Some pendants like this don’t come with a chain. It’s a good idea to get a chain so she doesn’t have to use an old one”
+      img src="https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/vinhockeyplayer+(1).jpg"
       .recipient-details
         .row
           .columns.small-11
             cite.float-right.black Sophie from Chicago, 35
           .columns.small-1
 
-      div#feature-3
-      h4.stoneground
-        | Funny gift stories & more
+    div#feature-3
+      h4.featitle.w700 Funny gift stories & more
       p “Waistcoat bitters authentic street art, humblebrag gluten-free health goth. Beard YOLO asymmetrical viral flexitarian, tacos VHS four dollar toast chambray offal. Gentrify bushwick blue bottle normcore cold-pressed. Twee iPhone flexitarian put a bird on it vice green juice lo-fi, thundercats fingerstache waistcoat helvetica four dollar toast keffiyeh.”
       .recipient-details
         .row
@@ -61,89 +69,9 @@
           .row
             .jumbotron
               h3.pearl.text-center
-                | Love gifts but not on Facebook?
+                | Love gifts but you're not on Facebook?
               h6.shade.text-center
                 | Sign up to be the first to know when our site launches 
           .row.form
             .jumbotron
                 = render partial: "users/form"
-
-
-
-
-/     div
-/       h4.stoneground
-/         | No more browsing gift lists. No more bad gifts.
-/       h4.stoneground
-/         | Get authentic gift idea inspiration from
-/       h3.lapis
-/         | unbiased, real people. 
-/       .row
-/         h5.stoneground.zerotbmargin
-/           | Coming Soon
-/         /a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#getstarted[href="#options" onclick="ga('send', 'event', 'Start', 'getStarted')"]
-/           h4.pearl.zerotbmargin
-/             | Get Gift Ideas
-/ #options
-/   .out-vc
-/     .in-vc
-/       h3.peppercorn.text-center
-/         | Choose who to ask for gift ideas.
-/       .row.text-center#shuffle[data-equalizer data-equalize-on="medium" data-equalize-by-row="true"]
-/         .columns.medium-4
-/           .clearfix
-/             img src="/assets/friends.svg" alt="ask your friends" data-svg-fallback="/assets/friends.png"
-/             .out-vc[data-equalizer-watch]
-/               .in-vc
-/                 h5.stoneground
-/                   | Ask a gifting expert
-/                 h4.peppercorn
-/                   | &amp;
-/                 h5.stoneground
-/                   | a group of your friends
-/             a.button.radius#friends[href="#signup" onclick="ga('send', 'event', 'Choose', 'friends')"]
-/               h5.pearl.zerotbmargin
-/                 | Select
-/         .columns.medium-4
-/           .clearfix
-/             img src="/assets/group.svg" alt="ask a group" data-svg-fallback="/assets/group.png"
-/             .out-vc[data-equalizer-watch]
-/               .in-vc
-/                 h5.stoneground
-/                   | Ask a gifting expert
-/                 h4.peppercorn
-/                   | &amp;
-/                 h5.stoneground
-/                   |  members of GiftOn's community
-/             a.button.radius#group[href="#signup" onclick="ga('send', 'event', 'Choose', 'community')"]
-/               h5.pearl.zerotbmargin
-/                 | Select
-/         .columns.medium-4
-/           .clearfix
-/             img src="/assets/master.svg" alt="ask a master" data-svg-fallback="/assets/master.png"
-/             .out-vc[data-equalizer-watch]
-/               .in-vc
-/                 h5.stoneground
-/                   | Ask a gifting expert
-/                   br
-/                   | (one-on-one)
-/             a.button.radius#master[href="#signup" onclick="ga('send', 'event', 'Choose', 'master')"]
-/               h5.pearl.zerotbmargin
-/                 | Select
-/ #signup
-/   .out-vc
-/     .in-vc
-/       .jumbotron
-/         div
-/           .row
-/             .jumbotron
-/               h3.pearl.text-center
-/                 | Want to help shape our product?
-/               h6.shade.text-center
-/                 | We're inviting our future users into the process of shaping our product. Would you like to join our pre-launch community and guide our product development? We'd love to hear your insights.
-/           .row.form
-/             .jumbotron
-/               div
-/                 h5.peppercorn
-/                   | Join our Pre-Launch Community
-/                 = render partial: "users/form"
