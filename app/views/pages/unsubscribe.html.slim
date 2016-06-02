@@ -1,3 +1,8 @@
-.jumbotron
+.jumbotron#signup
   .text-center
-    p We're sorry to see you go!
+    .row[style="padding-top: 30px;"]
+      h3 We're sorry to see you go!
+      p
+        | Enter your email address to unsubscribe.
+    .row.form
+      = render partial: "unsubscribes/form"

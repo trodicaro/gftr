@@ -1,0 +1,7 @@
+.unsubscribes
+  div
+    = form_for @unsubscribe, remote: true do |f|    
+      = f.email_field :email, placeholder: "Email Address"
+
+      span#help_block.lapis
+      = f.submit "Unsubscribe", class: "button radius", id: "submit", data: {disable_with: "Loading..."}, onclick: "ga('send', 'event', 'Unsubscribe', 'unsubscribe')"

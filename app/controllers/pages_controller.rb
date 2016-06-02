@@ -7,7 +7,8 @@
   def media
   end
   
-      def unsubscribe
-      end
+  def unsubscribe
+    @unsubscribe = Unsubscribe.new
+  end
    
 end

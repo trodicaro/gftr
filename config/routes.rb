@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   get 'users/new' => 'users#new'
   post 'users', to: 'users#create'
+  
+  get 'unsubscribes/new' => 'unsubscribes#new'
+  post 'unsubscribes', to: 'unsubscribes#create'
 
   get 'visitors/new' => 'visitors#new'
   post 'visitors', to: 'visitors#create'
