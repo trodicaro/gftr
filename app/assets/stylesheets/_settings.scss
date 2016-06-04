@@ -45,6 +45,7 @@
 //@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 // 1. Global
 // ---------
@@ -69,9 +70,10 @@ $black: #020509;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-//$body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 // $body-font-family: 'Lato', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: 'Nunito', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+//$body-font-family: 'Nunito', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$friendlyfont: 'Varela Round', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -558,3 +560,4 @@ $topbar-padding: 0.5rem;
 $topbar-background: $white;
 $topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
+//$topbar-unstack-breakpoint: small;

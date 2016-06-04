@@ -14,8 +14,8 @@ $blue: #000066;//Giftr logo color
 
 $shade: #211F30;
 
-$navheight: 67px;
-$negnavheight: -67px;
+$navheight: 68px;
+$negnavheight: -68px;
 
 .shade {
   color: $shade;
@@ -181,7 +181,7 @@ nav.column {
   position: fixed;
   top: 0;
   z-index: 1030;
-  padding: 0;
+  padding: 0 !important;
    -webkit-box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50);
   -moz-box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50);
   box-shadow: 0px 1px 3px 0px rgba($peppercorn, .50);
@@ -191,10 +191,20 @@ nav.column {
 }
 .top-bar img {
   max-height: 50%;
+  
+}
+.top-bar-left ul {
+  list-style: none;
 }
 .top-bar-left ul li:first-child a {
   height: 100%;
 } 
+.top-bar-left .menu .li a {
+  padding:0;
+}
+#navlogo {
+  padding:0;
+}
 @-moz-document url-prefix() {//logo correct size
     .top-bar img {
       max-height: 50%;
@@ -204,6 +214,14 @@ nav.column {
 .top-bar-right ul {
   padding: 0.35rem 0.35rem;
   line-height: 1;
+}
+.title-bar .menu-icon.dark {
+  text-align: right;
+  position: relative;
+  float: right;
+//  position: fixed;
+//  right: 0;
+//  top: 4px;
 }
 .title-bar {
   background-color: white;
@@ -237,6 +255,10 @@ nav.column {
     width: 100%;
   }
 }
+@media only screen and (max-width: 40em) {
+    .menu-text {
+      display: none !important; } }
+
 //endregion
 
 //Index
