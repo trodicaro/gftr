@@ -10,5 +10,8 @@
   def unsubscribe
     @unsubscribe = Unsubscribe.new
   end
-   
+  
+  def about
+  end 
+
 end

@@ -44,6 +44,7 @@
 // Google Fonts
 //@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
 
 // 1. Global
 // ---------
@@ -69,7 +70,8 @@ $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
 //$body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: 'Lato', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+// $body-font-family: 'Lato', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Nunito', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;

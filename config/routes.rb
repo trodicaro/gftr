@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'pages/media' => 'pages#media'
   get 'pages/thankyou' => 'pages#thankyou'
   get 'pages/unsubscribe' => 'pages#unsubscribe'
+  get 'pages/about-us' => 'pages#about'
 
 #  get 'ideas/index' => 'ideas#index'
   # get '/ideas' => 'ideas#index'

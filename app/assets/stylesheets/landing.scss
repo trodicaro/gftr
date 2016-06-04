@@ -1,0 +1,55 @@
+@import 'pages.scss';
+
+.container-fl {
+		padding:0;
+		margin: 0;
+
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row;	
+		-webkit-flex-wrap: wrap; /* Safari */
+	  flex-wrap:         wrap;
+	  // -webkit-justify-content: space-between; /* Safari */
+	  // justify-content:         space-between;
+	  -webkit-align-items: center; /* Safari */
+	  align-items:         center;
+}
+
+.fl-first {
+		// display: inline-block;
+		flex: 1;
+}
+
+.join-cta {
+	margin-left:auto;
+}
+
+
+.fl-image {
+	flex: 1
+}
+
+.note {
+	font-weight: 300; 
+	background-color: lighten($salmon, 20%)
+}
+.featitle{
+	text-align:center;
+}
+
+#feature-1 {
+	background-color: $lapis;
+	color: white;
+	padding: 1rem;
+}
+
+#feature-2 {
+	background-color: $salmon;
+	color: white;
+}
+
+#feature-3 {
+	background-color: $peppercorn;
+	color: white;
+}
