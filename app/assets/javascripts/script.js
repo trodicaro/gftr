@@ -165,3 +165,11 @@ function init(elem, options){
 	}
 })(jQuery);
 //END COUNTDOWN
+
+$(document).ready(function(){
+  $('.imgslider').slick({
+    autoplay: false,
+    arrows: true,
+    dots: true
+  });
+});
