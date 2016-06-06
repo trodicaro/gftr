@@ -168,8 +168,12 @@ function init(elem, options){
 
 $(document).ready(function(){
   $('.imgslider').slick({
-    autoplay: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     arrows: true,
-    dots: true
+    dots: true,
+    fade: true,
+    cssEase: 'linear'
   });
 });

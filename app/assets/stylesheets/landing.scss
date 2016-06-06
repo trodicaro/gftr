@@ -6,7 +6,6 @@
 //begin carousel
 .slick-slider {
   margin-bottom: 0 !important;
-//  min-height: 80vh !important;
 }
 .slick-slider .imgcontainer {
   background-size: cover;
@@ -18,7 +17,7 @@
   background-image: url("https://images.unsplash.com/photo-1425116100155-1ac0797442e1");
 }
 #secondimg {
-  background-image: url("/assets/Bear_large.jpg");
+  background-image: url("https://images.unsplash.com/photo-1461344577544-4e5dc9487184");
 }
 .slick-prev, .slick-next {
   z-index: 1000 !important;
@@ -43,6 +42,7 @@
 .slick-dots {
   list-style-position: inside !important;
   bottom: 0 !important;
+  margin-left: 0 !important;
 }
 .slick-dots button:before {
   background-color: #eee !important;
@@ -55,83 +55,36 @@
 .slick-dots .slick-active button:before {
   background-color: white !important;
 }
+.imgcontainer {
+  position: relative;
+}
+.slide_caption {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding: 15px;
+  padding-bottom: 35px;
+  background-color: rgba(2, 5, 9, 0.5) !important;
+  text-align: center;
+}
+//end carousels
 
-//end carousel
-
-//.dotClass {
-//  color: white !important;
-//}
-//.slick-dots button {
-//  height: 40px !important;
-//  width: 40px !important;
-//  border-radius: 100% !important;
-//  background-color: black;
-//}
-//#myslider {
-//	.orbit-slide {height: auto !important;
-//		.layer-centered {
-//			position:absolute;z-index:1;background:transparent;width:100%;text-align:center;
-//			h2 {padding: 0rem 3rem;color:$white;text-shadow:0 0 20px #484848;
-//				@include breakpoint(small only) {margin-top:13%;}
-//				@include breakpoint(medium up) {margin-top:21%;}
-//			}
-//			.image-caption {color:$white;text-shadow:0 0 20px rgba($black-75, 0.75);
-//				@include breakpoint(small only) {width: 100%;display: block;}
-//			}
-//		}
-//	}
-//}
-
-//.orbit img {
-//  height: 300px;
-//  width: 100%;
-//}
-//.orbit-container .orbit-slides-container > * {
-//position: relative;
-//float: left;
-//height: auto;
-//}
-//li.orbit-item-1 {
-//  background-image: url("https://images.unsplash.com/photo-1425116100155-1ac0797442e1");
-//  background-size: cover;
-//  background-repeat: no-repeat;
-//  background-position: center center;
-//}
-//li.orbit-item-2 {
-//  background-image: url("/assets/Beat_large.jpg");
-//  background-size: cover;
-//  background-repeat: no-repeat;
-//  background-position: center center;
-//}
-//.orbit-slide {
-//  opacity: 0;
-//}
-//.orbit-slide.is-active {
-//  opacity: 1;
-//}
-//.container-fl {
-//  padding:0;
-//  margin: 0;
-//
-//  display: -webkit-flex;
-//  display: flex;
-//  -webkit-flex-direction: row;
-//  flex-direction: row;	
-//  -webkit-flex-wrap: wrap; /* Safari */
-//  flex-wrap:         wrap;
-//// -webkit-justify-content: space-between; /* Safari */
-//// justify-content:         space-between;
-//  -webkit-align-items: center; /* Safari */
-//  align-items:         center;
-//}
-#belief {
-  background-image: url("https://images.unsplash.com/photo-1425116100155-1ac0797442e1");
+.existrow {
+  margin-top: 30px;
+}
+.existimg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 80vh;
-//  display: table-cell;
+  height: 50px;
+  background-image: url("https://images.unsplash.com/photo-1465060810938-30bbe7c40e76");
 }
+.img_caption {
+  padding: 10px;
+}
+
 .fl-first {
 		// display: inline-block;
 		flex: 1;
