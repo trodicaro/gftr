@@ -153,26 +153,73 @@
     margin-bottom: 10px;
   }
 }
-
 //end how it works
+
+//begin join group
+.penguinimg {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.fa-facebook-official {
+  color: #3b5998;
+  margin-right: 5px;
+}
+.joingroup .button {
+  margin-top: 16px;
+  position: relative;
+  width: 100%;
+}
+.joingroup .italic {
+  display: inline;
+}
+.storycontainer {
+  padding: 15px;
+}
+.joingroup .story>div {
+  background-color: $pearl;
+  position: relative;
+  height: 100%;
+  border-radius: 5px;
+  padding: 15px;
+}
+.joingroup .story span {
+  display: inline;
+}
+.joingroup .story p {
+  display: inline;
+  color: $stoneground;
+  line-height: 35px;
+  text-align: justify;
+}
+.joingroup cite {
+  text-align: right;
+}
+.note {
+  background-color: lighten($salmon, 20%)
+}
+#join-section {
+    display: block;
+    position: relative;
+    top: 2* $negnavheight;
+}
+@media screen and (max-width: 640px) {
+  .story {
+    margin-bottom: 25px;
+  }
+  #join-section {
+    top: $negnavheight;
+}
+}
+//end join group
+
 
 .fl-first {
 		// display: inline-block;
 		flex: 1;
 }
-
-//.join-cta {
-//	margin-left:auto;
-//}
-
-
 .fl-image {
 	flex: 1
-}
-
-.note {
-	font-weight: 300; 
-	background-color: lighten($salmon, 20%)
 }
 .featitle{
 	text-align:center;

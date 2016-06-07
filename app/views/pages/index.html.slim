@@ -32,14 +32,14 @@
 .row.howitworks
   .columns.large-offset-1.large-10
     .jumbotron
-       h2.stoneground.text-center.friendly#join-section
+       h2.stoneground.text-center.friendly
         | You have the power to help end bad gifts.
         .subheader Here’s how.
     .jumbotron.row.text-center [style="padding-top: 0;" data-equalizer]
       .columns.medium-4.medium-offset-0.small-offset-1.small-10
         div.HIWbg [data-equalizer-watch]
           i.fa.fa-user-plus.fa-3x
-          h5.peppercorn Join &amp; check out our current theme
+          h5.peppercorn Join us &amp; check out our current theme
       .columns.medium-4.medium-offset-0.small-offset-1.small-10
         div.HIWbg [data-equalizer-watch]
           i.fa.fa-comments-o.fa-3x
@@ -50,37 +50,56 @@
         div.HIWbg [data-equalizer-watch]
           i.fa.fa-heart.fa-3x
           h5.peppercorn Bask in positive community vibes
+hr
 .row.joingroup
   .columns.large-offest-1.large-10
-    .jumbotron.row
-      .columns.medium-6
-        | Featured gift story
-      .columns.medium-6
+    .jumbotron.row [data-equalizer data-equalize-on="medium"]
+      .columns.medium-6.story [data-equalizer-watch]
+        div.out-vc
+          div.in-vc
+            h4.peppercorn.text-center.friendly Check out a featured story from our community.
+            div.storycontainer
+              span.lapis.friendly.strong &ldquo;
+              p.italic My favorite Father’s Day gift ever was a necklace my wife commissioned that has the fingerprints of all 4 of my kids. The kids were ages 2 to 8 at the time. I’ve never taken it off. My kids are all in their 20’s now.
+              span.lapis.friendly.strong &rdquo;
+              cite Brad from Minnesota, 60
+      .columns.medium-6.text-center [data-equalizer-watch]
+        #join-section
+        h2.friendly.stoneground Be awesome.
+        h2.friendly.stoneground Like Brad.
         div.penguinimg
-          img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"  
+          img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"
+          .row
+            a.button.radius.large#join-group [href="https://www.facebook.com/groups/letsgifton" target="_blank"]
+              | Join the fun
+        .row
+          i.fa.fa-facebook-official.fa-1x
+          small.italic Request to join our Facebook community*
+.row.columns.note
+    h6.small.italic
+      | * We care about creating the best user experience. We are accepting invitations to our community in batches. This month we will accept 50 new members. 
         
-        
-.container-fl
-  h1.stoneground.text-centerfriendly#join-section
-    | Share memories of the best gifts you've received
-    
-  .fl-description    
-    h3.stoneground
-      | Tell your gift story to others
-    h5.stoneground
-      | A fun place for celebrating the human connection that happens when we give authentic gifts. 
-    
-    .join-cta
-      a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#join-cta[href="https://www.facebook.com/groups/letsgifton" target="_blank"]
-        h4.pearl.zerotbmargin
-          | Join the fun
-      
-      h6.stoneground.italic 
-        i.fa.fa-facebook-official
-        | Request to join our Facebook community*
-  
-  .fl-image
-    img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"  
+/.container-fl
+/  h1.stoneground.text-centerfriendly#join-section
+/    | Share memories of the best gifts you've received
+/    
+/  .fl-description    
+/    h3.stoneground
+/      | Tell your gift story to others
+/    h5.stoneground
+/      | A fun place for celebrating the human connection that happens when we give authentic gifts. 
+/    
+/    .join-cta
+/      a.small-10.small-offset-1.medium-6.medium-offset-3.large-4.large-offset-4.button.radius#join-cta[href="https://www.facebook.com/groups/letsgifton" target="_blank"]
+/        h4.pearl.zerotbmargin
+/          | Join the fun
+/      
+/      h6.stoneground.italic 
+/        i.fa.fa-facebook-official
+/        | Request to join our Facebook community*
+/  
+/  .fl-image
+/    img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"  
   
   .fl-note
     div
