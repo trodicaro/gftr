@@ -11,7 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 90vh;
+  min-height: 75vh;
 }
 #firstimg {
   background-image: url("https://images.unsplash.com/photo-1425116100155-1ac0797442e1");
@@ -70,29 +70,84 @@
   text-align: center;
 }
 //end carousels
-
+.existbg {
+  background-color: $light-gray;
+}
+.right {
+  text-align: right;
+}
 .existrow {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
-.existimg {
+.existcontainer {
+  position: relative;
+  padding: 20px;
+}
+.existimage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: url("https://images.unsplash.com/photo-1465060810938-30bbe7c40e76");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 50px;
-  background-image: url("https://images.unsplash.com/photo-1465060810938-30bbe7c40e76");
+  z-index: 1;
+  -webkit-filter: brightness(85%);
+  -moz-filter: brightness(85%);
+  -o-filter: brightness(85%);
+  -ms-filter: brightness(85%);
+  filter: brightness(85%);
 }
-.img_caption {
-  padding: 10px;
+.existcontent {
+  position: relative;
+  z-index: 2;
+  font-size: 120%;
 }
+.columns.giftoninfo {
+  padding-left: 0;
+}
+.giftoninfo>div {
+  background-color: white;
+  position: relative;
+  height: 100%;
+}
+.columns.existparent {
+  padding-right: 0;
+}
+@media screen and (max-width: 640px) {
+  .columns.existparent {
+    padding-right: 10px;
+  }
+  .columns.giftoninfo {
+  padding-left: 10px;
+  }
+  .existrow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  .existcontent {
+    font-size: 100%;
+  }
+}
+//.existimg {
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//  background-position: center center;
+//  background-image: url("https://images.unsplash.com/photo-1465060810938-30bbe7c40e76");
+//}
+//.img_caption {
+//  padding: 20px;
+//}
 
 .fl-first {
 		// display: inline-block;
 		flex: 1;
 }
 
-.join-cta {
-	margin-left:auto;
-}
+//.join-cta {
+//	margin-left:auto;
+//}
 
 
 .fl-image {
