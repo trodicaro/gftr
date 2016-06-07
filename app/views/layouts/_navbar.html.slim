@@ -9,7 +9,8 @@ nav.column.row
           li
             a href="#pagetop" id="navlogo"
               = image_tag '/assets/GiftOnLogo.png'
-    button.menu-icon.dark [data-toggle type="button"]
+    - if current_page?(root_path)
+      button.menu-icon.dark [data-toggle type="button"]
   #main-menu.top-bar
     .top-bar-left
       ul.dropdown.menu [data-dropdown-menu data-hide-for="small"]
@@ -20,9 +21,10 @@ nav.column.row
           li.menu-text
             a href="#pagetop" id="navlogo"
               = image_tag '/assets/GiftOnLogo.png'
-    .top-bar-right
-      ul.menu [data-responsive-menu="drilldown medium-dropdown"]
-        li.has-submenu
-          a href='#join-section' Join the Fun
-        /li
-          = link_to 'About Us', pages_about_us_path, :id => 'about-us'
+    - if current_page?(root_path)
+      .top-bar-right
+        ul.menu [data-responsive-menu="drilldown medium-dropdown"]
+          li.has-submenu
+            a href='#join-section' id="joinsection" Join the Fun
+          /li
+            = link_to 'About Us', pages_about_us_path, :id => 'about-us'

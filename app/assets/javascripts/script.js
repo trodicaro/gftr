@@ -1,8 +1,27 @@
 $(document).on('page:load', function() {//turbolinks
   $(document).foundation();
+  $('.imgslider').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    dots: true,
+    fade: true,
+    cssEase: 'linear'
+  });
 });
 
+$(document).on('page:load', function() {
+  $('a[href="#join-section"]').click(function() {
+    $('.top-bar').css('display', 'none')
+  });
+})
+
 jQuery(document).ready(function($) {
+  $('a[href="#join-section"]').click(function() {
+    $('.top-bar').css('display', 'none')
+  });
+  
   $("#getstarted").click(function(e) {
     e.preventDefault();
     hide("#getstarted");
@@ -25,6 +44,11 @@ jQuery(document).ready(function($) {
     window.dispatchEvent(new Event('resize'));
   }); 
   $("#navlogo").click(function(e) {
+    e.preventDefault();
+//    console.log(this.hash);
+    scrollTowards(this.hash);
+  });
+  $("#joinsection").click(function(e) {
     e.preventDefault();
 //    console.log(this.hash);
     scrollTowards(this.hash);
@@ -166,6 +190,7 @@ function init(elem, options){
 })(jQuery);
 //END COUNTDOWN
 
+//begin image slider
 $(document).ready(function(){
   $('.imgslider').slick({
     infinite: true,
@@ -177,3 +202,4 @@ $(document).ready(function(){
     cssEase: 'linear'
   });
 });
+//end image slider

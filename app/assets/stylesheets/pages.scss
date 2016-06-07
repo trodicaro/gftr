@@ -336,7 +336,7 @@ nav.column {
   background-color: $pearl;
   display: none;
 }
-#options, #signup {
+#options, #signup, #unsubscribe {
   min-height: 100vh;
   margin-top: $negnavheight;
   padding-top: $navheight;
@@ -345,6 +345,7 @@ nav.column {
 #signup {
   margin-top: 0;
   padding-top: 0;
+  min-height: inherit;
 }
 #options .columns, #options .columns .fa {
   display: block;
@@ -363,7 +364,7 @@ nav.column {
   padding: 1.25em;
   border-radius: 6px;
 }
-#options>.out-vc, #signup>.out-vc {
+#options>.out-vc, #signup>.out-vc, #unsubscribe>.out-vc {
   display: table-row;
   position: relative;
   height: 100%;
@@ -392,9 +393,14 @@ nav.column {
 #options h4 {
   font-weight: 800;
 }
-#signup {
+#unsubscribe {
   min-height: 100vh;
-  background-color: lighten($peppercorn, 25%);
+  display: table;
+  background-color: $pearl;
+}
+#signup {
+//  min-height: 100vh;
+//  background-color: lighten($peppercorn, 25%);
   display: table;
 }
 .form .jumbotron>div {
@@ -440,7 +446,7 @@ nav.column {
 }
 @media screen and (max-width: 640px) {
   #signup {
-  background-color: lighten($stoneground, 25%);
+//  background-color: lighten($stoneground, 25%);
 }
   #options .columns:nth-child(2), #options .columns:nth-child(3) {
     margin-top: 2rem;
