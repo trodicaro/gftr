@@ -14,7 +14,7 @@ $(document).on('page:load', function() {//turbolinks
 $(document).on('page:load', function() {
   if ($(window).width() < 640) {
     $('a[href="#join-section"]').click(function() { 
-      $('.top-bar').css('display', 'none')
+      $('.top-bar').css('display', 'none');
     });
   };
   $("#getstarted").click(function(e) {
@@ -58,7 +58,7 @@ $(document).on('page:load', function() {
 jQuery(document).ready(function($) {
   if ($(window).width() < 640) {
   $('a[href="#join-section"]').click(function() {
-    $('.top-bar').css('display', 'none')
+    $('.top-bar').css('display', 'none');
   });
   };
   
