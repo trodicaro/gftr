@@ -1,17 +1,24 @@
-   function sendAnalytics(eventCategory, eventAction) {
-       ga('send', 'event', eventCategory, eventAction, eventLabel);
-   };
+$(function() {
+    function sendAnalytics(eventCategory, eventAction, eventLabel) {
+        ga('send', 'event', eventCategory, eventAction, eventLabel);
+    };
 
-   $('#join-exist').on("click", function(event) {
-       event.preventDefault();
-       sendAnalytics('Interactions', 'clicked', 'Join the Fun1');
-   });
-  $('#join-group').on("click", function(event) {
-       event.preventDefault();
-       sendAnalytics('Interactions', 'clicked', 'Join the Fun2');
-   });
+    $('#joinsection').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('Interactions', 'clicked', 'Nav: Join the Fun');
+    });
 
-   $('#about-us').on("click", function(event) {
-       event.preventDefault();
-       sendAnalytics('Interactions', 'clicked', 'About Us');
-   });
+    $('#join-exist').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('Interactions', 'clicked', 'Join the Fun1');
+    });
+    $('#join-group').on("click", function(event) {
+        event.preventDefault();
+        sendAnalytics('Interactions', 'clicked', 'Join the Fun2');
+    });
+
+    // $('#about-us').on("click", function(event) {
+    //     event.preventDefault();
+    //     sendAnalytics('Interactions', 'clicked', 'About Us');
+    // });
+});
