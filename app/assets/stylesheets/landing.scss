@@ -1,8 +1,48 @@
 @import 'pages.scss';
 
+$friendlyblue: #03a9f4;
+.friendlyblue {
+  color: $friendlyblue;
+}
 .friendly {
   font-family: $friendlyfont;
 }
+
+//
+#pagetop > div {
+  min-height: 75vh;
+}
+#pagetop .relative {
+  position: relative;
+  margin-top: -75vh;
+}
+.banner-right {
+  position: absolute;
+  right: 0;
+  z-index: -10;
+}
+.banner-left {
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+}
+@media screen and (max-width: 640px) {
+  #pagetop {
+    margin-top: 40px;
+  }
+}
+//#pagetop .relative .rightbanner {
+//  height: 50px;
+//  width: 50px;
+//}
+//#pagetop .out-vc {
+//  display: table-row;
+//  position: relative;
+//  height: 100%;
+//}
+
+
+
 //begin carousel
 .slick-slider {
   margin-bottom: 0 !important;
