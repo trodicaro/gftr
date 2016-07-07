@@ -8,7 +8,7 @@ $friendlyblue: #03a9f4;
   font-family: $friendlyfont;
 }
 
-//
+//GiftOn Description
 #pagetop > div {
   min-height: 75vh;
 }
@@ -31,6 +31,27 @@ $friendlyblue: #03a9f4;
     margin-top: 40px;
   }
 }
+
+//join community
+#joincommunity {
+  background-color: #ffffde;
+}
+#joincommunity h4 {
+  color: #666666;
+}
+#joincommunity .penguinimg {
+  max-width: none;
+  text-align: center;
+}
+#joincommunity .penguinimg img {
+//  max-width: auto;
+  max-height: 140px;
+  margin-bottom: 15px;
+}
+#peekinside {
+//  background-color: $light-gray;
+  background-color: #f3f3ff;
+}
 //#pagetop .relative .rightbanner {
 //  height: 50px;
 //  width: 50px;
@@ -51,13 +72,17 @@ $friendlyblue: #03a9f4;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 75vh;
+//  min-height: 75vh;
+  min-height: 50vh;
 }
 #firstimg {
   background-image: url("https://images.unsplash.com/photo-1425116100155-1ac0797442e1");
 }
 #secondimg {
   background-image: url("https://images.unsplash.com/photo-1465060810938-30bbe7c40e76");
+}
+#thirdimg {
+  background-image: url("");
 }
 .slick-prev, .slick-next {
   z-index: 1000 !important;
@@ -244,14 +269,14 @@ $friendlyblue: #03a9f4;
 #join-section {
     display: block;
     position: relative;
-    top: 2* $negnavheight;
+    top: $negnavheight;
 }
 @media screen and (max-width: 640px) {
   .story {
     margin-bottom: 25px;
   }
   #join-section {
-    top: $negnavheight;
+    top: -40px;
 }
 }
 //end join group
