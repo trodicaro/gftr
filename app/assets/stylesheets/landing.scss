@@ -76,13 +76,13 @@ $friendlyblue: #03a9f4;
   min-height: 50vh;
 }
 #firstimg {
-  background-image: url("https://images.unsplash.com/photo-1425116100155-1ac0797442e1");
+  background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/Kindle.jpeg");
 }
 #secondimg {
-  background-image: url("https://images.unsplash.com/photo-1465060810938-30bbe7c40e76");
+  background-image: url("https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/Fathers_day_gift");
 }
 #thirdimg {
-  background-image: url("");
+  background-image: url("https://images.unsplash.com/photo-1456304015996-498b18b7afdb?dpr=1&auto=format&crop=entropy&fit=crop&w=1190&h=793&q=80");
 }
 .slick-prev, .slick-next {
   z-index: 1000 !important;
@@ -93,10 +93,10 @@ $friendlyblue: #03a9f4;
   background-color: rgba(2, 5, 9, 0.5) !important;
 }
 .slick-prev {
-  left: 0 !important; 
+  left: 0 !important;
 }
 .slick-next {
-  right: 0 !important; 
+  right: 0 !important;
 }
 .slick-next:before {
   content: "▶︎" !important;
@@ -263,7 +263,7 @@ $friendlyblue: #03a9f4;
 .notecontainer {
   background-color: lighten($salmon, 20%);
 }
-.note { 
+.note {
   padding: 20px;
 }
 #join-section {
