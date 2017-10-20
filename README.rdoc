@@ -1,28 +1,3 @@
-== README
+Reinventing gifting by building the world’s largest, community-powered, searchable database of relationship- and occasion-specific gifts to inspire givers with vetted gift ideas. We are currently developing our app with a focus on user testing and research.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Project built during Startup Weekend (http://communities.techstars.com/usa/chicago/startup-weekend/7653). Lives on as GiftOn: http://www.tatyana.me/gifton_info.
